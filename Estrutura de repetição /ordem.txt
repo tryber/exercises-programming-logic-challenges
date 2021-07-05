@@ -1,0 +1,12 @@
+REPETIÇÃO
+FACIL
+Contar até 10/moreira1
+Calcular a soma de 1 até 1000/jack08
+Escreva seu nome N vezes/jack10
+Números divisíveis por 3/ricci3
+Imprima os números ímpares/joicy5
+MEDIO
+Ordem decrescente/jack5
+Escreva seu nome N vezes/ricci1
+DIFICIL
+Um novo array/ricci6

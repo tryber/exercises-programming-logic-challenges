@@ -1,0 +1,23 @@
+Operadores
+- facil
+Calcular a média/jack01
+Calcular o salário/jack02
+Sucessor/joicy01
+Potência de um número/jack06
+Área de um triângulo/jack09
+Calcular IMC/moreira2
+Calcule quanto tempo de leitura/joicy02
+Conta do restaurante/gus03
+Celsius/baeta07
+Fahrenheit/baeta06
+Loja de ração/gus05
+Peso e preço do prato/gus07
+- medio
+Financiamento de veículo/gus06
+Simulação de dado rpg/baeta02
+Viagem de carro/gus4
+Aprovado ou reprovado?/jack3
+Média ponderada/jack04
+Peso e preço do prato/marioto2
+- dificil
+Divisões sucessivas/jack07

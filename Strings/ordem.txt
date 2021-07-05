@@ -1,0 +1,8 @@
+STRING
+FACL
+Nome e idade/gus1
+Quatro operações matemáticas/gus2
+MEDIO
+
+DIFICIL
+Descubra quantas letras tem/baeta1

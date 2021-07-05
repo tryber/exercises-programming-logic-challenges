@@ -1,0 +1,10 @@
+OBJETOS
+FACIL
+Jogo de fantasia/isaac1
+Jogo de fantasia- Parte 2/isaac2
+Escala musical/isaac8
+MEDIO
+Quem é a pessoa mais velha?/mariotto3
+Jogo de fantasia- Parte 3/isaac3
+
+DIFICIL
