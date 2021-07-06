@@ -1,20 +1,23 @@
 DESAFIADORES
 
-FACIL
+- FACIL
 Idade mínima da CNH/baeta3
 Raiz quadrada/gus12
 Array de notas musicais/isaac9
-MEDIO
+
+- MEDIO
 Array de notas musicais - 2/isaac10
 Varinhas mágicas/isaac7
 Calcule o preço/baeta9
 Calcule a média dos graus Celsius e Fahrenheit/baeta10
 O número de empates na Copa das galáxias/fernando2
 Programas de TV/ricci2
-DIFICIL
+nega Numeros/baeta22
+
+- DIFICIL
 Array de notas musicais - 3/isaac11
 Fatorial/fernando4
 Fibonnaci/fernando3
 Soma de números primos/ricci4
 Fatorial e média/ricci5
-Caixa eletrônico/fernando1
+validação cpf/fernando1

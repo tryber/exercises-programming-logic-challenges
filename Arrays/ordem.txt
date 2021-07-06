@@ -1,8 +1,12 @@
 ARRAY
-FACIL
+
+-FACIL
 Maior número/baeta4
 Menor número/baeta5
 Descubra se o nome esta em um array/joicy8
-MEDIO
-DIFICIL
+
+-MEDIO
+
+-DIFICIL
+Todos do mesmo tipo/baeta18
 Idade do filho mais velho/mariotto4

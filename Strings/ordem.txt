@@ -1,8 +1,12 @@
 STRING
-FACL
+
+-FACL
+Inverte nomes/baeta21
+Converte Para Numero/baeta19
 Nome e idade/gus1
 Quatro operações matemáticas/gus2
-MEDIO
 
-DIFICIL
+-MEDIO
+
+-DIFICIL
 Descubra quantas letras tem/baeta1
