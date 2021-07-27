@@ -21,3 +21,8 @@ Fibonnaci/fernando3
 Soma de números primos/ricci4
 Fatorial e média/ricci5
 validação cpf/fernando1
+
+
+
+for n in {1..16}; do touch desafiadores-0$n.js ; done
+for n in {1..16}; do rm desafiadores-0$n.txt ; done
