@@ -23,3 +23,5 @@ Pedra,papel e tesoura/joicy06
 Imprima a idade em ordem crescente/joicy4
 Jogo do par ou ímpar/mariotto01
 Jogo de cartas/mariotto6
+
+for n in {1..18}; do touch condicionais-0$n.js ; done
