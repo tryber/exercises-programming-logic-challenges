@@ -5,8 +5,15 @@ Inverte nomes/baeta21
 Converte Para Numero/baeta19
 Nome e idade/gus1
 Quatro operações matemáticas/gus2
+primeira e ultima letras
+
 
 -MEDIO
+nome do cachorro
+começa com a?
 
 -DIFICIL
 Descubra quantas letras tem/baeta1
+brincando de espionagem
+
+for n in {1..9}; do touch strings-0$n.js ; done
