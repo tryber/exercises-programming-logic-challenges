@@ -10,3 +10,5 @@ Quem é a pessoa mais velha?/mariotto3
 Jogo de fantasia- Parte 3/isaac3
 
 -DIFICIL
+
+for n in {1..5}; do touch objetos-0$n.js ; done
