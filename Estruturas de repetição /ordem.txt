@@ -15,3 +15,5 @@ Escreva seu nome N vezes/ricci1
 
 -DIFICIL
 Um novo array/ricci6
+
+for n in {1..10}; do touch repeticao-0$n.js ; done
