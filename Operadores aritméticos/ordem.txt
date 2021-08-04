@@ -28,3 +28,5 @@ Peso e preço do prato/marioto2
 
 - DIFICIL
 Divisões sucessivas/jack07
+
+for n in {1..23}; do touch operadores-0$n.js ; done
