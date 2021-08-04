@@ -1,6 +1,6 @@
 STRING
 
--FACL
+-FACIL
 Inverte nomes/baeta21
 Converte Para Numero/baeta19
 Nome e idade/gus1
