@@ -44,7 +44,7 @@ function factorial(n) {
 }
 
 
-// 13 - Fibonnaci
+// 13 - Fibonacci
 function fibonnaci(n) {
   const fib = [0, 1];
   for (let count = 2; count <= n; count += 1) {
