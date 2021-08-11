@@ -211,7 +211,7 @@ else {
 }
 
 
-// 10 - Nega Numeros
+// 10 - Nega Números
 function negateNumbers(arrayNumbers) {
   return arrayNumbers.map((number) => number * -1);
 }
