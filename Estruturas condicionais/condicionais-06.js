@@ -4,7 +4,7 @@
 // Idade: número maior que 0
 // Sexo: M ou F
 // Peso (kg): número maior que 0
-// Altura (cm): numero maior que 0
+// Altura (cm): número maior que 0
 // Fórmula para homens
 // (altura em centímetros x 6,25) + (peso em quilogramas x 9,99) – (idade x 4,92) + 5
 // Fórmula para mulheres
