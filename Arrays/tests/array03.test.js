@@ -10,7 +10,9 @@ beforeEach(() => {
   consoleSpy = jest.spyOn(console, 'log');
   consoleSpy.mockImplementation(() => 'ok');
 });
-
+afterEach(() => {
+  consoleSpy = jest.restoreAllMocks();
+});
 describe('Test Easy ', () => {
   test('should call console.log 1 time', () => {
     isNameIn([], 'mica');
@@ -38,7 +40,7 @@ describe('Test Normal ', () => {
   });
   test('should return Marina', () => {
     isNameIn(facilitators, 'Marina');
-    expect(consoleSpy).toBeCalledWith(nameIsIn('Mica'));
+    expect(consoleSpy).toBeCalledWith(nameIsIn('Marina'));
   });
 });
 
