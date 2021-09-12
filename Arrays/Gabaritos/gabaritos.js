@@ -1,47 +1,50 @@
-// 01- Maior número :
-const maxNumbers = [3, 1, 8, 34, 13, 2, 5];
+/* 01 - Encontre o maior número de uma array. */
+function getMaxNumber(arr) {
+  let maxNumber = arr[0];
 
-let maxNumber = maxNumbers[0];
-
-for (let index = 0; index < maxNumbers.length; index += 1) {
-  if (maxNumbers[index] > maxNumber) {
-    maxNumber = maxNumbers[index];
+  for (let index = 0; index < arr.length; index += 1) {
+    if (arr[index] > maxNumber) {
+      maxNumber = arr[index];
+    }
   }
+  return maxNumber;
 }
 
+/* 02 - Encontre o menor número de uma array. */
+function getMinNumber(arr) {
+  let minNumber = arr[0];
 
-//02 - Menor número
-const minNumbers = [3, 1, 8, 34, 13, -5, 2, 5];
-
-let minNumber = minNumbers[0];
-
-for (let index = 0; index < minNumbers.length; index += 1) {
-  if (minNumbers[index] < minNumber) {
-    minNumber = minNumbers[index];
+  for (let index = 0; index < arr.length; index += 1) {
+    if (arr[index] < minNumber) {
+      minNumber = arr[index];
+    }
   }
+  return minNumber;
 }
 
-// 03 - Descubra se o nome esta em um array
-let facilitators = ['Silvia', 'Isa', 'Marina', 'Mica', 'Amanda', 'Karine'];
-let foundMica = false;
-for(let index = 0; index < facilitators.length; index += 1) {
-  if(facilitators[index] == 'Mica'){
-    foundMica = true;
+/* 03 - Encontre uma pessoa convidada em uma lista de nomes. */
+function findName(arr, name) {
+  let foundName = false;
+  let msg = "";
+
+  for (let index = 0; index < arr.length; index += 1) {
+    if (arr[index].toUpperCase() == name.toUpperCase()) {
+      foundName = true;
+    }
   }
+
+  if (foundName == true) {
+    msg = "O nome está na lista.";
+  } else {
+    msg = "O nome não está na lista.";
+  }
+  return msg;
 }
 
-if(foundMica == true){
-  console.log('O nome da Mica está no array.')
-}
-else {
-  console.log('Não faz parte.')
-}
-
-
-// 04 - Todos do mesmo tipo?
-function verifyAllElements(array) {
-  const typeOfFirst = typeof array[0];
-  for (let elements of array) {
+/* 04 - Verifique se todos os dados de uma lista são do mesmo tipo. */
+function checkDataTypeValuesArr(arr) {
+  const typeOfFirst = typeof arr[0];
+  for (let elements of arr) {
     if (typeOfFirst !== typeof elements) {
       return false;
     }
@@ -49,19 +52,26 @@ function verifyAllElements(array) {
   return true;
 }
 
-
-// 05 - Idade do filho mais velho
-function oldestSon(pedroAge, kidsAges) {
-  let sumkidsAges = 0;
+/* 05 - Escreva uma algoritmo para encontrar a idade do filho mais velho considerando as informações abaixo. */
+function findMaxAgeSon(pedroAge, kidsAges) {
+  let sumKidsAges = 0;
 
   kidsAges.forEach((kid) => {
-    sumkidsAges += kid;
+    sumKidsAges += kid;
   });
 
-  let olderKidAge = (pedroAge - sumkidsAges);
+  let olderKidAge = pedroAge - sumKidsAges;
   kidsAges.push(olderKidAge);
 
-  let olderKid = Math.max(...kidsAges);
+  let olderKid = getMaxNumber(kidsAges);
 
   return `O filho mais velho tem ${olderKid} anos`;
 }
+
+module.exports = {
+  getMaxNumber,
+  getMinNumber,
+  findName,
+  checkDataTypeValuesArr,
+  findMaxAgeSon,
+};

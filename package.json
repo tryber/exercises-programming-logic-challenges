@@ -1,0 +1,21 @@
+{
+  "name": "revisao-trybe",
+  "version": "1.0.0",
+  "description": "Este repositório tem por finalidade apresentar alguns exercícios de logica de programação e alguns materiais de estudo complementares sobre os temas que são abordados nos exercícios.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tryber/exercises-programming-logic-challenges.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tryber/exercises-programming-logic-challenges/issues"
+  },
+  "homepage": "https://github.com/tryber/exercises-programming-logic-challenges#readme",
+  "dependencies": {
+    "jest": "^27.1.1"
+  }
+}
