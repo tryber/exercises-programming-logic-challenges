@@ -1,7 +1,9 @@
 # exercises-programming-logic-challenges
-Este repositório tem por finalidade apresentar alguns exercícios de logica de programação e alguns materiais de estudo complementares sobre os temas que são abordados nos exercícios.
+Este repositório tem por finalidade apresentar alguns exercícios de lógica de programação e materiais de estudo complementares sobre os temas que são abordados.
 
-LINKS para estudo
+Você verá que alguns links estão em inglês, mas disponibilizamos no final da página um tutorial para te ajudar a traduzir o site. :piscando_olho:
+
+Confira abaixo os links para estudo:
 
 ## Gerais
 * [Blog Trybe](https://blog.betrybe.com/javascript/)
@@ -58,10 +60,10 @@ Quando o site for aberto, ao lado direito superior vai ter um “botão” com o
 <br>
 <img src="imagens_tutorial/img1.png">
 
-Clicando nele uma barra de busca vai ser aberta, onde devemos escolher em qual língua queremos ver o site:
+Clicando nele uma barra de busca vai ser aberta, onde devemos escolher em qual idionma queremos ver o site:
 <br>
 <img src="imagens_tutorial/img2.png">
 
-Agora é só escolher o língua:
+Agora é só escolher o idioma:
 <br>
 <img src="imagens_tutorial/img3.png">
