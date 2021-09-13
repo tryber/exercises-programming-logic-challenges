@@ -50,3 +50,18 @@ LINKS para estudo
 * [If...else MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/if...else)
 * [JavaScript if else and else if W3](https://www.w3schools.com/js/js_if_else.asp)
 * [JavaScript if/else Statement W3](https://www.w3schools.com/jsref/jsref_if.asp)
+
+
+### Tutorial de como traduzir o W3 schools
+
+Quando o site for aberto, ao lado direito superior vai ter um “botão” com o formato do planeta :
+<br>
+<img src="imagens_tutorial/img1.png">
+
+Clicando nele uma barra de busca vai ser aberta, onde devemos escolher em qual língua queremos ver o site:
+<br>
+<img src="imagens_tutorial/img2.png">
+
+Agora é só escolher o língua:
+<br>
+<img src="imagens_tutorial/img3.png">
