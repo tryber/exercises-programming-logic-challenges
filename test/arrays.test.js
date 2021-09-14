@@ -19,7 +19,7 @@ describe("Desafios de Arrays.", () => {
     });
   });
 
-  describe("03 - Testando a Função findName.", () => {
+  describe(" 03 - Testando a Função findName.", () => {
     it("Verifica se o código está retornando a mensagem correta em caso de SUCESSO.", () => {
       expect(
         findName(
@@ -38,7 +38,7 @@ describe("Desafios de Arrays.", () => {
     });
   });
 
-  describe("04 - Testando a Função checkDataTypeValuesArr.", () => {
+  describe(" 04 - Testando a Função checkDataTypeValuesArr.", () => {
     it("Verifica se o código está retornando o valor booleano correto em caso de SUCESSO.", () => {
       expect(checkDataTypeValuesArr(["Daniel", "John", 1])).toEqual(false);
     });
@@ -49,7 +49,7 @@ describe("Desafios de Arrays.", () => {
     });
   });
 
-  describe("05 - Testando a Função findMaxAgeSon.", () => {
+  describe(" 05 - Testando a Função findMaxAgeSon.", () => {
     it("Verifica se o código esta retornando a mensagem correta.", () => {
       expect(findMaxAgeSon(40, [10, 10, 10])).toEqual(
         "O filho mais velho tem 10 anos"

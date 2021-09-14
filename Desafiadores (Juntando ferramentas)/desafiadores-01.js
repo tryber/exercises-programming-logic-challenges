@@ -1,6 +1,15 @@
-// 01 - Idade mínima da CNH
-// Escreva uma função que recebe o nome e ano de nascimento de uma pessoa e retorne a frase:
-// "(nome_da_pessoa) tem (idade) anos de idade e (pode ou não pode) iniciar o processo
-// para obter CNH."
+/*
+01 - Verificar se pessoa tem idade para dar entrada na CNH.
 
-// // Desenvolva seu código aqui.
+Escreva um algoritmo que recebe o nome e ano de nascimento de uma pessoa e verifica se ela pode dar entrada na CNH.
+
+Se a pessoa tiver menos de 18 anos retorne a seguinte mensagem: "(name) tem (x) anos de idade e não pode iniciar o processo.", se não retorne "(name) tem (x) anos de idade e pode iniciar o processo."
+
+*/
+
+function checkCnhProcess(name, birthYear){
+  // Desenvolva seu código nessa função
+  return
+}
+
+module.exports = checkCnhProcess;
