@@ -4,7 +4,7 @@ const {
   findName,
   checkDataTypeValuesArr,
   findMaxAgeSon,
-} = require("../Arrays/Gabaritos/gabaritos");
+} = require("../Desafios/Arrays/Gabaritos/1-5");
 
 describe("Desafios de Arrays.", () => {
   describe(" 01- Testando a Função GetMaxNumber.", () => {
