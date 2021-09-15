@@ -8,8 +8,6 @@ saída: [-2, 3 ,-4 ]
 
 */
 
-// Desenvolva seu código aqui
-
 function negateNumbers(arrNumbers){
   // Desenvolva seu código nessa função
   return

@@ -101,11 +101,13 @@ describe("Desafios de Estrutura Condicionais.", () => {
       expect().toEqual();
     });
   });
+
   describe(" 17 - Testando a Função .", () => {
     it(".", () => {
       expect().toEqual();
     });
   });
+
   describe(" 18 - Testando a Função .", () => {
     it(".", () => {
       expect().toEqual();

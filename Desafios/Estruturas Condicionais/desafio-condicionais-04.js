@@ -18,4 +18,9 @@ Caso o comando não for reconhecido, retorne:
 
 */
 
-// Desenvolva seu código aqui
+function dinosaur(command){
+  // Desenvolva seu código nessa função
+  return
+}
+
+module.exports = dinosaur;

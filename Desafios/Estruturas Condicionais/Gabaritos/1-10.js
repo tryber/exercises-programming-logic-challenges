@@ -1,5 +1,5 @@
 /*  01 - Lanchonete da Trybe */
-function OptionsMenu(number) {
+function optionsMenu(number) {
   switch (number) {
     case 1:
       return "1 - Trybe Lanche Feliz";
@@ -61,7 +61,7 @@ function foundAdventurous(adventurous) {
 
 /*  04 - Dinossauro poliglota */
 function dinosaur(command) {
-    switch (command) {
+  switch (command) {
     case "esquerda":
       return "english";
     case "direita":
@@ -71,89 +71,89 @@ function dinosaur(command) {
     case "as duas":
       return "Ai eu caiu, né!!";
     default:
-      return "Comando desconhecido."
+      return "Comando desconhecido.";
   }
 }
 
 /*  05 - Robô amigo */
-function robotFriend(relationship){
-
-if (mom || dad || me) {
-  console.log("Things I do for love...");
-} else if (brother && sister) {
-  console.log("Things I do for love...");
-} else {
-  console.log("Not today.");
-}
+function robotFriend(mon, dad, me, brother, sister) {
+  if (mon || dad || me || (brother && sister)) {
+    return "Things I do for love...";
+  }
+  return "Not today.";
 }
 
-// 06 - Taxa Metabólica Basal
-let personAge = 20;
-let personSex = "F";
-let personWeight = 80;
-let personHeight = 180;
+/* 06 - Taxa Metabólica Basal */
+function basalMetabolicRate(personAge, personSex, personWeight, personHeight) {
+  let bmr;
 
-let bmr;
+  if (personSex === "M") {
+    bmr = personHeight * 6.25 + personWeight * 9.99 - personAge * 4.92 + 5;
+  }
 
-if (personSex === "M") {
-  bmr = personHeight * 6.25 + personWeight * 9.99 - personAge * 4.92 + 5;
+  if (personSex === "F") {
+    bmr = personHeight * 6.25 + personWeight * 9.99 - personAge * 4.92 - 161;
+  }
+
+  return `A taxa metabólica basal é: ${bmr} Kcal.`;
 }
 
-if (personSex === "F") {
-  bmr = personHeight * 6.25 + personWeight * 9.99 - personAge * 4.92 - 161;
-}
-
-console.log(`A taxa metabólica basal é: ${bmr} Kcal.`);
-
-// 07 - Maior ou menor de idade
-let driverAge = 20;
-let driverCategory;
-
-//Com if/else
-if (driverAge >= 18) {
-  driverCategory = "maior de idade";
-} else {
-  driverCategory = "menor de idade";
-}
-
-console.log("A pessoa é " + driverCategory);
-
-//Com operador ternário
-let driverAgeT = 20;
-let categoryT = driverAgeT >= 18 ? "maior de idade" : "menor de idade";
-
-console.log("A pessoa é " + categoryT);
-
-// 08 - Descubra a idade mínima
-let ageMarina = 18;
-let ageSilvia = 16;
-let ageIza = 19;
-
-if (ageMarina < ageSilvia && ageMarina < ageIza) {
-  console.log("Marina é a mais nova");
-} else if (ageSilvia < ageMarina && ageSilvia < ageIza) {
-  console.log("Silvia é a mais nova");
-} else {
-  console.log("Iza é a mais nova");
-}
-
-// 09 - Aprovação nos projetos
-let totalRequirements = 80;
-let recoveryPeriod = false;
-
-if (totalRequirements >= 80 && recoveryPeriod === false) {
-  console.log("Parabéns, você está aprovado(a)!");
-} else if (totalRequirements >= 90) {
-  console.log("Parabéns, você está aprovado(a)!");
-} else {
-  console.log("Você ainda precisa entregar mais requisitos ;)");
-}
-
-// 10 - Entrega do drone
-function entregaPorDrone(alturaC, laguraC, profundidadeC, alturaJ, larguraJ) {
-  if ((alturaC < alturaJ && laguraC < larguraJ) || profundidadeC < larguraJ) {
-    return `É possível realizar a entrega`;
+/* 07 - Maior ou menor de idade */
+function legalAge(age) {
+  let response = "";
+  if (driverAge >= 18) {
+    response = "A pessoa é maior de idade.";
   } else {
-    return `Não é possível realizar a entrega`;
+    response = "A pessoa é menor de idade.";
+  }
+  return response;
+
+  /* Exemplo com ternário
+  return age >=18 ? "A pessoa é maior de idade." :"A pessoa é menor de idade.";
+  */
+}
+
+/* 08 - Descubra a idade mínima */
+function foundYoungerPerson(marinaAge, silviaAge, izaAge) {
+  if (ageMarina < ageSilvia && ageMarina < ageIza) {
+    return `Marina é a mais jovem e possui ${marinaAge} anos de idade.`;
+  } else if (ageSilvia < ageMarina && ageSilvia < ageIza) {
+    return `Silvia é a mais jovem e possui ${silviaAge} anos de idade.`;
+  } else {
+    return `Iza é a mais jovem e possui ${izaAge} anos de idade.`;
+  }
+}
+
+/* 09 - Aprovação nos projetos */
+function reviewProjectApproval(dataForAnalysis) {
+  let { rec, reqs, totalReqs, completed } = dataForAnalysis;
+
+  let approved = {
+    notRec: 0.8,
+    rec: 0.9,
+  };
+
+  let mensagem = {
+    approved: "Parabéns, você está aprovado(a)!",
+    notApproved: "Você ainda precisa entregar mais requisitos ;)",
+  };
+
+  if (rec) {
+    let isOk = completed / totalReqs >= approved.rec;
+    if (isOk) return mensagem.approved;
+    return mensagem.notApproved;
+  } else {
+    let isOk = completed / reqs >= approved.notRec;
+    if (isOk) return mensagem.approved;
+    return mensagem.notApproved;
+  }
+}
+
+/* 10 - Entrega do drone */
+function droneDelivery(heightBox, widthBox, depthBox, heightWindow, widthWindow, depthWindow) {
+  if ((heightBox < heightWindow && widthBox < widthWindow) || depthBox < depthWindow) {
+    return `É possível realizar a entrega.`;
+  } else {
+    return `Não é possível realizar a entrega.`;
   }
 }

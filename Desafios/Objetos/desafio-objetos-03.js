@@ -15,4 +15,9 @@ Desafio: faça sem usar estruturas condicionais (ifs ou switches).
 */
 
 
-// Desenvolva seu código aqui
+function musicalScale(note) {
+  // Desenvolva seu código nessa função
+  return 
+}
+
+module.exports = musicalScale;

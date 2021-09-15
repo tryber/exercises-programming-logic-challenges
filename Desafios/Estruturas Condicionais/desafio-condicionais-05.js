@@ -3,7 +3,7 @@
 
 Você está programando um robô que ajude nas tarefas de casa, e seus comportamentos deverão ser escritos em JavaScript.
 
-Crie um algoritmo que receba 5 booleanos:
+Escreva um algoritmo que receba 5 booleanos:
 mom, dad, me, brother, sister.
 
 Eles devem representar se a pessoa pediu para que o robô executasse uma tarefa.
@@ -16,5 +16,9 @@ Seu algoritmo deverá receber os 5 booleanos e mostrar a mensagem:
 
 */
 
+function robotFriend(mon, dad, me, brother, sister){
+  // Desenvolva seu código nessa função
+  return
+}
 
-//  Desenvolva seu código aqui
+module.exports = robotFriend;

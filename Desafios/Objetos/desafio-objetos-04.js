@@ -15,4 +15,9 @@ A saída deve ser da seguinte forma: 'X tem a maior idade com X anos.'
 
 */
 
-// Desenvolva seu código aqui
+function getOldPerson(arrPeople) {
+  // Desenvolva seu código nessa função
+  return 
+}
+
+module.exports = getOldPerson;

@@ -20,4 +20,9 @@ Desafio: faça sem usar estruturas condicionais (ifs ou switches)
 */
 
 
-// Desenvolva seu código aqui
+function fantasyGame(className) {
+  // Desenvolva seu código nessa função
+  return 
+}
+
+module.exports = fantasyGame;

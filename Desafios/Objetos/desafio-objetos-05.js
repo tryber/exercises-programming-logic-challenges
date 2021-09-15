@@ -34,5 +34,9 @@ Desafio: faça sem usar estruturas condicionais (ifs ou switches).
 
 */
 
+function fantasyGame3() {
+  // Desenvolva seu código nessa função
+  return 
+}
 
-//Desenvolva seu código aqui
+module.exports = fantasyGame3;

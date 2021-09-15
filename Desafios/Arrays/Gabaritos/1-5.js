@@ -1,34 +1,34 @@
 /* 01 - Encontre o maior número de uma array. */
-function getMaxNumber(arr) {
-  let maxNumber = arr[0];
+function getMaxNumber(arrNumbersInt) {
+  let maxNumber = arrNumbersInt[0];
 
-  for (let index = 0; index < arr.length; index += 1) {
-    if (arr[index] > maxNumber) {
-      maxNumber = arr[index];
+  for (let index = 0; index < arrNumbersInt.length; index += 1) {
+    if (arrNumbersInt[index] > maxNumber) {
+      maxNumber = arrNumbersInt[index];
     }
   }
   return maxNumber;
 }
 
 /* 02 - Encontre o menor número de uma array. */
-function getMinNumber(arr) {
-  let minNumber = arr[0];
+function getMinNumber(arrNumbersInt) {
+  let minNumber = arrNumbersInt[0];
 
-  for (let index = 0; index < arr.length; index += 1) {
-    if (arr[index] < minNumber) {
-      minNumber = arr[index];
+  for (let index = 0; index < arrNumbersInt.length; index += 1) {
+    if (arrNumbersInt[index] < minNumber) {
+      minNumber = arrNumbersInt[index];
     }
   }
   return minNumber;
 }
 
 /* 03 - Encontre uma pessoa convidada em uma lista de nomes. */
-function findName(arr, name) {
+function findName(arrListNames, name) {
   let foundName = false;
   let msg = "";
 
-  for (let index = 0; index < arr.length; index += 1) {
-    if (arr[index].toUpperCase() == name.toUpperCase()) {
+  for (let index = 0; index < arrListNames.length; index += 1) {
+    if (arrListNames[index].toUpperCase() == name.toUpperCase()) {
       foundName = true;
     }
   }
@@ -42,9 +42,9 @@ function findName(arr, name) {
 }
 
 /* 04 - Verifique se todos os dados de uma lista são do mesmo tipo. */
-function checkDataTypeValuesArr(arr) {
-  const typeOfFirst = typeof arr[0];
-  for (let elements of arr) {
+function checkDataTypeValuesArr(arrDataTypes) {
+  const typeOfFirst = typeof arrDataTypes[0];
+  for (let elements of arrDataTypes) {
     if (typeOfFirst !== typeof elements) {
       return false;
     }

@@ -15,4 +15,10 @@ A Trybe tem um grupo de aventureiros. Quando o nome de algum é invocado, a clas
 Caso o nome informado não faça parte do esquadrão, exiba a mensagem: Não foi possível encontrar um aventureiro com esse nome.
 
  */
-// Desenvolva seu código aqui
+
+function foundAdventurous(adventurous){
+  // Desenvolva seu código nessa função
+  return
+}
+
+module.exports = foundAdventurous;

@@ -54,6 +54,7 @@ describe("Desafios de Operadores Aritméticos.", () => {
       expect().toEqual();
     });
   });
+
   describe(" 09 - Testando a Função .", () => {
     it(".", () => {
       expect().toEqual();
@@ -101,36 +102,43 @@ describe("Desafios de Operadores Aritméticos.", () => {
       expect().toEqual();
     });
   });
+
   describe(" 17 - Testando a Função .", () => {
     it(".", () => {
       expect().toEqual();
     });
   });
+
   describe(" 18 - Testando a Função .", () => {
     it(".", () => {
       expect().toEqual();
     });
   });
+
   describe(" 19 - Testando a Função .", () => {
     it(".", () => {
       expect().toEqual();
     });
   });
+
   describe(" 20 - Testando a Função .", () => {
     it(".", () => {
       expect().toEqual();
     });
   });
+
   describe(" 21 - Testando a Função .", () => {
     it(".", () => {
       expect().toEqual();
     });
   });
+
   describe(" 22 - Testando a Função .", () => {
     it(".", () => {
       expect().toEqual();
     });
   });
+
   describe(" 23 - Testando a Função .", () => {
     it(".", () => {
       expect().toEqual();

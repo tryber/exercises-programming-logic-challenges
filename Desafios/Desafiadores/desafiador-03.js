@@ -15,7 +15,7 @@ Ex: ['Ré', 'Sol', 'Dó'] -> ['II', 'V', 'I']
  */
 
 function arrMusicalNotes(arrNotes) {
-  //  Desenvolva seu código aqui
+  // Desenvolva seu código nessa função
   return;
 }
 

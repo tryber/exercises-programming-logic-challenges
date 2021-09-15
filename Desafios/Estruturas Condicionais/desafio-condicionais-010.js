@@ -10,7 +10,7 @@ Crie um programa que realiza o cálculo para dizer se é possível ou não a ent
 
 - As informações que o drone captura na hora da análise são: altura, largura e profundidade da caixa e altura e largura da janela (todas em centímetros).
 
-- A saída deve ter o seguinte formato: 'É possível realizar a entrega' ou 'Não é possível realizar a entrega'.
+- A saída deve ter o seguinte formato: 'É possível realizar a entrega.' ou 'Não é possível realizar a entrega.'.
 
 */
 

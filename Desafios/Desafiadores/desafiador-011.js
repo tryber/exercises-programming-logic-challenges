@@ -31,10 +31,9 @@ Saída:
      degree: 'I',
      triad: ['Dó', 'Mi', 'Sol']
    },
- ] 
-*/
+ ]
 
-/*  Desenvolva seu código aqui */
+*/
 
 function arrMusicalNotes3(arrNotes){
   // Desenvolva seu código nessa função

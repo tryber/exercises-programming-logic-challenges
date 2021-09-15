@@ -17,4 +17,9 @@ Utilize Switch/Case para resolver este problema.
 
 */
 
-// Desenvolva seu código aqui
+function optionsMenu(number){
+  // Desenvolva seu código nessa função
+  return
+}
+
+module.exports = optionsMenu;

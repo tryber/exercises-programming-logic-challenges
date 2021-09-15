@@ -36,4 +36,11 @@ function studentSituation(studentNote) {
   return status;
 }
 
-Desenvolva seu código aqui */
+*/
+
+function studentSituation(studentNote){
+  // Desenvolva seu código nessa função
+  return
+}
+
+module.exports = studentSituation;
