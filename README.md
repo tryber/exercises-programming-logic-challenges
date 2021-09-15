@@ -1,4 +1,4 @@
-# exercises-programming-logic-challenges
+# Desafios de Lógica de Programação
 Este repositório tem por finalidade apresentar alguns exercícios de lógica de programação e materiais de estudo complementares sobre os temas que são abordados.
 
 Você verá que alguns links estão em inglês, mas disponibilizamos no final da página um tutorial para te ajudar a traduzir o site.
