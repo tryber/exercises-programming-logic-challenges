@@ -1,7 +1,7 @@
 /*
 18 - Jogo de cartas
 
-Mara e Sara estão jogando um novo jogo de cartas chamado Xablau. O jogo utiliza um baralho normal que possui Ás, dama, valete e reis.
+Mara e Sara estão jogando um novo jogo de cartas chamado Xablau. O jogo utiliza um baralho normal que possui Ás, Dama, Valete e Reis.
 
 Para jogar Xablau é necessário ter duas pessoas participantes, que devem receber 2 cartas cada. Ganha o jogo quem tiver a maior pontuação, e caso a pontuação das pessoas seja igual o jogo empata.
 A pontuação do Xablau é feita da seguinte forma:

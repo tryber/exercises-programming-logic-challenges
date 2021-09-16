@@ -13,8 +13,7 @@ Obesidade, quando o resultado é maior que 30 kg/m2.
 Crie um programa para calcular o IMC e exibir a faixa do resultado.
 IMC precisa ter 1 casa decimal depois da vírgula;
 exiba os resultados da seguinte forma:
-seu IMC é: 23.7 kg/m2
-resultado: Normal
+Seu IMC é: 23.7 kg/m2. O resultado foi: Normal
 
  */
 

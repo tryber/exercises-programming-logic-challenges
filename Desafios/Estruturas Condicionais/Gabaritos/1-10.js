@@ -101,7 +101,7 @@ function basalMetabolicRate(personAge, personSex, personWeight, personHeight) {
 /* 07 - Maior ou menor de idade */
 function legalAge(age) {
   let response = "";
-  if (driverAge >= 18) {
+  if (age >= 18) {
     response = "A pessoa é maior de idade.";
   } else {
     response = "A pessoa é menor de idade.";
@@ -115,9 +115,9 @@ function legalAge(age) {
 
 /* 08 - Descubra a idade mínima */
 function foundYoungerPerson(marinaAge, silviaAge, izaAge) {
-  if (ageMarina < ageSilvia && ageMarina < ageIza) {
+  if (marinaAge < silviaAge && marinaAge < izaAge) {
     return `Marina é a mais jovem e possui ${marinaAge} anos de idade.`;
-  } else if (ageSilvia < ageMarina && ageSilvia < ageIza) {
+  } else if (silviaAge < marinaAge && silviaAge < izaAge) {
     return `Silvia é a mais jovem e possui ${silviaAge} anos de idade.`;
   } else {
     return `Iza é a mais jovem e possui ${izaAge} anos de idade.`;
@@ -150,10 +150,23 @@ function reviewProjectApproval(dataForAnalysis) {
 }
 
 /* 10 - Entrega do drone */
-function droneDelivery(heightBox, widthBox, depthBox, heightWindow, widthWindow, depthWindow) {
+/* function droneDelivery(heightBox, widthBox, depthBox, heightWindow, widthWindow, depthWindow) {
   if ((heightBox < heightWindow && widthBox < widthWindow) || depthBox < depthWindow) {
     return `É possível realizar a entrega.`;
   } else {
     return `Não é possível realizar a entrega.`;
   }
+}
+ */
+module.exports = {
+  optionsMenu,
+  studentSituation,
+  foundAdventurous,
+  dinosaur,
+  robotFriend,
+  basalMetabolicRate,
+  legalAge,
+  foundYoungerPerson,
+  reviewProjectApproval,
+  /* droneDelivery, */
 }
