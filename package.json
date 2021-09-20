@@ -4,7 +4,7 @@
   "description": "Repositório com desafios de logica de programação",
   "main": "index.js",
   "scripts": {
-    "test": "jest tests",
+    "test": "jest",
     "dev": "jest --watch tests"
   },
   "repository": {
