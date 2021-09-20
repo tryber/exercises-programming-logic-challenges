@@ -1,11 +1,19 @@
 /*
-09 - Um novo array
+09 - Incluído nos arrays
 
-Dados 2 arrays A = [1, 2, 4, 5, 6] e B = [3, 9, 8, 5, 0, 2], crie um algoritmo que imprime um novo array com os valores presentes nos Arrays A e B ao mesmo tempo.
+Escreva um algoritmo que irá receber dois array A e B, retorne um novo array com os elementos que se repetem em A e B, por exemplo:
+Entrada: A = [1, 2, 3 ], B = [4, 2, 4 ]
+Saída: [2]
 
 Obs: Não utilize o includes, você deve encontrar os valores utilizando 2 fors.
 
 */
 
 
-// Desenvolva seu código aqui
+
+function decodeString(word){
+  // Desenvolva seu código nessa função
+  return
+}
+
+module.exports = decodeString;

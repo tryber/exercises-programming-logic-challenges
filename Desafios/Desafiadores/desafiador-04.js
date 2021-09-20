@@ -1,4 +1,5 @@
-/* 
+/*
+
 04 - Array de notas musicais - 2
 
 Relembrando que uma música normalmente possui uma sequência de notas.
@@ -38,9 +39,9 @@ Saída:
 
 */
 
-function arrMusicalNotes2(arrNotes){
+function musicalNotes2(arrNotes){
   // Desenvolva seu código nessa função
   return
 }
 
-module.exports = arrMusicalNotes2;
+module.exports = musicalNotes2;

@@ -36,222 +36,228 @@ const mock8 = {
 
 const mockResult11 = [
   {
-    degree: 'II',
-    triad: ['Ré', 'Fá', 'Lá']
+    degree: "II",
+    triad: ["Ré", "Fá", "Lá"],
   },
   {
-    degree: 'V',
-    triad: [ 'Sol', 'Si', 'Ré' ]
+    degree: "V",
+    triad: ["Sol", "Si", "Ré"],
   },
   {
-    degree: 'I',
-    triad: ['Dó', 'Mi', 'Sol']
+    degree: "I",
+    triad: ["Dó", "Mi", "Sol"],
   },
-]; 
+];
 
 const {
-  checkCnhProcess,
-  calcSquareRoot,
-  arrMusicalNotes,
-  arrMusicalNotes2,
-  findMagicWand,
-  calcAverageAndExpensive,
+  cnhProcess,
+  squareRoot,
+  musicalNotes,
+  musicalNotes2,
+  magicWand,
+  averagedExpensive,
   averageTemperature,
-  calcNumberOfTies,
-  analystViewerTvShows,
+  numberTies,
+  viewerTvShows,
   negateNumbers,
 } = require("../Desafios/Desafiadores/Gabaritos/1-10");
 
 const {
-  arrMusicalNotes3,
+  musicalNotes3,
   factorial,
   fibonnaci,
-  sumSequencePrimesNumbers,
+  sumPrimesNumbers,
   /* fatorial, */
   cpfValidator,
- } = require("../Desafios/Desafiadores/Gabaritos/11-16")
+} = require("../Desafios/Desafiadores/Gabaritos/11-16");
 
 describe("Desafios Desafiadores.", () => {
-  describe(" 01- Testando a Função checkCnhProcess.", () => {
+  describe(" 01- Testando a Função cnhProcess.", () => {
     const currentYear = new Date().getFullYear();
     const birthSuccess = 2000;
     const birthError = currentYear - 10;
     const ageSuccess = currentYear - birthSuccess;
     const ageError = currentYear - birthError;
-    it("Verifica se o código está retornando a mensagem de forma correta em caso ser possível iniciar o processo de CNH.", () => {
-      expect(checkCnhProcess("Daniel", birthSuccess)).toEqual(
+    it("Verifica o retorno quando é possível dar entrada na CNH.", () => {
+      expect(cnhProcess("Daniel", birthSuccess)).toEqual(
         `Daniel tem ${ageSuccess} anos de idade e pode iniciar o processo.`
       );
     });
-
-    it("Verifica se o código está retornando a mensagem de forma correta em caso de NÃO ser possível iniciar o processo de CNH.", () => {
-      expect(checkCnhProcess("João", birthError)).toEqual(
+    it("Verifica o retorno quando NÃO é possível dar entrada na CNH.", () => {
+      expect(cnhProcess("João", birthError)).toEqual(
         `João tem ${ageError} anos de idade e não pode iniciar o processo.`
       );
     });
   });
 
-  describe(" 02- Testando a Função checkCnhProcess.", () => {
-    it("Verifica se o código está retornando a mensagem correta em caso de quadrado perfeito.", () => {
-      expect(calcSquareRoot(25)).toEqual("A raiz quadrada de 25 é: 5.");
+  describe(" 02- Testando a Função squareRoot.", () => {
+    it("Verifica o retorno para um quadrado perfeito.", () => {
+      expect(squareRoot(25)).toEqual("A raiz quadrada de 25 é: 5.");
     });
-    it("Verifica se o código está retornando a mensagem correta em caso de raiz não exata.", () => {
-      expect(calcSquareRoot(30)).toEqual(
-        "Não existe raiz exata para o número 30."
-      );
+    it("Verifica o retorno para uma raiz não exata.", () => {
+      expect(squareRoot(30)).toEqual("Não existe raiz exata para o número 30.");
     });
-    it("Verifica se o código está retornando a mensagem correta em caso do argumento passado ser zero.", () => {
-      expect(calcSquareRoot(0)).toEqual("Número inválido.");
+    it("Verifica o retorno para entrada Zero.", () => {
+      expect(squareRoot(0)).toEqual("Número inválido.");
     });
-    it("Verifica se o código está retornando a mensagem correta em caso do argumento passado não for do tipo número.", () => {
-      expect(calcSquareRoot("24")).toEqual("Número inválido.");
+    it("Verifica o retorno para entrada não numérica.", () => {
+      expect(squareRoot("24")).toEqual("Número inválido.");
     });
   });
 
-  describe(" 03 - Testando a Função arrMusicalNotes.", () => {
-    it("Verifica se o código está retornado a mensagem corretamente", () => {
-      expect(arrMusicalNotes(["Ré", "Sol", "Dó"])).toEqual(["II", "V", "I"]);
+  describe(" 03- Testando a Função musicalNotes.", () => {
+    it("Verifica o retorno correto dos graus.", () => {
+      expect(musicalNotes(["Ré", "Sol", "Dó"])).toEqual(["II", "V", "I"]);
     });
   });
 
-  describe(" 04 - Testando a Função arrMusicalNotes2.", () => {
-    it("Verifica se o código está retornado a mensagem corretamente", () => {
-      expect(arrMusicalNotes2(["Ré", "Sol", "Dó"])).toEqual(mock4);
+  describe(" 04- Testando a Função musicalNotes2.", () => {
+    it("Verifica o retorno correto dos graus, terças e escala.", () => {
+      expect(musicalNotes2(["Ré", "Sol", "Dó"])).toEqual(mock4);
     });
   });
 
-  describe(" 05 - Testando a Função findMagicWand.", () => {
-    it("Verifica se o código está retornando a mensagem corretamente quando a varinha escolhe conforme a tabela.", () => {
-      expect(findMagicWand("Harry Potter", "Azevinho e Pena de Fênix")).toEqual(
+  describe(" 05- Testando a Função magicWand.", () => {
+    it("Verifica o retorno correto conforme a tabela.", () => {
+      expect(magicWand("Harry Potter", "Azevinho e Pena de Fênix")).toEqual(
         "Curioso... muito curioso..."
       );
     });
-    it("Verifica se o código está retornando a mensagem corretamente quando a varinha escolhe DIFERENTE da tabela.", () => {
+    it("Verifica o retorno correto caso a escolha seja diferente da tabela.", () => {
       expect(
-        findMagicWand("Alvo Dumbledore", "Nogueira e Fibra de Dragão")
+        magicWand("Alvo Dumbledore", "Nogueira e Fibra de Dragão")
       ).toEqual("Não, não! Decididamente, não!");
     });
   });
 
-  describe(" 6 - Testando a Função calcAverageAndExpensive.", () => {
-    it("Verifica se o código está retornando a mensagem corretamente", () => {
-      expect(calcAverageAndExpensive(mock6)).toEqual(
+  describe(" 6- Testando a Função averagedExpensive.", () => {
+    it("Verifica o retorno correto da mensagem com dados dos produtos.", () => {
+      expect(averagedExpensive(mock6)).toEqual(
         "O produto mais caro é teclado gamer e custa: R$ 180, a média de preços dos produtos é de: R$36.11."
       );
     });
   });
 
-  describe(" 7 - Testando a Função averageTemperature.", () => {
-    it("Verifica se o código está retornando a mensagem corretamente", () =>
+  describe(" 7- Testando a Função averageTemperature.", () => {
+    it("Verifica o retorno correto da médica da temperatura", () =>
       expect(
         averageTemperature([98, 95, 92, 88, 74, 106, 114, 90, 76, 65, 55, 80])
       ).toEqual("A média anual de temperatura em graus Celsius é 30.05."));
   });
 
-  describe(" 08- Testando a Função calcNumberOfTies .", () => {
-    it("Verifica se o código está retornando a quantidade correta de empates.", () => {
-      expect(calcNumberOfTies(2, mock8)).toEqual(3);
+  describe(" 08- Testando a Função numberTies .", () => {
+    it("Verifica o retorno correto de empates.", () => {
+      expect(numberTies(2, mock8)).toEqual(3);
     });
   });
 
-  describe(" 09 - Testando a Função analystViewerTvShows.", () => {
-    it("Verifica se o código está retornando corretamente para o perfil UFC.", () => {
-      expect(analystViewerTvShows({
-        age: 17,
-        country: "Brasil",
-        likeSports: true
-      })).toEqual("UFC");
+  describe(" 09- Testando a Função viewerTvShows.", () => {
+    it("Verifica o retorno correto para o perfil UFC.", () => {
+      expect(
+        viewerTvShows({
+          age: 17,
+          country: "Brasil",
+          likeSports: true,
+        })
+      ).toEqual("UFC");
     });
-    it("Verifica se o código está retornando corretamente para o perfil The Simpsons.", () => {
-      expect(analystViewerTvShows({
-        age: 17,
-        country: "Brasil",
-        likeSports: false
-      })).toEqual("The Simpsons");
+    it("Verifica o retorno correto para o perfil The Simpsons.", () => {
+      expect(
+        viewerTvShows({
+          age: 17,
+          country: "Brasil",
+          likeSports: false,
+        })
+      ).toEqual("The Simpsons");
     });
-    it("Verifica se o código está retornando corretamente para o perfil The Penguins of Madagascar.", () => {
-      expect(analystViewerTvShows({
-        age: 15,
-        country: "Chile",
-        likeSports: false
-      })).toEqual("The Penguins of Madagascar");
+    it("Verifica o retorno correto para o perfil The Penguins of Madagascar.", () => {
+      expect(
+        viewerTvShows({
+          age: 15,
+          country: "Chile",
+          likeSports: false,
+        })
+      ).toEqual("The Penguins of Madagascar");
     });
     it(".", () => {
-      expect(analystViewerTvShows({
-        age: 15,
-        country: "Argentina",
-        likeSports: true
-      })).toEqual("Sport Fishing.");
+      expect(
+        viewerTvShows({
+          age: 15,
+          country: "Argentina",
+          likeSports: true,
+        })
+      ).toEqual("Sport Fishing.");
     });
-    it("Verifica o retorno a mensagem padrão para casos que não sejam possíveis a classificação.", () => {
-      expect(analystViewerTvShows({
-        age: 20,
-        country: "Chile",
-        likeSports: true
-      })).toEqual("Não foi possível dizer o que ela deve assistir." );
-    });
-  });
-
-  describe(" 10 - Testando a Função negateNumbers.", () => {
-    it("Verifica se o código está retornando a relação de números dentro de um array corretamente.", () => {
-      expect(negateNumbers([1,3,4])).toEqual([-1,-3,-4]);
+    it("Verifica o retorno caso não seja possível a classificação.", () => {
+      expect(
+        viewerTvShows({
+          age: 20,
+          country: "Chile",
+          likeSports: true,
+        })
+      ).toEqual("Não foi possível dizer o que ela deve assistir.");
     });
   });
 
-  describe(" 11 - Testando a Função arrMusicalNotes3.", () => {
-    it("Verifica se o código está retornando um array de objetos com as informações corretas.", () => {
-      expect(arrMusicalNotes3(['Ré', 'Sol', 'Dó'])).toEqual(mockResult11);
+  describe(" 10- Testando a Função negateNumbers.", () => {
+    it("Verifica o retorno do array com números negados.", () => {
+      expect(negateNumbers([1, 3, 4])).toEqual([-1, -3, -4]);
     });
   });
 
-  describe(" 12 - Testando a Função factorial.", () => {
-    it("Verifica se o código está retornado o valor correto para o argumento 5.", () => {
+  describe(" 11- Testando a Função musicalNotes3.", () => {
+    it("Verifica o retorno do objeto com informações musicais..", () => {
+        expect(musicalNotes3(["Ré", "Sol", "Dó"])).toEqual(mockResult11);
+    });
+  });
+
+  describe(" 12- Testando a Função factorial.", () => {
+    it("Verifica o retorno correto para para o número 5.", () => {
       expect(factorial(5)).toEqual(120);
     });
-    it("Verifica se o código está retornado o valor correto para o argumento 1.", () => {
+    it("Verifica o retorno correto para o número 1.", () => {
       expect(factorial(1)).toEqual(1);
     });
-    it("Verifica se o código está retornado o valor correto para o argumento 2.", () => {
+    it("Verifica o retorno correto para o número 2.", () => {
       expect(factorial(2)).toEqual(2);
     });
-
   });
 
-  describe(" 13 - Testando a Função fibonnaci.", () => {
-    it("Verifica se o código está retornado o valor correto para o argumento 1.", () => {
+  describe(" 13- Testando a Função fibonnaci.", () => {
+    it("Verifica o retorno para posição 1.", () => {
       expect(fibonnaci(1)).toEqual(0);
     });
-    it("Verifica se o código está retornado o valor correto para o argumento 2.", () => {
+    it("Verifica o retorno para posição 2.", () => {
       expect(fibonnaci(2)).toEqual(1);
     });
-    it("Verifica se o código está retornado o valor correto para o argumento 3.", () => {
+    it("Verifica o retorno para posição 3.", () => {
       expect(fibonnaci(3)).toEqual(1);
     });
-    it("Verifica se o código está retornado o valor correto para o argumento 5.", () => {
+    it("Verifica o retorno para posição 5.", () => {
       expect(fibonnaci(5)).toEqual(3);
-    });    
-  });
-
-  describe(" 14 - Testando a Função sumSequencePrimesNumbers.", () => {
-    it("Verifica se o código está retornado a soma correta dos números primos da sequência.", () => {
-      expect(sumSequencePrimesNumbers()).toEqual(2276);
     });
   });
 
-/*   describe(" 15 - Testando a Função fatorial.", () => {
+  describe(" 14- Testando a Função sumPrimesNumbers.", () => {
+    it("Verifica o retorno da soma.", () => {
+      expect(sumPrimesNumbers()).toEqual(2276);
+    });
+  });
+
+/*   describe(" 15- Testando a Função fatorial.", () => {
     it(".", () => {
       expect().toEqual();
     });
   }); */
 
-  describe(" 16 - Testando a Função cpfValidator.", () => {
-    it("Verifica se o código está retornado o valor correto para o CPF 000-000-000-00.", () => {
+  describe(" 16- Testando a Função cpfValidator.", () => {
+    it("Verifica o retorno para o CPF 000-000-000-00.", () => {
       expect(cpfValidator("000-000-000-00")).toEqual("CPF inválido");
     });
-    it("Verifica se o código está retornado o valor correto para o CPF 397-606-448-34.", () => {
+    it("Verifica o retorno para o CPF 397-606-448-34.", () => {
       expect(cpfValidator("397-606-448-34")).toEqual("CPF inválido");
     });
-    it("Verifica se o código está retornado o valor correto para o CPF 166.354.840-43.", () => {
+    it("Verifica o retorno para o CPF 166.354.840-43.", () => {
       expect(cpfValidator("166.354.840-43")).toEqual("CPF válido");
     });
   });

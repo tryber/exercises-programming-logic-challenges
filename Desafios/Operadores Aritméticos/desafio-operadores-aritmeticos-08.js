@@ -1,9 +1,9 @@
 /*
 08 - Conta do restaurante
 
-Você foi jantar em um restaurante chique, em uma cidade turística. O prato que você pediu custou R$100,00. Porém o restaurante possui uma taxa de 10% sobre o valor da conta por ser um lugar turístico.
+Escreva um algorítmo que recebe o valor de um prato, calcule re retorne valor final acrescendo 10% de taxa por ser uma área turística e mais 5% de corjeta para o garçon.
 
-Crie uma solução para calcular o valor final da conta sendo que você também quis dar 5% de gorjeta para a pessoa que lhe atendeu.
+Obs: Retornar um valor do tipo number com duas casa decimais.
 
 */
 

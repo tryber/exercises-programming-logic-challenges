@@ -23,7 +23,7 @@ function getMinNumber(arrNumbersInt) {
 }
 
 /* 03 - Encontre uma pessoa convidada em uma lista de nomes. */
-function findName(arrListNames, name) {
+function getName(arrListNames, name) {
   let foundName = false;
   let msg = "";
 
@@ -42,7 +42,7 @@ function findName(arrListNames, name) {
 }
 
 /* 04 - Verifique se todos os dados de uma lista são do mesmo tipo. */
-function checkDataTypeValuesArr(arrDataTypes) {
+function dataType(arrDataTypes) {
   const typeOfFirst = typeof arrDataTypes[0];
   for (let elements of arrDataTypes) {
     if (typeOfFirst !== typeof elements) {
@@ -52,8 +52,8 @@ function checkDataTypeValuesArr(arrDataTypes) {
   return true;
 }
 
-/* 05 - Escreva uma algoritmo para encontrar a idade do filho mais velho considerando as informações abaixo. */
-function findMaxAgeSon(pedroAge, kidsAges) {
+/* 05 - Encontre o filho mais velho. */
+function getMaxAge(pedroAge, kidsAges) {
   let sumKidsAges = 0;
 
   kidsAges.forEach((kid) => {
@@ -65,13 +65,13 @@ function findMaxAgeSon(pedroAge, kidsAges) {
 
   let olderKid = getMaxNumber(kidsAges);
 
-  return `O filho mais velho tem ${olderKid} anos`;
+  return `O filho mais velho tem ${olderKid} anos.`;
 }
 
 module.exports = {
   getMaxNumber,
   getMinNumber,
-  findName,
-  checkDataTypeValuesArr,
-  findMaxAgeSon,
+  getName,
+  dataType,
+  getMaxAge,
 };

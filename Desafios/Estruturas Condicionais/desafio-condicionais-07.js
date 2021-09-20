@@ -9,4 +9,9 @@ Bônus: Crie a condição utilizando operador ternário.
 
 */
 
-// Desenvolva seu código aqui
+function legalAge(age){
+  // Desenvolva seu código nessa função
+  return
+}
+
+module.exports = legalAge;

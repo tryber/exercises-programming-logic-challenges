@@ -1,4 +1,4 @@
-// 01 - Mensagem codificada 
+/* 01 - Mensagem codificada  */
 function decodeString(word) {
   let stringDecoded = "";
   for (let index = 0; index < word.length; index += 1) {
@@ -7,76 +7,99 @@ function decodeString(word) {
   return stringDecoded;
 }
 
-
-// 02 - Contar até 10
-for(let contador = 1; contador <= 10; contador = contador + 1){
-	console.log("Contator " + contador);
-}
-
-
-// 03 - Calcular a soma de 1 até 1000
-let sum = 0;
-
-for(let count = 0; count <= 1000; count = count + 1){
-  sum += count;
-}
-
-
-// 04 - Escreva seu nome N vezes
-for(let count = 1; count <= 50; count = count + 1){
-  console.log('Jackson - ' + count);
-}
-
-
-// 05 - Números divisíveis por 3
-let counter = 0;
-for(let index = 2; index <= 150; index += 1) {
-    if(index % 3 === 0) {
-        counter += 1;
-    }
-}
-
-if(counter === 50) {
-    console.log('secret Message!');
-}
-
-
-// 06 - Imprima os números ímpares
-for (let index = 1; index <= 50; index += 1){
-  if((index % 2) != 0){
-    console.log(index)
+/* 02 - Contar até o limite */
+function accumulator(limit) {
+  let accumulator = 1;
+  for (let index = 2; index <= limit; index = index + 1) {
+    accumulator = accumulator + index;
   }
+  return accumulator;
 }
 
+/* 03 - Calcular a soma de 1 até 1000 */
+function accumulatorThousand() {
+  let accumulator = 1;
+  for (let index = 2; index <= 1000; index = index + 1) {
+    accumulator = accumulator + index;
+  }
+  return `A soma de 1 até 1000 é ${accumulator}.`;
+}
 
-// 07 - Onde está o elemento?
+/* 04 - Escreva um nome N vezes */
+function repeatName(name, quantity) {
+  let concatenator = name;
+  for (let index = 2; index <= quantity; index = index + 1) {
+    concatenator = `${concatenator}, ${name}`;
+  }
+  return concatenator + ".";
+}
+
+/* 05 - Números divisíveis por 3 */
+function numbersDivisibleBy3(start, limit) {
+  let counter = 0;
+  for (let index = start; index <= limit; index = index + 1) {
+    if (index % 3 === 0) {
+      counter = counter + 1;
+    }
+  }
+  if (counter >= 50) {
+    return "Há 50 ou mais números diviseis por 3.";
+  }
+  return "Sequência muito pequena.";
+}
+
+/* 06 - Retorne os números ímpares */
+function oddNumbers() {
+  let concatenator = "1";
+  for (let index = 3; index <= 50; index = index + 1) {
+    if (index % 2 !== 0) {
+      concatenator = `${concatenator}, ${index}`;
+    }
+  }
+  return `${concatenator}.`;
+}
+/* 07 - Onde está o elemento? */
 function findIndexOf(array, element) {
   for (let elem of array) {
     if (elem === element) {
       return array.indexOf(element);
     }
   }
-  return "Elemento não encontrado no array";
+  return "Elemento não encontrado no array.";
 }
 
-
-// 08 - Ordem decrescente
-for(let count = 200; count >= 100; count = count - 1){
-  console.log(count);
+/* 08 - Ordem decrescente */
+function sortDec() {
+  let concatenator = "200";
+  for (let count = 199; count >= 100; count = count - 1) {
+    concatenator = `${concatenator}, ${count}`;
+  }
+  return `${concatenator}.`;
 }
 
+/* 09 - Incluído nos arrays */
+function includesInArrays(a, b) {
+  let newArray = [];
 
-// 09 - Um novo array
-let A = [1, 2, 4, 5, 6];
-let B = [3, 9, 8, 5, 0, 2];
-let newArray = [];
-
-for(let index = 0; index < A.length; index += 1) {
-    for(let newIndex = 0; newIndex < B.length; newIndex += 1) {
-        if(A[index] === B[newIndex]) {
-            newArray.push(A[index]);
-        }
+  for (let index = 0; index < a.length; index += 1) {
+    for (let newIndex = 0; newIndex < b.length; newIndex += 1) {
+      if (a[index] === b[newIndex]) {
+        newArray.push(a[index]);
+      }
     }
+
+  }
+  return newArray;
 }
 
-
+module.exports = {
+  decodeString,
+  accumulator,
+  accumulatorThousand,
+  repeatName,
+  numbersDivisibleBy3,
+  oddNumbers,
+  findIndexOf,
+  sortDec,
+  includesInArrays,
+};

@@ -1,5 +1,5 @@
 /*  11 - Array de notas musicais - 3 */
-function arrMusicalNotes3(arrNotes) {
+function musicalNotes3(arrNotes) {
   let allDegrees = {
     Dó: "I",
     Ré: "II",
@@ -63,7 +63,7 @@ function isPrimo(number) {
 }
 
 /*  14 - Soma de números primos */
-function sumSequencePrimesNumbers(){
+function sumPrimesNumbers(){
   let sum = 0;
   for(let index = 1; index <= 150; index += 1) {
     if(isPrimo(index)){
@@ -129,10 +129,10 @@ function cpfValidator(cpf) {
 }
 
 module.exports = {
-  arrMusicalNotes3,
+  musicalNotes3,
   factorial,
   fibonnaci,
-  sumSequencePrimesNumbers,
+  sumPrimesNumbers,
   fatorial,
   cpfValidator,
 };

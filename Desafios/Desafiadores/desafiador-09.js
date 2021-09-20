@@ -1,4 +1,5 @@
 /*
+
 09 - Programas de TV
 
 Você foi a pessoa designada para escrever um algoritmo que classifica programas de TV para telespectadores.
@@ -13,9 +14,9 @@ Caso a pessoa não se enquadre nessas categorias acima, retorne a mensagem: "Nã
 
 */
 
-function analystViewerTvShows(dataViewer){
+function viewerTvShows(dataViewer){
   // Desenvolva seu código nessa função
   return
 }
 
-module.exports = analystViewerTvShows;
+module.exports = viewerTvShows;

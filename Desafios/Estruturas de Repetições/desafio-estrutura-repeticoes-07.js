@@ -1,9 +1,15 @@
 /*
 07 - Onde está o elemento?
 
-Elabore uma função que receba 2 parâmetros (um array e um elemento que está contido no array) e retorne
-a posição em que o elemento se encontra no array. Caso não encontre o elemento, retorne uma mensagem de erro.
+Escreva uma algoritmo que recebe 2 parâmetros (um array e um elemento que está contido no array) e retorne
+a posição em que o elemento se encontra no array. Caso não encontre o elemento, retorne a mensagem de erro: "Elemento Não encontrado no array.".
 
 */
 
-// Desenvolva seu código aqui
+
+function findIndexOf(){
+  // Desenvolva seu código nessa função
+  return
+}
+
+module.exports = findIndexOf;

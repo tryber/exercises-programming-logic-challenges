@@ -18,22 +18,22 @@ function triVowels(word) {
 }
 
 /*  12 - IMC */
-function IMC(imcWeight, imcHeight) {
-  let imc = Number((imcWeight / (imcHeight * imcHeight)).toFixed(1));
+function IMC(weight, height) {
+  let imc = Number((weight / (height * height)).toFixed(1));
 
-  let imcResult;
+  let result;
 
   if (imc < 18.5) {
-    imcResult = "Magreza";
+    result = "Magreza";
   } else if (imc < 24.9) {
-    imcResult = "Normal";
+    result = "Normal";
   } else if (imc < 30) {
-    imcResult = "Sobrepeso";
+    result = "Sobrepeso";
   } else {
-    imcResult = "Obesidade";
+    result = "Obesidade";
   }
 
-  return "Seu IMC é: " + imc + " kg/m2." + " O Resultado foi: " + imcResult;
+  return "Seu IMC é: " + imc + " kg/m2." + " O Resultado foi: " + result;
 }
 
 /*  13 - Pontos no Xadrez */

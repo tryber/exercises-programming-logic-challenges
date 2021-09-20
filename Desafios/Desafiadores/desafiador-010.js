@@ -1,10 +1,11 @@
 /*
+
 10 - Nega Números
 
 Escreva uma algoritmo que ao receber um array de números, retorne uma cópia do array com todos os números negados, por exemplo:
 
-entrada: [2 ,-3 ,4 ]
-saída: [-2, 3 ,-4 ]
+Entrada: [2 ,-3 ,4 ]
+Saída: [-2, 3 ,-4 ]
 
 */
 

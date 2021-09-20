@@ -11,4 +11,9 @@ Saída: "Marina é a pessoa mais jovem e possui 18 anos de idade."
 
 */
 
-// Desenvolva seu código aqui
+function foundYoungerPerson(marinaAge, silviaAge, izaAge){
+  // Desenvolva seu código nessa função
+  return
+}
+
+module.exports = foundYoungerPerson;

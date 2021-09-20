@@ -6,4 +6,9 @@
 
 */
 
-// Desenvolva seu código aqui
+function triVowels(word){
+  // Desenvolva seu código nessa função
+  return
+}
+
+module.exports = triVowels;

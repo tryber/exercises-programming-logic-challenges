@@ -20,4 +20,9 @@ A saída deve ser da seguinte forma: 'Ana venceu' ou 'Lúcio venceu'
 */
 
 
-// Desenvolva seu código aqui
+function oddOreEven(lucioFingers, anaFingers, even){
+  // Desenvolva seu código nessa função
+  return
+}
+
+module.exports = oddOreEven;

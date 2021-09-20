@@ -22,4 +22,9 @@ Possíveis saídas:
 
 */
 
-// Desenvolva seu código aqui
+function cardGames(maraCard1, maraCard2, saraCard1, saraCard2){
+  // Desenvolva seu código nessa função
+  return
+}
+
+module.exports = cardGames;

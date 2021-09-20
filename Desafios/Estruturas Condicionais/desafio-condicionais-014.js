@@ -14,4 +14,9 @@ Se estiver tudo certo com o valor do saque, subtraia o valor do saldo e exiba a 
 */
 
 
-//  Desenvolva seu código aqui
+function ATM(balance, withdrew){
+  // Desenvolva seu código nessa função
+  return
+}
+
+module.exports = ATM;

@@ -1,9 +1,17 @@
 /*
 05 - Números divisíveis por 3
 
-Crie um algoritmo que conte quantos números do intervalo entre 2 e 150 são divisíveis por 3.
-Caso a quantidade seja igual a 50, exiba uma mensagem secreta.
+Escreva um algoritmo que recebe o inicio e o fim de uma sequência de números inteiros de razão 1.
+
+Conte a quantidade de números da sequência que são diviseis por 3, se houver 50 ou mais retorne a seguinte mensagem:
+"Há 50 ou mais números diviseis por 3.", caso o contrário retorne: "Sequência muito pequena."
 
 */
 
-// Desenvolva seu código aqui
+
+function numbersDivisibleBy3(start, limit){
+  // Desenvolva seu código nessa função
+  return
+}
+
+module.exports = numbersDivisibleBy3;

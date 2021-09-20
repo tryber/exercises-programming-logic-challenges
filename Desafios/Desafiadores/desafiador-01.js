@@ -1,4 +1,5 @@
 /*
+
 01 - Verificar se pessoa tem idade para dar entrada na CNH.
 
 Escreva um algoritmo que recebe o nome e ano de nascimento de uma pessoa e verifica se ela pode dar entrada na CNH.
@@ -7,9 +8,9 @@ Se a pessoa tiver menos de 18 anos retorne a seguinte mensagem: "(name) tem (x) 
 
 */
 
-function checkCnhProcess(name, birthYear){
+function cnhProcess(name, birthYear){
   // Desenvolva seu código nessa função
   return
 }
 
-module.exports = checkCnhProcess;
+module.exports = cnhProcess;

@@ -1,5 +1,5 @@
 /*  01 - Verificar se pessoa tem idade para dar entrada na CNH. */
-function checkCnhProcess(name, birthYear) {
+function cnhProcess(name, birthYear) {
   let currentYear = new Date().getFullYear();
 
   let age = currentYear - birthYear;
@@ -15,7 +15,7 @@ function checkCnhProcess(name, birthYear) {
 }
 
 /*  02 - Calcula a raiz quadrada de um número */
-function calcSquareRoot(number) {
+function squareRoot(number) {
   const sqrt = Math.sqrt(number);
 
   if (number === 0 || typeof number != "number") {
@@ -28,7 +28,7 @@ function calcSquareRoot(number) {
 }
 
 /*  03 - Array de notas musicais */
-function arrMusicalNotes(arrNotes) {
+function musicalNotes(arrNotes) {
   let firstAllDegrees = {
     Dó: "I",
     Ré: "II",
@@ -52,7 +52,7 @@ function arrMusicalNotes(arrNotes) {
 }
 
 /*  04 - Array de notas musicais - 2 */
-function arrMusicalNotes2(arrNotes) {
+function musicalNotes2(arrNotes) {
   let allNotesDetails = {
     Dó: {
       degree: "I",
@@ -104,7 +104,7 @@ function arrMusicalNotes2(arrNotes) {
 }
 
 /*  05 - Varinhas mágicas */
-function findMagicWand(wizard, wand) {
+function magicWand(wizard, wand) {
   let wizardsWands = {
     "Harry Potter": "Azevinho e Pena de Fênix",
     "Rony Weasley": "Salgueiro e Pelo de Unicórnio",
@@ -121,7 +121,7 @@ function findMagicWand(wizard, wand) {
 }
 
 /*  06 - Analise de preços da lista de compras */
-function calcAverageAndExpensive(productList) {
+function averagedExpensive(productList) {
   let maxPrice = productList[0].price;
   let maxProduct = "";
 
@@ -156,14 +156,14 @@ function averageTemperature(anualRegister) {
 }
 
 /*  08 - O número de empates na Copa das galáxias */
-function calcNumberOfTies(matches, scores) {
+function numberTies(matches, scores) {
   const sumPoints = Object.values(scores).reduce((sum, number) => sum + number);
   const winPoints = 3;
   return Math.abs(winPoints * matches - sumPoints);
 }
 
 /*  09 - Programas de TV */
-function analystViewerTvShows(dataViewer) {
+function viewerTvShows(dataViewer) {
   let { age, country, likeSports } = dataViewer;
 
   let message = {
@@ -193,22 +193,22 @@ function analystViewerTvShows(dataViewer) {
 }
 
 /*  10 - Nega Números */
-function negateNumbers(arrayNumbers) {
+function negateNumbers(arrNumbers) {
   let newArr = [];
-  for (let index = 0; index < arrayNumbers.length; index++) {
-    newArr.push(arrayNumbers[index] * -1);
+  for (let index = 0; index < arrNumbers.length; index++) {
+    newArr.push(arrNumbers[index] * -1);
   }
   return newArr;
 }
 module.exports = {
-  checkCnhProcess,
-  calcSquareRoot,
-  arrMusicalNotes,
-  arrMusicalNotes2,
-  findMagicWand,
-  calcAverageAndExpensive,
+  cnhProcess,
+  squareRoot,
+  musicalNotes,
+  musicalNotes2,
+  magicWand,
+  averagedExpensive,
   averageTemperature,
-  calcNumberOfTies,
-  analystViewerTvShows,
+  numberTies,
+  viewerTvShows,
   negateNumbers,
 };

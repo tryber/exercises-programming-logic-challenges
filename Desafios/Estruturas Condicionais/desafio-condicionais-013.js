@@ -17,4 +17,9 @@ Jogador(a) 1: 1500 pontos; Jogador(a) 2: 1600 pontos.
 
 */
 
-// Desenvolva seu código aqui
+function chessPoint(ratingPlayOne,ratingPlayTwo){
+  // Desenvolva seu código nessa função
+  return
+}
+
+module.exports = chessPoint;

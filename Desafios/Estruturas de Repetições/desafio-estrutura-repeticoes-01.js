@@ -1,8 +1,13 @@
 /*
 01 - Mensagem codificada 
 
-Elabore uma função que ao receber uma string como parâmetro retorne outra string com a posição de cada caractere multiplicado por 3 no lugar do caractere. Exemplo: decodeString("Trybe") retorna "036912".
+Escreva um algoritmo que recebe uma string e retorne outra string com o index dos respectivos caracteres multiplicado por 3. Exemplo: decodeString("Trybe") retorna "036912".
 
 */
 
-// Desenvolva seu código aqui
+function decodeString(word){
+  // Desenvolva seu código nessa função
+  return
+}
+
+module.exports = decodeString;

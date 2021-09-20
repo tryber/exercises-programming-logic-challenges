@@ -1,11 +1,12 @@
 /*
+
 6 - Analise de preços da lista de compras
 
 Faça um algoritmo que irá receber uma lista de produtos e retornar uma string contendo:
 
-O produto com maior preço
-O preço do produto
-A média do preços dos produtos
+O produto com maior preço.
+O preço do produto. Exemplo.
+A média do preços dos produtos.
 
 Por exemplo:
 
@@ -23,15 +24,15 @@ Entrada:
 ];
 
 Saída:
- O produto mais caro é teclado gamer e custa: R$ 180, a média de preços dos produtos é de: R$36.11.
+O produto mais caro é teclado gamer e custa: R$ 180, a média de preços dos produtos é de: R$36.11.
 
- Obs: A saída tem que possuir exatamente esse formato.
+Obs: A saída tem que possuir exatamente esse formato.
 
 */
 
-function calcAverageAndExpensive(productList){
+function averagedExpensive(productList){
   // Desenvolva seu código nessa função
   return
 }
 
-module.exports = calcAverageAndExpensive;
+module.exports = averagedExpensive;

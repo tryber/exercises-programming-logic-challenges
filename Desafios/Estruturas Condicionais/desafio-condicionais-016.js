@@ -5,4 +5,9 @@ Escreva um algoritmo que recebe a idade de Marina, Silvia e Iza e imprime as ida
 
 */
 
-// Desenvolva seu código aqui
+function sortAgeAsc(mariaAge, silviaAge, izaAge){
+  // Desenvolva seu código nessa função
+  return
+}
+
+module.exports = sortAgeAsc;

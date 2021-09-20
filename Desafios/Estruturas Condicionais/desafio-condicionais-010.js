@@ -14,4 +14,9 @@ Crie um programa que realiza o cálculo para dizer se é possível ou não a ent
 
 */
 
-// Desenvolva seu código aqui
+function robotFriend(mon, dad, me, brother, sister){
+  // Desenvolva seu código nessa função
+  return
+}
+
+module.exports = robotFriend;

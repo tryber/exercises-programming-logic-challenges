@@ -1,12 +1,11 @@
 /*
- 11 - Array de notas musicais - 3 
 
+11 - Array de notas musicais - 3 
 
 Relembrando, dada a escala natural de Dó, cada uma das 7 notas possui um grau representado por um algarismo romano conforme abaixo:
 
 | Dó | Ré | Mi  | Fá | Sol | Lá | Si  |
 | I  | II | III | IV |  V  | VI | VII |
-
 
 Além disso, cada nota forma um acorde chamado tríade. A tríade é composta por uma sequência a partir dela com a "primeira" nota, a "terça" e a "quinta".
 Exemplos
@@ -35,9 +34,9 @@ Saída:
 
 */
 
-function arrMusicalNotes3(arrNotes){
+function musicalNotes3(arrNotes){
   // Desenvolva seu código nessa função
   return
 }
 
-module.exports = arrMusicalNotes3;
+module.exports = musicalNotes3;

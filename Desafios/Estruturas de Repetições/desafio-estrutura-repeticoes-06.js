@@ -1,10 +1,20 @@
 /*
-06 - Imprima os números ímpares
+06 - Retorne os números ímpares
 
 A Dora aventureira gostaria de ter uma lista com todos o números ímpares entre 1 e 50.
-Crie um algoritmo que exibe todos os números inteiros ímpares desse intervalo. 
+Crie um algoritmo que retorne uma string com todos os números inteiros ímpares desse intervalo.
+
+Use a seguinte estrutura no retorno: "x, x, x, ...x."
+
+Obs: O '.' faz parte do retorno =);
 
 */
 
 
-// Desenvolva seu código aqui
+
+function oddNumbers(){
+  // Desenvolva seu código nessa função
+  return
+}
+
+module.exports = oddNumbers;

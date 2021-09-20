@@ -22,4 +22,9 @@ A taxa metabólica basal é: 1340 Kcal.
 
 */
 
-// Desenvolva seu código aqui
+function basalMetabolicRate(personAge, personSex, personWeight, personHeight){
+  // Desenvolva seu código nessa função
+  return
+}
+
+module.exports = basalMetabolicRate;

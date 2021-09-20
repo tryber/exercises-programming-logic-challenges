@@ -17,4 +17,9 @@ Seu IMC é: 23.7 kg/m2. O resultado foi: Normal
 
  */
 
-// Desenvolva seu código aqui
+function IMC(weight, height){
+  // Desenvolva seu código nessa função
+  return
+}
+
+module.exports = IMC;

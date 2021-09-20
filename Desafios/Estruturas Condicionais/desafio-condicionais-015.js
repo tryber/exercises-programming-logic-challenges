@@ -7,4 +7,9 @@ Escreva um algoritmo que simula o jogo "pedra, papel e tesoura" levando em consi
 
 */
 
-// Desenvolva seu código aqui
+function rockPaperScissors(signPerson1, signPerson2){
+  // Desenvolva seu código nessa função
+  return
+}
+
+module.exports = rockPaperScissors;
