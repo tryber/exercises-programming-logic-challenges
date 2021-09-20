@@ -3,4 +3,10 @@
 // "(nome_da_pessoa) tem (idade) anos de idade e (pode ou não pode) iniciar o processo
 // para obter CNH."
 
-// // Desenvolva seu código aqui.
+function canGetLicenseToDrive() {
+  // Desenvolva seu código aqui.
+}
+
+module.exports = {
+  canGetLicenseToDrive,
+}
