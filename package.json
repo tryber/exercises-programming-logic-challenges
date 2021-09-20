@@ -1,0 +1,25 @@
+{
+  "name": "exercises-programming-logic-challenges",
+  "version": "1.0.0",
+  "description": "Repositório com desafios de logica de programação",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest tests",
+    "dev": "jest --watch tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tryber/exercises-programming-logic-challenges.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tryber/exercises-programming-logic-challenges/issues"
+  },
+  "homepage": "https://github.com/tryber/exercises-programming-logic-challenges#readme",
+  "dependencies": {
+    "@types/jest": "^27.0.1",
+    "jest": "^27.1.0"
+  }
+}
