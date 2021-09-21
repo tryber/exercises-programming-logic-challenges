@@ -8,7 +8,7 @@ Escreva uma algoritmo que recebe um array de dados quaisquer e verifique se todo
 
 function dataType(arrDataTypes){
   // Desenvolva seu código aqui.
-  return 
+  return arrDataTypes.every((e) => typeof e === typeof arrDataTypes[0]);
 }
 
 module.exports = dataType;

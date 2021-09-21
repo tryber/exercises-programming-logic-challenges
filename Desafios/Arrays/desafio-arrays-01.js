@@ -6,9 +6,9 @@ Escreva um algoritmo que recebe uma array de números inteiros, procure o maior 
 
 */
 
-function getMaxNumber(arrNumbersInt) {
+function getMaxNumber(arrIntegers) {
   // Desenvolva seu código nessa função
-  return 
+  return Math.max(...arrIntegers);
 }
 
 module.exports = getMaxNumber;

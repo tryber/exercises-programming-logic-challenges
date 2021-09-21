@@ -11,10 +11,9 @@ Pedro é pai de 4 filhos que têm idades diferentes. Esse ano ele notou que a so
 
 */
 
-function getMaxAge(pedroAge, arrKidsAges){
+function findOldestSon(pedroAge, arrKidsAges){
   // Desenvolva seu código aqui.
-  return 
+  return `O filho mais velho tem ${pedroAge - arrKidsAges.reduce((acc, cur) => acc + cur)} anos.`;
 }
 
-module.exports =getMaxAge;
-
+module.exports = findOldestSon;

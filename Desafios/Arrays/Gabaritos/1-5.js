@@ -23,7 +23,7 @@ function getMinNumber(arrNumbersInt) {
 }
 
 /* 03 - Encontre uma pessoa convidada em uma lista de nomes. */
-function getName(arrListNames, name) {
+function findQuest(arrListNames, name) {
   let foundName = false;
   let msg = "";
 
@@ -53,7 +53,7 @@ function dataType(arrDataTypes) {
 }
 
 /* 05 - Encontre o filho mais velho. */
-function getMaxAge(pedroAge, kidsAges) {
+function findOldestSon(pedroAge, kidsAges) {
   let sumKidsAges = 0;
 
   kidsAges.forEach((kid) => {
@@ -71,7 +71,7 @@ function getMaxAge(pedroAge, kidsAges) {
 module.exports = {
   getMaxNumber,
   getMinNumber,
-  getName,
+  findQuest,
   dataType,
-  getMaxAge,
+  findOldestSon,
 };
