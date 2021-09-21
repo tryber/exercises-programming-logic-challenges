@@ -1,9 +1,10 @@
 /*
+
 06 - Taxa Metabólica Basal
 
 Renata é uma nutricionista e quer disponibilizar uma calculadora de BMR (Taxa Metabólica Basal) em seu site.
 
-Escreva um algoritmo que receba os dados a seguir e, a partir disso, calcula a BMR da pessoa:
+Escreva um algoritmo que recebe os dados a seguir e, a partir disso, calcula a BMR da pessoa:
 
 Idade: número maior que 0
 Sexo: M ou F

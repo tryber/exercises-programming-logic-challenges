@@ -60,7 +60,7 @@ function foundAdventurous(adventurous) {
 }
 
 /*  04 - Dinossauro poliglota */
-function dinosaur(command) {
+function polyglotDinosaur(command) {
   switch (command) {
     case "esquerda":
       return "english";
@@ -125,7 +125,7 @@ function foundYoungerPerson(marinaAge, silviaAge, izaAge) {
 }
 
 /* 09 - Aprovação nos projetos */
-function reviewProjectApproval(dataForAnalysis) {
+function evaluateProject(dataForAnalysis) {
   let { rec, reqs, totalReqs, completed } = dataForAnalysis;
 
   let approved = {
@@ -162,11 +162,11 @@ module.exports = {
   optionsMenu,
   studentSituation,
   foundAdventurous,
-  dinosaur,
+  polyglotDinosaur,
   robotFriend,
   basalMetabolicRate,
   legalAge,
   foundYoungerPerson,
-  reviewProjectApproval,
+  evaluateProject,
   /* droneDelivery, */
 }

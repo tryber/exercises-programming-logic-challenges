@@ -2,7 +2,7 @@ const {
   optionsMenu,
   studentSituation,
   foundAdventurous,
-  dinosaur,
+  polyglotDinosaur,
   robotFriend,
   basalMetabolicRate,
   legalAge,
@@ -91,21 +91,21 @@ describe("Desafios de Estrutura Condicionais.", () => {
     });
   });
 
-  describe(" 04 - Testando a Função dinosaur dinosaur.", () => {
+  describe(" 04 - Testando a Função polyglotDinosaur polyglotDinosaur.", () => {
     it("Verifica o retorno correto para o argumento 'esquerda'.", () => {
-      expect(dinosaur("esquerda")).toEqual("english");
+      expect(polyglotDinosaur("esquerda")).toEqual("english");
     });
     it("Verifica o retorno correto para o argumento 'direita'.", () => {
-      expect(dinosaur("direita")).toEqual("français");
+      expect(polyglotDinosaur("direita")).toEqual("français");
     });
     it("Verifica o retorno correto para o argumento 'nenhuma''.", () => {
-      expect(dinosaur("nenhuma")).toEqual("português");
+      expect(polyglotDinosaur("nenhuma")).toEqual("português");
     });
     it("Verifica o retorno correto para o argumento 'as duas'.", () => {
-      expect(dinosaur("as duas")).toEqual("Ai eu caiu, né!!");
+      expect(polyglotDinosaur("as duas")).toEqual("Ai eu caiu, né!!");
     });
     it("Verifica o retorno padrão correto.", () => {
-      expect(dinosaur("Xablau")).toEqual("Comando desconhecido.");
+      expect(polyglotDinosaur("Xablau")).toEqual("Comando desconhecido.");
     });
   });
 

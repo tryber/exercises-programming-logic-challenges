@@ -1,6 +1,6 @@
 /*
 
-07 - Começa com "a" ?
+07 - Contem "a" ?
 
 Escreva um algoritmo que recebe uma palavra e checa se ela possui a letra "a" considerando as seguintes premissas para cada tipo de retorno.
 
@@ -21,9 +21,36 @@ Retornar 'A palavra X não contém "a".'
 
 */
 
-function withA(word) {
+function includeA(word) {
   // Desenvolva seu código nessa função
-  return 
+  const newWord = word.toLowerCase();
+  const wordsBegin = newWord.startsWith("a");
+  const wordsEnd = newWord.endsWith("a");
+  const contain = newWord.substr(1, newWord.length - 2).includes("a");
+
+  if (wordsBegin && !wordsEnd && !contain) {
+    return "A palavra " + word + " possui a letra 'a' apenas no início.";
+  }
+  if (!wordsBegin && wordsEnd && !contain) {
+    return "A palavra " + word + " possui a letra 'a' apenas no fim.";
+  }
+
+  if (wordsBegin && wordsEnd && !contain) {
+    return (
+      "A palavra " +
+      word +
+      " possui a letra 'a', porém ela não está nem no início nem no fim."
+    );
+  }
+
+  if (!wordsBegin && !wordsEnd && contain) {
+    return (
+      "A palavra " +
+      word +
+      " possui a letra 'a', porém ela não é a primeira nem a última letra."
+    );
+  }
+  return "A palavra " + word + " não contém a letra 'a'.";
 }
 
-module.exports = withA;
+module.exports = includeA;

@@ -49,6 +49,7 @@ const mockResult11 = [
   },
 ];
 
+/* Gabarito */
 const {
   cnhProcess,
   squareRoot,
@@ -67,7 +68,7 @@ const {
   factorial,
   fibonnaci,
   sumPrimesNumbers,
-  /* fatorial, */
+  // fatorial
   cpfValidator,
 } = require("../Desafios/Desafiadores/Gabaritos/11-16");
 

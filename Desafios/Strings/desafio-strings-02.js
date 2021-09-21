@@ -1,6 +1,6 @@
 /*
 
-02 - Converte Para numeros
+02 - Converte para numero
 
 Escreva um algoritmo que recebe uma string que representa um número inteiro e retorne o valor convertido para o tipo number.
 
@@ -10,9 +10,9 @@ Saída; 1
 
 */
 
-function convertNumber(string) {
+function converteType(string) {
   // Desenvolva seu código nessa função
-  return 
+  return +string;
 }
 
-module.exports = convertNumber;
+module.exports = converteType;

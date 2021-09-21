@@ -10,7 +10,6 @@ Se a pessoa tiver menos de 18 anos retorne a seguinte mensagem: "(name) tem (x) 
 
 function cnhProcess(name, birthYear){
   // Desenvolva seu código nessa função
-  return
 }
 
 module.exports = cnhProcess;

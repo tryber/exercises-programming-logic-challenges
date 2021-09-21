@@ -1,4 +1,5 @@
 /*
+
 09 - Aprovação nos projetos
 
 Aqui na Trybe você precisa entregar os projetos dentro de algumas regras para obter aprovação. Escreva um algoritmo que recebe um objeto com a seguinte estrutura:
@@ -6,15 +7,15 @@ Aqui na Trybe você precisa entregar os projetos dentro de algumas regras para o
 {
 rec: bool,
 reqs: number int,
-totalReqs: number int,
+allReqs: number int,
 completed: number int,
 }
 
 Aonde:
-rec: informando se a pessoa estudante está ou não em recuperação.
-reqs: são os requisitos obrigatórios
-totalReqs: são os  requisitos obrigatórios mais os bônus
-completed: quantidade de requisitos feitos, completados.
+- rec: informando se a pessoa estudante está ou não em recuperação;
+- reqs: são os requisitos obrigatórios;
+- allReqs: são os requisitos obrigatórios mais os bônus:
+- completed: quantidade de requisitos feitos, completados:
 
 
 Considere as seguintes premissas:
@@ -28,9 +29,9 @@ requisitos;)."
 
 */
 
-function reviewProjectApproval(dataForAnalysis){
+function evaluateProject(dataForAnalysis){
   // Desenvolva seu código nessa função
   return
 }
 
-module.exports = reviewProjectApproval;
+module.exports = evaluateProject;

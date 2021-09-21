@@ -1,10 +1,20 @@
+/* Gabarito */
+/* const {
+  getMaxNumber,
+  getMinNumber,
+  findQuest,
+  dataType,
+  findOldestSon,
+} = require("../Desafios/Arrays/Gabaritos/1-5"); */
+
+/* Exercícios */
 const {
   getMaxNumber,
   getMinNumber,
-  getName,
+  findQuest,
   dataType,
-  getMaxAge,
-} = require("../Desafios/Arrays/Gabaritos/1-5");
+  findOldestSon,
+} = require("../Desafios/Arrays/")
 
 describe("Desafios de Arrays.", () => {
   describe(" 01- Testando a Função getMaxNumber.", () => {
@@ -19,15 +29,15 @@ describe("Desafios de Arrays.", () => {
     });
   });
 
-  describe(" 03- Testando a Função getName.", () => {
+  describe(" 03- Testando a Função findQuest.", () => {
     it("Verifica o retorno quando o nome é encontrado na lista.", () => {
       expect(
-        getName(["Silvia", "Isa", "Marina", "Mica", "Amanda", "Karine"], "Mica")
+        findQuest(["Silvia", "Isa", "Marina", "Mica", "Amanda", "Karine"], "Mica")
       ).toEqual("O nome está na lista.");
     });
     it("Verifica o retorno quando o nome NÃO é encontrado na lista.", () => {
       expect(
-        getName(
+        findQuest(
           ["Silvia", "Isa", "Marina", "Mica", "Amanda", "Karine"],
           "Daniel"
         )
@@ -44,9 +54,9 @@ describe("Desafios de Arrays.", () => {
     });
   });
 
-  describe(" 05- Testando a Função getMaxAge.", () => {
+  describe(" 05- Testando a Função findOldestSon.", () => {
     it("Verifica o retorno das informações do filho mais velho.", () => {
-      expect(getMaxAge(40, [10, 10, 10])).toEqual(
+      expect(findOldestSon(40, [10, 10, 10])).toEqual(
         "O filho mais velho tem 10 anos."
       );
     });

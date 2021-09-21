@@ -1,6 +1,6 @@
 /*
 
-07 - Calcule a média dos graus Celsius e Fahrenheit
+07 - Calcule a média dos graus Celsius em Fahrenheit
 
 Escreva uma algoritmo que recebe uma lista com a média de temperatura em Fahrenheit registradas nos últimos 12 meses e retorne uma mensagem informando a médica em Celsius no formato da saída, por exemplo:
 

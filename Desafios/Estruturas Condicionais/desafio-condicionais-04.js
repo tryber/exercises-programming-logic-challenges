@@ -1,4 +1,5 @@
 /*
+
 04 - Dinossauro poliglota
 
 Fernando tem um dinossauro muito esperto. Quando está com as duas pernas no chão, o dinossauro fala em português. Quando levanta a perna esquerda, fala em inglês. Por fim, quando levanta a perna direita fala em francês.
@@ -18,9 +19,9 @@ Caso o comando não for reconhecido, retorne:
 
 */
 
-function dinosaur(command){
+function polyglotDinosaur(command){
   // Desenvolva seu código nessa função
   return
 }
 
-module.exports = dinosaur;
+module.exports = polyglotDinosaur;

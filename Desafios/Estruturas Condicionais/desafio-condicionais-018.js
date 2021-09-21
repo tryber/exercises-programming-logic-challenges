@@ -1,4 +1,5 @@
 /*
+
 18 - Jogo de cartas
 
 Mara e Sara estão jogando um novo jogo de cartas chamado Xablau. O jogo utiliza um baralho normal que possui Ás, Dama, Valete e Reis.
@@ -13,7 +14,7 @@ Caso não satisfaça nenhum das duas condições anteriores, a pessoa jogadora r
 
 Para a pontuação vamos considerar apenas números inteiros de 1 a 13.
 
-Crie um programa que mostre quando houve empate no jogo ou quem foi a pessoa vencedora do Xablau e qual foi sua pontuação baseando-se nas informações dadas anteriormente.
+Escreva um algoritmo que retorne quando houve empate no jogo ou quem foi a pessoa vencedora do Xablau e qual foi sua pontuação baseando-se nas informações dadas anteriormente.
 
 Possíveis saídas:
 "Mara venceu com X pontos"

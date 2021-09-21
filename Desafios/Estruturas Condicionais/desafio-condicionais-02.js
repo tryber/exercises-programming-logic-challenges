@@ -1,4 +1,5 @@
 /*
+
 02 - Switch Case
 
 Refatore a função abaixo para utilizar if/else

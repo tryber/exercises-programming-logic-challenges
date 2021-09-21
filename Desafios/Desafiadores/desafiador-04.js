@@ -15,7 +15,7 @@ Dada a escala Natural de Dó, cada uma das 7 notas possui:
 | Terça  | Maior | Menor  | Menor  | Maior | Maior     | Menor  | Menor  |
 | Escala | Jônia | Dórica | Frígia | Lídia | Mixolídia | Eólia  | Lócrio |
 
-Escreva um algoritmo que recebe um array de notas e retorna um outro array de objetos com os respectivos graus, terças e escalas das respectivas notas, por exemplo:
+Escreva um algoritmo que recebe um array de notas e retorna um outro array de objetos com os respectivos graus, terças e escalas, por exemplo:
 
 Entrada: ['Ré', 'Sol', 'Dó']
 Saída:

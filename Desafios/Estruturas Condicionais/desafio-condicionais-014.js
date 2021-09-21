@@ -1,7 +1,9 @@
 /*
+
 14 - Caixa eletrônico
 
 Um grande banco lhe contratou para fazer um programa para gerenciar um caixa eletrônico. As máquinas deste banco só possuem notas de R$10, R$50 e R$100.
+
 Para fazer este programa funcionar você deve coletar o saldo da pessoa e qual o valor do saque que ela quer fazer.
 
 Se o valor passado no saque for zero ou não for um número, exiba a mensagem: "Valor de saque inválido".

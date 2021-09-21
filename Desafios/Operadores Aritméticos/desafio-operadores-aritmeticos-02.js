@@ -1,4 +1,5 @@
 /*
+
 02 - Calcular o salário 
 
 Na sapataria do Faraó todas as pessoas da área de vendas recebem um salário fixo acrescido de 4% de comissão sobre as vendas. 

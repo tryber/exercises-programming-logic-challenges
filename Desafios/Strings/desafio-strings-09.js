@@ -14,7 +14,28 @@ u - 1
 
 function encodeMessage(string) {
   // Desenvolva seu código nessa função
-  return 
+  return [...string].reduce((acc, cur) => {
+    switch (cur) {
+      case "a":
+        acc += "5";
+        return acc;
+      case "e":
+        acc += "b";
+        return acc;
+      case "i":
+        acc += "9";
+        return acc;
+      case "o":
+        acc += "p";
+        return acc;
+      case "u":
+        acc += "1";
+        return acc;
+      default:
+        acc += cur;
+        return acc;
+    }
+  }, "");
 }
 
 module.exports = encodeMessage;

@@ -1,4 +1,5 @@
 /*
+
 13 - Pontos no Xadrez
 
 Você está desenvolvendo o sistema de pontuação de um site de partidas de xadrez.
@@ -8,7 +9,7 @@ Diferença | Ganhador(a) | Perdedor(a)
   > 200       +10            -10
  <= 200       +20            -20
 
-Crie um algoritmo que receba:
+Escreva um algoritmo que recebe:
 - A pontuação das pessoas que jogam (antes da partida): número maior que zero
 - A pessoa vencedora: 1 ou 2
 

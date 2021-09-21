@@ -1,18 +1,18 @@
 /*
+
 05 - Robô amigo
 
 Você está programando um robô que ajude nas tarefas de casa, e seus comportamentos deverão ser escritos em JavaScript.
 
-Escreva um algoritmo que receba 5 booleanos:
+Escreva um algoritmo recebe 5 booleanos:
 mom, dad, me, brother, sister.
 
 Eles devem representar se a pessoa pediu para que o robô executasse uma tarefa.
 Caso me (você), mom (mãe) ou dad (pai) pedirem, o robô deverá executar sem pensar duas vezes.
 Por outro lado, quando seu irmão ou irmã pedirem algo, o robô só deverá executar se ambos pedirem em conjunto.
 
-Seu algoritmo deverá receber os 5 booleanos e mostrar a mensagem:
-- "Things I do for love...", caso deva executar a tarefa
-- "Not today.", caso não deva executar.
+Caso o Robô for executar a tarefa retorne a seguinte mensagem:- "Things I do for love...", caso deva executar a tarefa",
+ caso contrário retorne: "Not today.", 
 
 */
 

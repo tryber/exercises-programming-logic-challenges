@@ -14,7 +14,10 @@ O cachorrinho de Joana vai se chamar:  XXX
 
 function dogName(snack, sweet) {
   // Desenvolva seu código nessa função
-  return 
+  return `O cachorrinho de Joana vai se chamar: ${snack.slice(
+    0,
+    3
+  )}${sweet.slice(-3)}`;
 }
 
 module.exports = dogName;

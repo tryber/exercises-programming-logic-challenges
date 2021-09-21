@@ -11,7 +11,11 @@ Saída: "1 + 2 = 3. 1 - 2 = -1. 1 x 2 = 2. 1 / 2 = 0.5."
 
 function mathOperations(number1, number2) {
   // Desenvolva seu código nessa função
-  return 
+  const sum = `${number1} + ${number2} = ${number1 + number2}.`;
+  const sub = `${number1} - ${number2} = ${number1 - number2}.`;
+  const mult = `${number1} x ${number2} = ${number1 * number2}.`;
+  const div = `${number1} / ${number1} = ${number1 / number2}.`;
+  return `${sum} ${sub} ${mult} ${div}`;
 }
 
 module.exports = mathOperations;

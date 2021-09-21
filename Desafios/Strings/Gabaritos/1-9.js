@@ -1,17 +1,17 @@
-/*  01 - Inverte Nome */
-function namePosition(fullName) {
+/*  01 - Inverte nomes */
+function reverseNames(fullName) {
   let invertName = fullName.split(" ");
   return invertName[1] + " " + invertName[0];
 }
 
-/*  02 - Converte para numeros */
-function convertNumber(string) {
+/*  02 - Converte para numero */
+function converteType(string) {
   let toNumber = Number(string);
   return toNumber;
 }
 
-/*  03 - Eu sou */
-function IAM(firstName, lastName, age) {
+/*  03 - Apresentação pessoal */
+function personalPresentation(firstName, lastName, age) {
   return (
     "Meu nome é " +
     firstName +
@@ -38,7 +38,7 @@ function firstLastLetter(word) {
   let lastLetter = word.substr(-1);
 
   return (
-    "A primeira letra é: " + firstLetter + " e a ultima letra é: " + lastLetter
+    "A primeira letra é: " + firstLetter + " e a última letra é: " + lastLetter+"."
   );
 }
 
@@ -53,7 +53,7 @@ function dogName(snack, sweet) {
 }
 
 /*  07 - Contem "a" ? */
-function withA(word) {
+function includeA(word) {
   let newWord = word.toLowerCase();
   let wordsBegin = newWord.startsWith("a");
   let wordsEnd = newWord.endsWith("a");
@@ -85,7 +85,7 @@ function withA(word) {
 }
 
 /*  08 - Descubra quantas letras tem */
-function manyLetters(string, letter) {
+function countLetters(string, letter) {
   let newString = string;
   newString = newString.replace(/[àáäâã]/g, "a");
   newString = newString.replace(/[èéëê]/g, "e");
@@ -133,13 +133,13 @@ function encodeMessage(string) {
 }
 
 module.exports = {
-  namePosition,
-  convertNumber,
-  IAM,
+  reverseNames,
+  converteType,
+  personalPresentation,
   mathOperations,
   firstLastLetter,
   dogName,
-  withA,
-  manyLetters,
+  includeA,
+  countLetters,
   encodeMessage,
 };

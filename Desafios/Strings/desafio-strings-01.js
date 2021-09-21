@@ -1,19 +1,20 @@
 /*
 
-01 - Inverte Nome
+01 - Inverte nomes
 
 Escreva um algoritmo que recebe uma string com o formato "Nome Sobrenome" e retorne
 uma string com os nomes invertidos: "Sobrenome Nome". 
 
 Por exemplo: 
-Entrada: 'Márcio Daniel"
-Saída: "Daniel Márcio"
+Entrada: "Xablau Xablauzinho"
+Saída: "Xablauzinho Xablau"
 
 */
 
-function namePosition(fullName) {
+function reverseNames(fullName) {
   // Desenvolva seu código nessa função
-  return 
+  const [first, last] = fullName.split(" ");
+  return `${last} ${first}`;
 }
 
-module.exports = namePosition;
+module.exports = reverseNames;
