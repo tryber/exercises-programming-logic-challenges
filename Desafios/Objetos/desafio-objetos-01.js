@@ -1,4 +1,5 @@
-/* 
+/*
+
 01 - Jogo de fantasia
 
 Você é responsável pelo sistema de um novo jogo de fantasia medieval.

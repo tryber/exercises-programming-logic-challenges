@@ -1,4 +1,5 @@
 /*
+
 02 - Jogo de fantasia- Parte 2
 
 Além dos pontos de vida (PV), será necessário estipular o equipamento inicial do(a) personagem. Tudo isso deve ser feito no mesmo código, seguindo a seguinte tabela:
@@ -11,7 +12,7 @@ Além dos pontos de vida (PV), será necessário estipular o equipamento inicial
 |   Cavaleiro  |        20PV        |     Armadura Completa   |
 
 
-Escreva um algoritmo capaz de receber uma classe e retornar os pontos de vida e o equipamento inicial do(a) personagem.
+Escreva um algoritmo que recebe o nome de uma classe e retorna os pontos de vida e o equipamento inicial do(a) personagem.
 
 O retorno deve ser no seguinte formato:
 Entrada: Guerreiro

@@ -1,4 +1,5 @@
 /*
+
 03 - Escala musical
 
 Dada a escala maior natural de Dó, cada uma das 7 notas possui um grau, representado por um algarismo romano:

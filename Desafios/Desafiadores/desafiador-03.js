@@ -3,7 +3,6 @@
 03 - Array de notas musicais
 
 Uma música normalmente possui uma sequência de notas.
-//Verificando com amigo músico se essa afirmação está correta =)
 
 Data a escala natural de Dó, cada uma das 7 notas possui um grau representado por um algarismo romano conforme abaixo:
 

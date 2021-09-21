@@ -1,10 +1,11 @@
 /*
+
 07 - Começa com "a" ?
 
-Escreva um algorítmo que recebe uma palavra e checa se ela possui a letra "a" considerando as seguintes premissas para cada tipo de retorno.
+Escreva um algoritmo que recebe uma palavra e checa se ela possui a letra "a" considerando as seguintes premissas para cada tipo de retorno.
 
 Se apenas começa com letra "a":
-retornar: A palavra X possui a letra 'a' apenas no ínicio.
+retornar: A palavra X possui a letra 'a' apenas no início.
 
 Se apenas termina com a letra "a".
 retornar: A palavra X possui a letra 'a' apenas no final.
@@ -17,6 +18,12 @@ retornar: A palavra X possui 'a', porém ela não está nem no início nem no fi
 
 Se não.
 Retornar 'A palavra X não contém "a".'
+
 */
 
-// Desenvolva seu código aqui
+function withA(word) {
+  // Desenvolva seu código nessa função
+  return 
+}
+
+module.exports = withA;

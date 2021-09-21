@@ -1,11 +1,16 @@
 /*
+
 05 - Primeira e última letra
 
-Escreva um algorítmo que recebe uma palavra e imprima sua primeira e ultima letra no formato:
-A primeira letra é: "X" ultima letra é: "Y".
+Escreva um algoritmo que recebe uma palavra e retorne uma string com a primeira e ultima letra no formato:
 
-Desafio: faça de 3 maneiras diferentes. 
+A primeira letra é: "X" ultima letra é: "Y".
 
 */
 
-// Desenvolva seu código aqui
+function firstLastLetter(word) {
+  // Desenvolva seu código nessa função
+  return 
+}
+
+module.exports = firstLastLetter;

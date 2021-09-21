@@ -1,11 +1,11 @@
 /*  01 - Inverte Nome */
-function changeNamePosition(fullName) {
+function namePosition(fullName) {
   let invertName = fullName.split(" ");
   return invertName[1] + " " + invertName[0];
 }
 
 /*  02 - Converte para numeros */
-function convertToNumber(string) {
+function convertNumber(string) {
   let toNumber = Number(string);
   return toNumber;
 }
@@ -85,7 +85,7 @@ function withA(word) {
 }
 
 /*  08 - Descubra quantas letras tem */
-function findHowManyWords(string, word) {
+function manyLetters(string, letter) {
   let newString = string;
   newString = newString.replace(/[àáäâã]/g, "a");
   newString = newString.replace(/[èéëê]/g, "e");
@@ -96,7 +96,7 @@ function findHowManyWords(string, word) {
 
   let totalWords = 0;
   for (let index = 0; index < newString.length; index += 1) {
-    if (newString[index] === word) {
+    if (newString[index] === letter) {
       totalWords += 1;
     }
   }
@@ -104,7 +104,7 @@ function findHowManyWords(string, word) {
 }
 
 /*  09 - Brincando de espionagem */
-function codeMessage(string) {
+function encodeMessage(string) {
   let newWord = "";
   for (let index = 0; index < string.length; index += 1) {
     let word = string[index];
@@ -133,13 +133,13 @@ function codeMessage(string) {
 }
 
 module.exports = {
-  changeNamePosition,
-  convertToNumber,
+  namePosition,
+  convertNumber,
   IAM,
   mathOperations,
   firstLastLetter,
   dogName,
   withA,
-  findHowManyWords,
-  codeMessage,
+  manyLetters,
+  encodeMessage,
 };

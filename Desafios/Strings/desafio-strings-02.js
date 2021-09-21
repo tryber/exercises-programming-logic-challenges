@@ -1,12 +1,18 @@
 /*
+
 02 - Converte Para numeros
 
-Escreva um algorítmo que recebe uma string que representa um número interior e retorne os valores convertidos para do tipo number.
+Escreva um algoritmo que recebe uma string que representa um número inteiro e retorne o valor convertido para o tipo number.
 
 Por exemplo:
 Entrada: '1''
-Sáida; 1
+Saída; 1
 
 */
 
-// Desenvolva seu código aqui
+function convertNumber(string) {
+  // Desenvolva seu código nessa função
+  return 
+}
+
+module.exports = convertNumber;

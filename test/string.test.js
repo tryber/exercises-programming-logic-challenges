@@ -3,27 +3,27 @@ const mockTest9 ="Na minha vida tudo acontece Mas quanto mais a gente rala, mais
 const mockResp9 = "N5 m9nh5 v9d5 t1dp 5cpntbcb M5s q15ntp m59s 5 gbntb r5l5, m59s 5 gbntb crbscb Hpjb bstp1 fbl9z pprq1b b1 spnhb9 cpm vpcê E 5m5nhã ppssp chpr5r ppr nãp ppdbr tb vbr M5s p sb1 sprr9sp v5lb m59s q1b 1m d95m5ntb Sb vpcê v9br cpm9gp, 5í nós v5mps 5d95ntb Cpm 5 c5bbç5 brg19d5 b m5ntbndp 5 fé bm Db1s O sb1 d95 m59s fbl9z v59 sbr p mbsmp q1b p mb1 A v9d5 mb bns9np1 5 n1nc5 dbs9st9r Nbm g5nh5r, nbm pbrdbr m5s prpc1r5r bvpl19r Ppdbm mb t9r5r t1dp q1b tbnhp Só nãp ppdbm mb t9r5r 5s cp9s5s bp5s q1b b1 já f9z pr5 q1bm b1 5mp E b1 sp1 fbl9z b c5ntp b p 1n9vbrsp é 1m5 c5nçãp E b1 vp1 q1b vp1 H9stór95, npss5s h9stór95s D95s db l1t5, d95s db glór95"
 
 const {
-  changeNamePosition,
-  convertToNumber,
+  namePosition,
+  convertNumber,
   IAM,
   mathOperations,
   firstLastLetter,
   dogName,
   withA,
-  findHowManyWords,
-  codeMessage,
+  manyLetters,
+  encodeMessage,
 } = require("../Desafios/Strings/Gabaritos/1-9");
 
 describe("Desafios de Strings.", () => {
-  describe(" 01 - Testando a Função changeNamePosition .", () => {
+  describe(" 01 - Testando a Função namePosition .", () => {
     it("Verifica o correto retorno dos nomes invertidos.", () => {
-      expect(changeNamePosition('Márcio Daniel')).toEqual('Daniel Márcio');
+      expect(namePosition('Márcio Daniel')).toEqual('Daniel Márcio');
     });
   });
 
-  describe(" 02 - Testando a Função convertToNumber.", () => {
-    it(".Verifica o correto retorno da transformações de string para number.", () => {
-      expect(convertToNumber('1')).toEqual(1);
+  describe(" 02 - Testando a Função convertNumber.", () => {
+    it(".Verifica o correto retorno da transformação de string para number.", () => {
+      expect(convertNumber('1')).toEqual(1);
     });
   });
 
@@ -69,21 +69,21 @@ describe("Desafios de Strings.", () => {
     });
   });
 
-  describe(" 08 - Testando a Função findHowManyWords.", () => {
+  describe(" 08 - Testando a Função manyLetters.", () => {
     it("Verifica o correto retorno para a palavra Abacate.", () => {
-      expect(findHowManyWords("Abacate", "a")).toEqual(3);
+      expect(manyLetters("Abacate", "a")).toEqual(3);
     });
     it("Verifica o correto retorno para a frase 'Ando devagar porque já tive pressa' .", () => {
-      expect(findHowManyWords("Ando de vagar porque já tive pressa", "a")).toEqual(5);
+      expect(manyLetters("Ando de vagar porque já tive pressa", "a")).toEqual(5);
     });
   });
 
-  describe(" 09- Testando a Função codeMessage.", () => {
+  describe(" 09- Testando a Função encodeMessage.", () => {
     it("Verifica o correto retorno para a mensagem aeiou.", () => {
-      expect(codeMessage('aeiou')).toEqual('5b9p1');
+      expect(encodeMessage('aeiou')).toEqual('5b9p1');
     });
     it("Verifica o correto retorno para a mensagem aleatória.", () => {
-      expect(codeMessage(mockTest9)).toEqual(mockResp9);
+      expect(encodeMessage(mockTest9)).toEqual(mockResp9);
     });
   });
 });

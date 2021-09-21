@@ -1,6 +1,6 @@
 /*
 
-01 - Verificar se pessoa tem idade para dar entrada na CNH.
+01 - Verifica se pessoa tem idade para dar entrada na CNH.
 
 Escreva um algoritmo que recebe o nome e ano de nascimento de uma pessoa e verifica se ela pode dar entrada na CNH.
 

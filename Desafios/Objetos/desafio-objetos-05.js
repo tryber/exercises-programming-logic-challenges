@@ -1,4 +1,5 @@
 /*
+
 05 - Jogo de fantasia- Parte 3
 
 Você está desenvolvendo um jogo que lida com personagens em diferentes níveis de experiência, de acordo com a tabela a seguir:
@@ -18,7 +19,7 @@ Regras:
 * Cada personagem terá seu equipamento inicial relacionado à classe.
 * A cada nível após o primeiro, cada personagem ganha uma quantidade de PV de acordo com a classe.
 
-Escreva um algoritmo que receba uma classe e um nível (maior que 0), e retorne o total de Pontos de Vida (inicial + por  nível) e o equipamento do(a) personagem.
+Escreva um algoritmo que receba o nome de uma classe e um nível (maior que 0), e retorne o total de Pontos de Vida (inicial + por  nível) e o equipamento do(a) personagem.
 
 O retorno deve ser no seguinte formato, por exemplos:
 Entrada: Mago
