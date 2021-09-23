@@ -21,7 +21,7 @@ Regras:
 
 Escreva um algoritmo que receba o nome de uma classe e um nível (maior que 0), e retorne o total de Pontos de Vida (inicial + por  nível) e o equipamento do(a) personagem.
 
-O retorno deve ser no seguinte formato, por exemplos:
+O retorno deve ser no seguinte formato, exemplos:
 Entrada: Mago
 Saída: Mago, nível 2: 7PV, varinha.
 
@@ -37,7 +37,6 @@ Desafio: faça sem usar estruturas condicionais (ifs ou switches).
 
 function fantasyGame3() {
   // Desenvolva seu código nessa função
-  return 
 }
 
 module.exports = fantasyGame3;

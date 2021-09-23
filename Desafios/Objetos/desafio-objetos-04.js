@@ -12,13 +12,13 @@ people = [
   { name: 'Amanda', age: 19 }
 ];
 
-A saída deve ser da seguinte forma: 'X tem a maior idade com X anos.'
+O retorno deve ser no seguinte formato:
+'X tem a maior idade com X anos.'
 
 */
 
 function getOldPerson(arrPeople) {
   // Desenvolva seu código nessa função
-  return 
 }
 
 module.exports = getOldPerson;

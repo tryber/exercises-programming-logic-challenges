@@ -12,7 +12,7 @@ Além dos pontos de vida (PV), será necessário estipular o equipamento inicial
 |   Cavaleiro  |        20PV        |     Armadura Completa   |
 
 
-Escreva um algoritmo que recebe o nome de uma classe e retorna os pontos de vida e o equipamento inicial do(a) personagem.
+Escreva um algoritmo que recebe o nome de uma classe e retorne os pontos de vida e o equipamento inicial do(a) personagem.
 
 O retorno deve ser no seguinte formato:
 Entrada: Guerreiro
@@ -22,10 +22,8 @@ Desafio: faça sem usar estruturas condicionais (ifs ou switches).
 
 */
 
-
 function fantasyGame2(className) {
   // Desenvolva seu código nessa função
-  return 
 }
 
 module.exports = fantasyGame2;

@@ -4,7 +4,7 @@
 
 Você é responsável pelo sistema de um novo jogo de fantasia medieval.
 
-Escreva um algoritmo que recebe o nome da classe e retorna os pontos de vida do(a) personagem, com base na tabela a seguir:
+Escreva um algoritmo que recebe o nome da classe e retorne os pontos de vida do(a) personagem, com base na tabela a seguir:
 
 |   Classe     |   Pontos de Vida   |
 |    Mago      |        5PV         |
@@ -20,10 +20,8 @@ Desafio: faça sem usar estruturas condicionais (ifs ou switches)
 
 */
 
-
 function fantasyGame(className) {
   // Desenvolva seu código nessa função
-  return 
 }
 
 module.exports = fantasyGame;
