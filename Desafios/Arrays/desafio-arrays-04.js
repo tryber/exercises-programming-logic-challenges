@@ -6,9 +6,9 @@ Escreva uma algoritmo que recebe um array de dados quaisquer e verifique se todo
 
 */
 
-function dataType(arrDataTypes){
+function dataType(types){
   // Desenvolva seu código aqui.
-  return arrDataTypes.every((e) => typeof e === typeof arrDataTypes[0]);
+  return // Retorne o resultado aqui
 }
 
 module.exports = dataType;

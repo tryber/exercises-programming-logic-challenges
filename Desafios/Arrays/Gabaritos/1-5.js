@@ -1,50 +1,50 @@
 /* 01 - Encontre o maior número de uma array. */
-function getMaxNumber(arrNumbersInt) {
-  let maxNumber = arrNumbersInt[0];
+function getMaxNumber(numbers) {
+  let maxNumber = numbers[0];
 
-  for (let index = 0; index < arrNumbersInt.length; index += 1) {
-    if (arrNumbersInt[index] > maxNumber) {
-      maxNumber = arrNumbersInt[index];
+  for (let index = 1; index < numbers.length; index += 1) {
+    if (numbers[index] > maxNumber) {
+      maxNumber = numbers[index];
     }
   }
   return maxNumber;
 }
 
 /* 02 - Encontre o menor número de uma array. */
-function getMinNumber(arrNumbersInt) {
-  let minNumber = arrNumbersInt[0];
+function getMinNumber(numbers) {
+  let minNumber = numbers[0];
 
-  for (let index = 0; index < arrNumbersInt.length; index += 1) {
-    if (arrNumbersInt[index] < minNumber) {
-      minNumber = arrNumbersInt[index];
+  for (let index = 1; index < numbers.length; index += 1) {
+    if (numbers[index] < minNumber) {
+      minNumber = numbers[index];
     }
   }
   return minNumber;
 }
 
 /* 03 - Encontre uma pessoa convidada em uma lista de nomes. */
-function findQuest(arrListNames, name) {
-  let foundName = false;
-  let msg = "";
+function findQuest(names, guest) {
+  let findGuest = false;
+  let message = "";
 
-  for (let index = 0; index < arrListNames.length; index += 1) {
-    if (arrListNames[index].toUpperCase() == name.toUpperCase()) {
-      foundName = true;
+  for (let index = 0; index < names.length; index += 1) {
+    if (names[index].toUpperCase() == guest.toUpperCase()) {
+      findGuest = true;
     }
   }
 
-  if (foundName == true) {
-    msg = "O nome está na lista.";
+  if (findGuest == true) {
+    message = "O nome está na lista.";
   } else {
-    msg = "O nome não está na lista.";
+    message = "O nome não está na lista.";
   }
-  return msg;
+  return message;
 }
 
 /* 04 - Verifique se todos os dados de uma lista são do mesmo tipo. */
-function dataType(arrDataTypes) {
-  const typeOfFirst = typeof arrDataTypes[0];
-  for (let elements of arrDataTypes) {
+function dataType(types) {
+  const typeOfFirst = typeof types[0];
+  for (let elements of types) {
     if (typeOfFirst !== typeof elements) {
       return false;
     }
@@ -53,17 +53,17 @@ function dataType(arrDataTypes) {
 }
 
 /* 05 - Encontre o filho mais velho. */
-function findOldestSon(pedroAge, kidsAges) {
-  let sumKidsAges = 0;
+function findOldestSon(pedroAge, kidsAge) {
+  let sumKidsAge = 0;
 
-  kidsAges.forEach((kid) => {
-    sumKidsAges += kid;
+  kidsAge.forEach((kid) => {
+    sumKidsAge += kid;
   });
 
-  let olderKidAge = pedroAge - sumKidsAges;
-  kidsAges.push(olderKidAge);
+  let olderKidAge = pedroAge - sumKidsAge;
+  kidsAge.push(olderKidAge);
 
-  let olderKid = getMaxNumber(kidsAges);
+  let olderKid = getMaxNumber(kidsAge);
 
   return `O filho mais velho tem ${olderKid} anos.`;
 }

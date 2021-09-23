@@ -2,7 +2,7 @@
 
 05 - Encontre o filho mais velho
 
-Dada a idade de Pedro e a idade de três de seus filhos, escreva um algoritmo que irá receber esses dados para computar e retornar a idade do filho mais velho de Pedro.
+Dada a idade de Pedro e um array com a idade de três de seus filhos, escreva um algoritmo que irá receber esses dados para computar e retornar a idade do filho mais velho de Pedro.
 
 A saída deve ter o seguinte formato: 'O filho mais velho tem "X" anos.'.
 
@@ -11,9 +11,9 @@ Pedro é pai de 4 filhos que têm idades diferentes. Esse ano ele notou que a so
 
 */
 
-function findOldestSon(pedroAge, arrKidsAges){
+function findOldestSon(pedroAge, kidsAge){
   // Desenvolva seu código aqui.
-  return `O filho mais velho tem ${pedroAge - arrKidsAges.reduce((acc, cur) => acc + cur)} anos.`;
+  return // Retorne o resultado aqui
 }
 
 module.exports = findOldestSon;

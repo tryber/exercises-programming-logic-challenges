@@ -6,9 +6,9 @@ Escreva um algoritmo que recebe uma array de números inteiros, procure o menor 
 
 */
 
-function getMinNumber(arrIntegers) {
+function getMinNumber(numbers) {
   // Desenvolva seu código nessa função
-  return Math.min(...arrIntegers)
+  return // Retorne o resultado aqui
 }
 
 module.exports = getMinNumber;

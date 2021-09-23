@@ -8,10 +8,9 @@ Se encontrar o nome na lista retorne a seguinte mensagem: 'O nome está na lista
 
 */
 
-function findGuest(arrNames, guest){
+function findGuest(names, guest){
   // Desenvolva seu código nessa função
-  const check = arrNames.includes(guest);
-  return check ? 'O nome está na lista.' : 'O nome não está na lista.'
+  return // Retorne o resultado aqui
 }
 
 module.exports = findGuest;
