@@ -14,7 +14,6 @@ Se o valor recebido for igual a zero ou não for do tipo number, então retorne 
 
 function squareRoot(number){
   // Desenvolva seu código nessa função
-  return
 }
 
 module.exports = squareRoot;

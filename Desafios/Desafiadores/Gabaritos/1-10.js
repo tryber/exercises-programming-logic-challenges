@@ -28,7 +28,7 @@ function squareRoot(number) {
 }
 
 /*  03 - Array de notas musicais */
-function musicalNotes(arrNotes) {
+function musicalNotes(notes) {
   let firstAllDegrees = {
     Dó: "I",
     Ré: "II",
@@ -41,8 +41,8 @@ function musicalNotes(arrNotes) {
 
   let firstMusicDegrees = [];
 
-  for (let index = 0; index < arrNotes.length; index += 1) {
-    let thisNote = arrNotes[index];
+  for (let index = 0; index < notes.length; index += 1) {
+    let thisNote = notes[index];
     let thisDegree = firstAllDegrees[thisNote];
 
     firstMusicDegrees.push(thisDegree);
@@ -52,7 +52,7 @@ function musicalNotes(arrNotes) {
 }
 
 /*  04 - Array de notas musicais - 2 */
-function musicalNotes2(arrNotes) {
+function musicalNotes2(notes) {
   let allNotesDetails = {
     Dó: {
       degree: "I",
@@ -93,8 +93,8 @@ function musicalNotes2(arrNotes) {
 
   let secondMusicNotesDetails = [];
 
-  for (let index = 0; index < arrNotes.length; index += 1) {
-    let thisNote = arrNotes[index];
+  for (let index = 0; index < notes.length; index += 1) {
+    let thisNote = notes[index];
     let thisDetails = allNotesDetails[thisNote];
 
     secondMusicNotesDetails.push(thisDetails);
@@ -121,21 +121,21 @@ function magicWand(wizard, wand) {
 }
 
 /*  06 - Analise de preços da lista de compras */
-function averagedExpensive(productList) {
-  let maxPrice = productList[0].price;
+function productAnalysis(products) {
+  let maxPrice = products[0].price;
   let maxProduct = "";
 
   let total = 0;
 
-  for (let index = 0; index < productList.length; index += 1) {
-    total += productList[index].price;
-    if (productList[index].price > maxPrice) {
-      maxPrice = productList[index].price;
-      maxProduct = productList[index].name;
+  for (let index = 0; index < products.length; index += 1) {
+    total += products[index].price;
+    if (products[index].price > maxPrice) {
+      maxPrice = products[index].price;
+      maxProduct = products[index].name;
     }
   }
 
-  let averagePrice = (total / productList.length).toFixed(2);
+  let averagePrice = (total / products.length).toFixed(2);
 
   return `O produto mais caro é ${maxProduct} e custa: R$ ${maxPrice}, a média de preços dos produtos é de: R$${averagePrice}.`;
 }
@@ -193,10 +193,10 @@ function viewerTvShows(dataViewer) {
 }
 
 /*  10 - Nega Números */
-function negateNumbers(arrNumbers) {
+function negateNumbers(numbers) {
   let newArr = [];
-  for (let index = 0; index < arrNumbers.length; index++) {
-    newArr.push(arrNumbers[index] * -1);
+  for (let index = 0; index < numbers.length; index++) {
+    newArr.push(numbers[index] * -1);
   }
   return newArr;
 }
@@ -206,7 +206,7 @@ module.exports = {
   musicalNotes,
   musicalNotes2,
   magicWand,
-  averagedExpensive,
+  productAnalysis,
   averageTemperature,
   numberTies,
   viewerTvShows,

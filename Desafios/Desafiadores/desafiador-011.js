@@ -8,8 +8,8 @@ Relembrando, dada a escala natural de Dó, cada uma das 7 notas possui um grau r
 | I  | II | III | IV |  V  | VI | VII |
 
 Além disso, cada nota forma um acorde chamado tríade. A tríade é composta por uma sequência a partir dela com a "primeira" nota, a "terça" e a "quinta".
-Exemplos
 
+Exemplos:
 Tríade de Dó: Dó (a primeira), Mi (a terça), Sol (a quinta).
 Tríade de Ré: Ré (a primeira), Fá (a terça), Lá (a quinta).
 
@@ -34,9 +34,8 @@ Saída:
 
 */
 
-function musicalNotes3(arrNotes){
+function musicalNotes3(notes){
   // Desenvolva seu código nessa função
-  return
 }
 
 module.exports = musicalNotes3;

@@ -11,7 +11,6 @@ Saída: "A média anual de temperatura em graus Celsius é 30.05."
 
 function averageTemperature(anualRegister){
   // Desenvolva seu código nessa função
-  return
 }
 
 module.exports = averageTemperature;

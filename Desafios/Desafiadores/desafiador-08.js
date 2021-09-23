@@ -12,7 +12,6 @@ Escreva um algoritmo que recebe a quantidade de partidas jogadas e um objeto no 
 
 function numberTies(matches, scores){
   // Desenvolva seu código nessa função
-  return
 }
 
 module.exports = numberTies;

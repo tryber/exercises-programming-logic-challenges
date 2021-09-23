@@ -16,9 +16,8 @@ Saída: ['II', 'V', 'I']
 
  */
 
-function musicalNotes(arrNotes) {
+function musicalNotes(notes) {
   // Desenvolva seu código nessa função
-  return;
 }
 
 module.exports = musicalNotes;

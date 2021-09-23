@@ -16,7 +16,6 @@ Caso a pessoa não se enquadre nessas categorias acima, retorne a mensagem: "Nã
 
 function viewerTvShows(dataViewer){
   // Desenvolva seu código nessa função
-  return
 }
 
 module.exports = viewerTvShows;

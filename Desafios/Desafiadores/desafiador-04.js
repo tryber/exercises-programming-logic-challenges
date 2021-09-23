@@ -39,9 +39,8 @@ Saída:
 
 */
 
-function musicalNotes2(arrNotes){
+function musicalNotes2(notes){
   // Desenvolva seu código nessa função
-  return
 }
 
 module.exports = musicalNotes2;

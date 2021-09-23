@@ -7,6 +7,7 @@ Você foi a pessoa designada para escrever um novo sistema para Olivaras, o fabr
 Como se sabe, a varinha escolhe o(a) bruxo(a), então você deverá criar um algoritmo que recebe o nome da pessoa aspirante e nome da varinha a ser testada.
 
 Considere a seguinte tabela:
+
 |       Bruxo(a)           |               Varinha               |
 |                          |                                     |
 |    Harry Potter          |    Azevinho e Pena de Fênix         |
@@ -23,7 +24,6 @@ Desafio: faça usando apenas um único IF acompanhado por um único Else.
 
 function magicWand(wizard, wand){
   // Desenvolva seu código nessa função
-  return
 }
 
 module.exports = magicWand;

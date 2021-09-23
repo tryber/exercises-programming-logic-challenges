@@ -9,9 +9,8 @@ Saída: [-2, 3 ,-4 ]
 
 */
 
-function negateNumbers(arrNumbers){
+function negateNumbers(numbers){
   // Desenvolva seu código nessa função
-  return
 }
 
 module.exports = negateNumbers;

@@ -33,7 +33,6 @@ Saída: 'CPF válido'
 
 function cpfValidator(cpf){
   // Desenvolva seu código nessa função
-  return
 }
 
 module.exports = cpfValidator;

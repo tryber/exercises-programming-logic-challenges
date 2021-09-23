@@ -8,7 +8,6 @@
 
 function fatorial(number){
   // Desenvolva seu código nessa função
-  return
 }
 
 module.exports = fatorial;

@@ -2,7 +2,7 @@
 
 6 - Analise de preços da lista de compras
 
-Faça um algoritmo que irá receber uma lista de produtos e retornar uma string contendo:
+Faça um algoritmo que irá receber um array de produtos e retornar uma string contendo:
 
 O produto com maior preço.
 O preço do produto.
@@ -10,8 +10,7 @@ A média do preços dos produtos.
 
 Por exemplo:
 
-Entrada:
-[
+Entrada: [
   { name: 'lápis', price: 2 },
   { name: 'borracha', price: 4 },
   { name: 'caneta', price: 5 },
@@ -21,15 +20,14 @@ Entrada:
   { name: 'mochila', price: 33 },
   { name: 'fone de ouvido', price: 57 },
   { name: 'mousepad', price: 35 },
-];
-Saída:
-O produto mais caro é teclado gamer e custa: R$ 180, a média de preços dos produtos é de: R$36.11.
+]
+Saída: "O produto mais caro é teclado gamer e custa: R$ 180, a média de preços dos produtos é de: R$36.11."
 
 */
 
-function averagedExpensive(productList){ // corrigir nome
+function productAnalysis(products){ // corrigir nome
   // Desenvolva seu código nessa função
-  return
 }
 
-module.exports = averagedExpensive;
+module.exports = productAnalysis;
+
