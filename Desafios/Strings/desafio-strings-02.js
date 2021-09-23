@@ -12,7 +12,6 @@ Saída; 1
 
 function converteType(string) {
   // Desenvolva seu código nessa função
-  return +string;
 }
 
 module.exports = converteType;

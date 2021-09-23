@@ -2,14 +2,15 @@
 
 03 - Apresentação pessoal
 
-Escreva um algoritmo que recebe seu nome, último nome e idade e exibe estas informações no seguinte formato:
-"Meu nome é 'nome' 'sobrenome' e tenho "x" anos de vida."
+Escreva um algoritmo que recebe o primeiro e o último nome de uma pessoa mais a idade, e retorne uma mensagem seguindo o exemplo:
+
+Entrada: "João","Carvalho', 25
+Saída: "Meu nome é João Carvalho e tenho 25 anos de vida1"
 
 */
 
 function personalPresentation(firstName, lastName, age) {
   // Desenvolva seu código nessa função
-  return `Meu nome é ${firstName} ${lastName} e tenho ${age} anos de vida.`;
 }
 
 module.exports = personalPresentation;

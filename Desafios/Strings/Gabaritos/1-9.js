@@ -38,7 +38,11 @@ function firstLastLetter(word) {
   let lastLetter = word.substr(-1);
 
   return (
-    "A primeira letra é: " + firstLetter + " e a última letra é: " + lastLetter+"."
+    "A primeira letra é: " +
+    firstLetter +
+    " e a última letra é: " +
+    lastLetter +
+    "."
   );
 }
 

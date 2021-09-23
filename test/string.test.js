@@ -2,18 +2,6 @@ const {
   stringMock: { test9, resp9 },
 } = require("../test/mocks");
 /* Gabaritos */
-/* const {
-  reverseNames,
-  converteType,
-  personalPresentation,
-  mathOperations,
-  firstLastLetter,
-  dogName,
-  includeA,
-  countLetters,
-  encodeMessage, 
-} = require("../Desafios/Strings/Gabaritos/1-9"); */
-
 const {
   reverseNames,
   converteType,
@@ -24,116 +12,123 @@ const {
   includeA,
   countLetters,
   encodeMessage,
-} = require("../Desafios/Strings");
+} = require("../Desafios/Strings/Gabaritos/1-9");
+
+/* const {
+  reverseNames,
+  converteType,
+  personalPresentation,
+  mathOperations,
+  firstLastLetter,
+  dogName,
+  includeA,
+  countLetters,
+  encodeMessage,
+} = require("../Desafios/Strings"); */
 
 describe("Desafios de Strings.", () => {
-  describe(" 01 - Testando a Função reverseNames .", () => {
-    it("Verifica o retorno dos nomes invertidos.", () => {
-      expect(reverseNames("Márcio Daniel")).toEqual("Daniel Márcio");
+  describe("01 - Testando a Função reverseNames .", () => {
+    it("Ao passar o argumento 'Caio Lewis', deve retornar a mensagem: 'Lewis Caio'.", () => {
+      expect(reverseNames("Caio Lewis")).toBe("Lewis Caio");
     });
   });
 
-  describe(" 02 - Testando a Função converteType.", () => {
-    it(".Verifica o retorno da transformação de string para number.", () => {
-      expect(converteType("1")).toEqual(1);
+  describe("02 - Testando a Função converteType.", () => {
+    it("Ao passar o argumento '1', deve retornar a mensagem: 1.", () => {
+      expect(converteType("1")).toBe(1);
     });
   });
 
-  describe(" 03 - Testando a Função personalPresentation.", () => {
-    it("Verifica o retorno para apresentação.", () => {
-      expect(personalPresentation("Márcio", "Daniel", 35)).toEqual(
+  describe("03 - Testando a Função personalPresentation.", () => {
+    it("Ao passar o argumento 'Márcio Daniel', deve retornar a mensagem:\n 'Meu nome é Márcio Daniel e tenho 35 anos de vida.'.", () => {
+      expect(personalPresentation("Márcio", "Daniel", 35)).toBe(
         "Meu nome é Márcio Daniel e tenho 35 anos de vida."
       );
     });
   });
 
-  describe(" 04 - Testando a Função mathOperations.", () => {
-    it("Verifica o retorno para as 4 operações básicas matemáticas.", () => {
-      expect(mathOperations(1, 1)).toEqual(
+  describe("04 - Testando a Função mathOperations.", () => {
+    it("Ao passar os argumento 1 e 1, deve retornar a mensagem:\n '1 + 1 = 2. 1 - 1 = 0. 1 x 1 = 1. 1 / 1 = 1.'.", () => {
+      expect(mathOperations(1, 1)).toBe(
         "1 + 1 = 2. 1 - 1 = 0. 1 x 1 = 1. 1 / 1 = 1."
       );
     });
   });
 
-  describe(" 05 - Testando a Função firstLastLetter.", () => {
-    it("Verifica o retorno da primeira e última letras de uma palavra.", () => {
-      expect(firstLastLetter("Xablau")).toEqual(
-        "A primeira letra é: X e a última letra é: u."
+  describe("05 - Testando a Função firstLastLetter.", () => {
+    it("Ao passar o argumento 'Junior', deve retornar a mensagem:\n 'A primeira letra é: J e a última letra é: r.'.", () => {
+      expect(firstLastLetter("Junior")).toBe(
+        "A primeira letra é: J e a última letra é: r."
       );
     });
   });
 
-  describe(" 06 - Testando a Função dogName.", () => {
-    it("Verifica o retorno do nome do cachorrinho =)....", () => {
-      expect(dogName("Chips", "pudim")).toEqual(
-        "O cachorrinho de Joana vai se chamar: Chidim"
+  describe("06 - Testando a Função dogName.", () => {
+    it("Ao passar os argumento 'Chips' e 'Brigadeiro', deve retornar a mensagem:\n 'O cachorrinho de Joana vai se chamar: Chiiro'.", () => {
+      expect(dogName("Chips", "Brigadeiro")).toBe(
+        "O cachorrinho de Joana vai se chamar: Chiiro"
       );
     });
   });
 
-  describe(" 07 - Testando a Função includeA.", () => {
-    it("Verifica o retorno quando possui 'a' apenas no começo e no fim.", () => {
-      expect(includeA("Aninha")).toEqual(
+  describe("07 - Testando a Função includeA.", () => {
+    it("Ao passar o argumento 'Aninha', deve retornar a mensagem:\n 'A palavra Aninha possui a letra 'a', porém ela não está nem no início nem no fim.'.", () => {
+      expect(includeA("Aninha")).toBe(
         "A palavra Aninha possui a letra 'a', porém ela não está nem no início nem no fim."
       );
     });
-    it("Verifica o retorno quando possui 'a' apenas no começo e no fim.", () => {
-      expect(includeA("ana")).toEqual(
+    it("Ao passar o argumento 'ana', deve retornar a mensagem:\n 'A palavra ana possui a letra 'a', porém ela não está nem no início nem no fim.'.", () => {
+      expect(includeA("ana")).toBe(
         "A palavra ana possui a letra 'a', porém ela não está nem no início nem no fim."
       );
     });
-    it("Verifica o retorno quando possui 'a' apenas como primeira letra.", () => {
-      expect(includeA("Amém")).toEqual(
+    it("Ao passar o argumento 'Amém', deve retornar a mensagem:\n 'A palavra Amém possui a letra 'a' apenas no início.'.", () => {
+      expect(includeA("Amém")).toBe(
         "A palavra Amém possui a letra 'a' apenas no início."
       );
     });
-    it("Verifica o retorno quando possui 'a' apenas como última letra.", () => {
-      expect(includeA("Lua")).toEqual(
+    it("Ao passar o argumento 'Lua', deve retornar a mensagem:\n 'A palavra Lua possui a letra 'a' apenas no fim'.", () => {
+      expect(includeA("Lua")).toBe(
         "A palavra Lua possui a letra 'a' apenas no fim."
       );
     });
-    it("Verifica o retorno quando possui não possui a letra 'a'.", () => {
-      expect(includeA("esquivo")).toEqual(
-        "A palavra esquivo não contém a letra 'a'."
+    it("Ao passar o argumento 'Esquivo', deve retornar a mensagem:\n 'A palavra esquivo não contém a letra 'a'.'.", () => {
+      expect(includeA("Esquivo")).toBe(
+        "A palavra Esquivo não contém a letra 'a'."
       );
     });
   });
 
-  describe(" 08 - Testando a Função countLetters.", () => {
-    it("Verifica o retorno para a palavra Abacate.", () => {
-      expect(countLetters("Abacate", "a")).toEqual(3);
+  describe("08 - Testando a Função countLetters.", () => {
+    it("Ao passar o argumento 'Abacate', deve retornar: 3.", () => {
+      expect(countLetters("Abacate", "a")).toBe(3);
     });
-    it("Verifica o retorno para a frase 'Ando devagar porque já tive pressa' .", () => {
-      expect(countLetters("Ando de vagar porque já tive pressa", "a")).toEqual(
-        5
-      );
+    it("Ao passar o argumento 'Ando de vagar porque já tive pressa', deve retornar: 5.", () => {
+      expect(countLetters("Ando de vagar porque já tive pressa", "a")).toBe(5);
     });
-    it("Verifica o retorno para string 'àáäâã' .", () => {
-      expect(countLetters("àáäâã", "a")).toEqual(5);
+    it("Ao passar o argumento 'àáäâã', deve retornar: 5.", () => {
+      expect(countLetters("àáäâã", "a")).toBe(5);
     });
-    it("Verifica o retorno para string 'àáäâã' .", () => {
-      expect(countLetters("àáäâã", "a")).toEqual(5);
+    it("Ao passar o argumento 'èéëê', deve retornar: 4 ''.", () => {
+      expect(countLetters("èéëê", "e")).toBe(4);
     });
-    it("Verifica o retorno para string 'èéëê' .", () => {
-      expect(countLetters("èéëê", "e")).toEqual(4);
+    it("Ao passar o argumento 'ìíïî', deve retornar: 4.", () => {
+      expect(countLetters("ìíïî", "i")).toBe(4);
     });
-    it("Verifica o retorno para string 'àáäâã' .", () => {
-      expect(countLetters("ìíïî", "i")).toEqual(4);
+    it("Ao passar o argumento 'òóöô', deve retornar: 4.", () => {
+      expect(countLetters("òóöô", "o")).toBe(4);
     });
-    it("Verifica o retorno para string 'àáäâã' .", () => {
-      expect(countLetters("òóöô", "o")).toEqual(4);
-    });
-    it("Verifica o retorno para string 'ùúüû' .", () => {
-      expect(countLetters("ùúüû", "u")).toEqual(4);
+    it("Ao passar o argumento 'ùúüû', deve retornar: 4.", () => {
+      expect(countLetters("ùúüû", "u")).toBe(4);
     });
   });
 
-  describe(" 09- Testando a Função encodeMessage.", () => {
-    it("Verifica o retorno para a mensagem aeiou.", () => {
-      expect(encodeMessage("aeiou")).toEqual("5b9p1");
+  describe("09- Testando a Função encodeMessage.", () => {
+    it("Ao passar o argumento 'aeiou', deve retornar a mensagem: '5b9p1'.", () => {
+      expect(encodeMessage("aeiou")).toBe("5b9p1");
     });
-    it("Verifica o retorno para um trecho de música.", () => {
-      expect(encodeMessage(test9)).toEqual(resp9);
+    it("Verifica o retorno ao passar o trecho de uma música.", () => {
+      expect(encodeMessage(test9)).toBe(resp9);
     });
   });
 });
