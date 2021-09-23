@@ -168,8 +168,8 @@ function viewerTvShows(dataViewer) {
 
   let message = {
     ufc: "UFC",
-    simpsons: "The Simpsons",
-    madagascar: "The Penguins of Madagascar",
+    simpsons: "The Simpsons.",
+    madagascar: "The Penguins of Madagascar.",
     fishing: "Sport Fishing.",
     notFound: "Não foi possível dizer o que ela deve assistir.",
   };
