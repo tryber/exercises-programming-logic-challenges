@@ -34,7 +34,7 @@ function studentSituation(studentNote) {
 }
 
 /*  03 - Mostre a classe do aventureiro */
-function foundAdventurous(adventurous) {
+function findAdventurous(adventurous) {
   switch (adventurous) {
     case "Tunico":
       return "Mestre dos Magos";
@@ -55,7 +55,7 @@ function foundAdventurous(adventurous) {
       return "Clérigo";
 
     default:
-      return "Não foi possível encontrar um aventureiro e nome.";
+      return "Aventureiro não encontrado";
   }
 }
 
@@ -114,7 +114,7 @@ function legalAge(age) {
 }
 
 /* 08 - Descubra a idade mínima */
-function foundYoungerPerson(marinaAge, silviaAge, izaAge) {
+function findYoungerPerson(marinaAge, silviaAge, izaAge) {
   if (marinaAge < silviaAge && marinaAge < izaAge) {
     return `Marina é a mais jovem e possui ${marinaAge} anos de idade.`;
   } else if (silviaAge < marinaAge && silviaAge < izaAge) {
@@ -125,8 +125,8 @@ function foundYoungerPerson(marinaAge, silviaAge, izaAge) {
 }
 
 /* 09 - Aprovação nos projetos */
-function evaluateProject(dataForAnalysis) {
-  let { rec, reqs, totalReqs, completed } = dataForAnalysis;
+function evaluateProject(obj) {
+  let { rec, reqs, totalReqs, completed } = obj;
 
   let approved = {
     notRec: 0.8,
@@ -150,23 +150,23 @@ function evaluateProject(dataForAnalysis) {
 }
 
 /* 10 - Entrega do drone */
-/* function droneDelivery(heightBox, widthBox, depthBox, heightWindow, widthWindow, depthWindow) {
+function droneDelivery(heightBox, widthBox, depthBox, heightWindow, widthWindow, depthWindow) {
   if ((heightBox < heightWindow && widthBox < widthWindow) || depthBox < depthWindow) {
     return `É possível realizar a entrega.`;
   } else {
     return `Não é possível realizar a entrega.`;
   }
 }
- */
+
 module.exports = {
   optionsMenu,
   studentSituation,
-  foundAdventurous,
+  findAdventurous,
   polyglotDinosaur,
   robotFriend,
   basalMetabolicRate,
   legalAge,
-  foundYoungerPerson,
+  findYoungerPerson,
   evaluateProject,
-  /* droneDelivery, */
+  droneDelivery,  
 }

@@ -10,17 +10,16 @@ Diferença | Ganhador(a) | Perdedor(a)
  <= 200       +20            -20
 
 Escreva um algoritmo que recebe:
-- A pontuação das pessoas que jogam (antes da partida): número maior que zero
-- A pessoa vencedora: 1 ou 2
+* A pontuação das pessoas que jogam (antes da partida): número maior que zero;
+* A pessoa vencedora: 1 ou 2.
 
-E retorne a pontuação de cada pessoa jogadora (após a partida) no seguinte formato:
-Jogador(a) 1: 1500 pontos; Jogador(a) 2: 1600 pontos.
+E retorne uma mensagem com pontuação de cada enxadrista (após a partida) no seguinte formato: 
+"Enxadrista1: 1500 pontos. Enxadrista2: 1600 pontos."
 
 */
 
-function chessPoint(ratingPlayOne,ratingPlayTwo){
+function chessRating(ratingPlayOne,ratingPlayTwo){
   // Desenvolva seu código nessa função
-  return
 }
 
-module.exports = chessPoint;
+module.exports = chessRating;

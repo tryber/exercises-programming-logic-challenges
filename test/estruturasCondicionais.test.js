@@ -1,355 +1,436 @@
+/*
+ É importada nesse arquivo tanto as funções do gabarito quanto dos desafios 
+*/
+/* Gabaritos */
 const {
   optionsMenu,
   studentSituation,
-  foundAdventurous,
+  findAdventurous,
   polyglotDinosaur,
   robotFriend,
   basalMetabolicRate,
   legalAge,
-  foundYoungerPerson,
-  reviewProjectApproval,
-/*   droneDelivery, */
+  findYoungerPerson,
+  evaluateProject,
+  /*   droneDelivery, */
 } = require("../Desafios/Estruturas Condicionais/Gabaritos/1-10");
 
 const {
   triVowels,
   IMC,
-  chessPoint,
+  chessRating,
   ATM,
   rockPaperScissors,
   sortAgeAsc,
   oddOreEven,
-  cardGames,
+  cardsGame,
 } = require("../Desafios/Estruturas Condicionais/Gabaritos/11-18");
 
-describe("Desafios de Estrutura Condicionais.", () => {
-  describe(" 01 - Testando a Função optionsMenu.", () => {
-    it("Verifica o retorno correto para o argumento '1'.", () => {
-      expect(optionsMenu(1)).toEqual("1 - Trybe Lanche Feliz");
+/* Exercícios */
+/* const {
+  triVowels,
+  IMC,
+  chessRating,
+  ATM,
+  rockPaperScissors,
+  sortAgeAsc,
+  oddOreEven,
+  cardsGame,
+  optionsMenu,
+  studentSituation,
+  findAdventurous,
+  polyglotDinosaur,
+  robotFriend,
+  basalMetabolicRate,
+  legalAge,
+  findYoungerPerson,
+  evaluateProject,
+  droneDelivery,
+  triVowels,
+  IMC,
+  chessRating,
+  ATM,
+  rockPaperScissors,
+  sortAgeAsc,
+  oddOreEven,
+  cardsGame,
+} = require("../Desafios/Estruturas Condicionais") */
+
+describe("Desafios de Estruturas Condicionais.", () => {
+  describe("01 - Testando a Função optionsMenu.", () => {
+    it("Ao passar o argumento 1, deve retornar: '1 - Trybe Lanche Feliz'", () => {
+      expect(optionsMenu(1)).toBe("1 - Trybe Lanche Feliz");
     });
-    it("Verifica o retorno correto para o argumento '2'.", () => {
-      expect(optionsMenu(2)).toEqual("2 - McTrybe");
+    it("Ao passar o argumento 2, deve retornar: '2 - McTrybe'", () => {
+      expect(optionsMenu(2)).toBe("2 - McTrybe");
     });
-    it("Verifica o retorno correto para o argumento '3'.", () => {
-      expect(optionsMenu(3)).toEqual("3 - TrybeWooper");
+    it("Ao passar o argumento 3, deve retornar: '3 - TrybeWooper'", () => {
+      expect(optionsMenu(3)).toBe("3 - TrybeWooper");
     });
-    it("Verifica o retorno correto para o argumento '4'.", () => {
-      expect(optionsMenu(4)).toEqual("4 - X-Trybe");
+    it("Ao passar o argumento 4, deve retornar: '4 - X-Trybe'", () => {
+      expect(optionsMenu(4)).toBe("4 - X-Trybe");
     });
-    it("Verifica o retorno correto para o argumento '5''.", () => {
-      expect(optionsMenu(5)).toEqual("5 - Triplo Trybe com JS");
+    it("Ao passar o argumento 5, deve retornar: '5 - Triplo Trybe com JS'", () => {
+      expect(optionsMenu(5)).toBe("5 - Triplo Trybe com JS");
     });
-    it("Verifica o retorno padrão correto.", () => {
-      expect(optionsMenu(6)).toEqual("Não temos esta opção ainda :(");
+    it("Ao passar o argumento 6, deve retornar: 'Não temos esta opção ainda :('", () => {
+      expect(optionsMenu(6)).toBe("Não temos esta opção ainda :(");
     });
   });
 
-  describe(" 02 - Testando a Função studentSituation.", () => {
-    it("Verifica o retorno correto para o intervalo 'menor igual a 10'.", () => {
-      expect(studentSituation(10)).toEqual("PÉSSIMO");
+  describe("02 - Testando a Função studentSituation.", () => {
+    it("Ao passar o argumento 10, deve retornar: 'PÉSSIMO'", () => {
+      expect(studentSituation(10)).toBe("PÉSSIMO");
     });
-    it("Verifica o retorno correto para o intervalo 'igual ou maior que 11 e menor igual a 30'.", () => {
-      expect(studentSituation(30)).toEqual("RUIM");
+    it("Ao passar o argumento 10, deve retornar: 'RUIM'", () => {
+      expect(studentSituation(30)).toBe("RUIM");
     });
-    it("Verifica o retorno correto para o intervalo 'igual ou maior que 31 e menor igual a 50'.", () => {
-      expect(studentSituation(50)).toEqual("REGULAR");
+    it("Ao passar o argumento 50, deve retornar: 'REGULAR'", () => {
+      expect(studentSituation(50)).toBe("REGULAR");
     });
-    it("Verifica o retorno correto para o intervalo 'igual ou maior que 51 e menor igual a 70'.", () => {
-      expect(studentSituation(70)).toEqual("MEDIANO");
+    it("Ao passar o argumento 70, deve retornar: 'MEDIANO'", () => {
+      expect(studentSituation(70)).toBe("MEDIANO");
     });
-    it("Verifica o retorno correto para o intervalo 'igual ou maior que 71 e menor igual a 90'.", () => {
-      expect(studentSituation(90)).toEqual("ÓTIMO");
+    it("Ao passar o argumento 90, deve retornar: 'ÓTIMO'", () => {
+      expect(studentSituation(90)).toBe("ÓTIMO");
     });
-    it("Verifica o retorno correto para o intervalo 'maior igual a 90'.", () => {
-      expect(studentSituation(91)).toEqual("EXCELENTE");
+    it("Ao passar o argumento 91, deve retornar: 'EXCELENTE'", () => {
+      expect(studentSituation(91)).toBe("EXCELENTE");
     });
   });
 
-  describe(" 03 - Testando a Função foundAdventurous.", () => {
-    it("Verifica o retorno correto para o argumento Tunico.", () => {
-      expect(foundAdventurous("Tunico")).toEqual("Mestre dos Magos");
+  describe("03 - Testando a Função findAdventurous.", () => {
+    it("Ao passar o argumento 'Tunico', deve retornar: 'Mestre dos Magos'", () => {
+      expect(findAdventurous("Tunico")).toBe("Mestre dos Magos");
     });
-    it("Verifica o retorno correto para o argumento Cremoso.", () => {
-      expect(foundAdventurous("Cremoso")).toEqual("Cavaleiro Negro");
+    it("Ao passar o argumento 'Cremoso', deve retornar: 'Cavaleiro Negro'", () => {
+      expect(findAdventurous("Cremoso")).toBe("Cavaleiro Negro");
     });
-    it("Verifica o retorno correto para o argumento Gordinho.", () => {
-      expect(foundAdventurous("Gordinho")).toEqual("Pirata");
+    it("Ao passar o argumento 'Gordinho', deve retornar: 'Pirata'", () => {
+      expect(findAdventurous("Gordinho")).toBe("Pirata");
     });
-    it("Verifica o retorno correto para o argumento Lobo Solitário.", () => {
-      expect(foundAdventurous("Lobo Solitário")).toEqual("Samurai");
+    it("Ao passar o argumento 'Lobo Solitário', deve retornar: 'Samurai'", () => {
+      expect(findAdventurous("Lobo Solitário")).toBe("Samurai");
     });
-    it("Verifica o retorno correto para o argumento Ousado.", () => {
-      expect(foundAdventurous("Ousado")).toEqual("Mago");
+    it("Ao passar o argumento Ousado, deve retornar: 'Mago'", () => {
+      expect(findAdventurous("Ousado")).toBe("Mago");
     });
-    it("Verifica o retorno correto para o argumento Anjo Loiro.", () => {
-      expect(foundAdventurous("Anjo Loiro")).toEqual("Clérigo");
+    it("Ao passar o argumento 'Anjo Loiro', deve retornar: 'Clérigo'", () => {
+      expect(findAdventurous("Anjo Loiro")).toBe("Clérigo");
     });
-    it("Verifica o retorno padrão correto.", () => {
-      expect(foundAdventurous("Xablau")).toEqual(
-        "Não foi possível encontrar um aventureiro e nome."
+    it("Ao passar um argumento incorreto, deve retornar: 'Aventureiro não encontrado'", () => {
+      expect(findAdventurous("Xablau")).toBe(
+        "Aventureiro não encontrado"
       );
     });
   });
 
-  describe(" 04 - Testando a Função polyglotDinosaur polyglotDinosaur.", () => {
-    it("Verifica o retorno correto para o argumento 'esquerda'.", () => {
-      expect(polyglotDinosaur("esquerda")).toEqual("english");
+  describe("04 - Testando a Função polyglotDinosaur.", () => {
+    it("Ao passar o argumento 'esquerda', deve retornar: 'english'", () => {
+      expect(polyglotDinosaur("esquerda")).toBe("english");
     });
-    it("Verifica o retorno correto para o argumento 'direita'.", () => {
-      expect(polyglotDinosaur("direita")).toEqual("français");
+    it("Ao passar o argumento 'direita', deve retornar: 'français'", () => {
+      expect(polyglotDinosaur("direita")).toBe("français");
     });
-    it("Verifica o retorno correto para o argumento 'nenhuma''.", () => {
-      expect(polyglotDinosaur("nenhuma")).toEqual("português");
+    it("Ao passar o argumento 'nenhuma', deve retornar: 'português'", () => {
+      expect(polyglotDinosaur("nenhuma")).toBe("português");
     });
-    it("Verifica o retorno correto para o argumento 'as duas'.", () => {
-      expect(polyglotDinosaur("as duas")).toEqual("Ai eu caiu, né!!");
+    it("Ao passar o argumento 'as duas', deve retornar: 'Ai eu caiu, né!!'", () => {
+      expect(polyglotDinosaur("as duas")).toBe("Ai eu caiu, né!!");
     });
-    it("Verifica o retorno padrão correto.", () => {
-      expect(polyglotDinosaur("Xablau")).toEqual("Comando desconhecido.");
+    it("Ao passar o argumento 'Xablau', deve retornar: 'Comando desconhecido'", () => {
+      expect(polyglotDinosaur("Xablau")).toBe("Comando desconhecido.");
     });
   });
 
-  describe(" 05 - Testando a Função robotFriend.", () => {
-    it("Verifica o retorno do comando efetuado apenas por 'mon'", () => {
-      expect(robotFriend(true, false, false, false, false)).toEqual("Things I do for love...");
+  describe("05 - Testando a Função robotFriend.", () => {
+    it(`Ao passar os argumento true, false, false, false, false, deve retornar: 
+         'Things I do for love...'.`, () => {
+      expect(robotFriend(true, false, false, false, false)).toBe(
+        "Things I do for love..."
+      );
     });
-    it("Verifica o retorno do comando efetuado apenas por 'ded'", () => {
-      expect(robotFriend(false, true, false, false, false)).toEqual("Things I do for love...");
+    it(`Ao passar os argumentos false, true, false, false, false, deve retornar: 
+         'Things I do for love...'.`, () => {
+      expect(robotFriend(false, true, false, false, false)).toBe(
+        "Things I do for love..."
+      );
     });
-    it("Verifica o retorno do comando efetuado apenas por 'me'", () => {
-      expect(robotFriend(false, false, true, false, false)).toEqual("Things I do for love...");
+    it(`Ao passar os argumentos false, false, true, false, false, deve retornar: 
+         'Things I do for love...'.`, () => {
+      expect(robotFriend(false, false, true, false, false)).toBe(
+        "Things I do for love..."
+      );
     });
-    it("Verifica o retorno do comando efetuado apenas por 'brother' ", () => {
-      expect(robotFriend(false, false, false, true, false)).toEqual("Not today.");
+    it(`Ao passar od argumentos false, false, false, true, false, deve retornar: 
+         'Not today.'.`, () => {
+      expect(robotFriend(false, false, false, true, false)).toBe("Not today.");
     });
-    it("Verifica o retorno do comando efetuado apenas por 'sister' ", () => {
-      expect(robotFriend(false, false, false, false, true)).toEqual("Not today.");
+    it(`Ao passar os argumentos false, false, false, false, true, deve retornar: 
+         'Not today.'.`, () => {
+      expect(robotFriend(false, false, false, false, true)).toBe("Not today.");
     });
-    it("Verifica o retorno do comando efetuado apenas por 'sister' e 'brother  ", () => {
-      expect(robotFriend(false, false, false, true, true)).toEqual("Things I do for love...");
-    });   
+    it(`Ao passar os argumentos false, false, false, true, true, deve retornar: 
+         'Things I do for love...'.`, () => {
+      expect(robotFriend(false, false, false, true, true)).toBe(
+        "Things I do for love..."
+      );
+    });
   });
 
-  describe(" 06 - Testando a Função basalMetabolicRate.", () => {
-    it("Verifica o retorno com o cálculo correto do BMR.", () => {
-      expect(basalMetabolicRate(35, "M", 78, 175)).toEqual(
+  describe("06 - Testando a Função basalMetabolicRate.", () => {
+    it(`Ao passar os argumentos 35, 'M', 78, 175, deve retornar: 
+         'A taxa metabólica basal é: 1705.77 Kcal'.`, () => {
+      expect(basalMetabolicRate(35, "M", 78, 175)).toBe(
         "A taxa metabólica basal é: 1705.77 Kcal."
       );
     });
-    it("Verifica o retorno com o cálculo correto do BMR.", () => {
-      expect(basalMetabolicRate(18, "F", 61, 167)).toEqual(
+    it(`Ao passar os argumentos 18, 'F', 61, 167, deve retornar: 
+         'A taxa metabólica basal é: 1403.58 Kcal.'.`, () => {
+      expect(basalMetabolicRate(18, "F", 61, 167)).toBe(
         "A taxa metabólica basal é: 1403.58 Kcal."
       );
     });
   });
 
-  describe(" 07 - Testando a Função legalAge.", () => {
-    it("Verifica o retorno correto para menor de idade.", () => {
-      expect(legalAge(17)).toEqual("A pessoa é menor de idade.");
+  describe("07 - Testando a Função legalAge.", () => {
+    it("Ao passar o argumento 17, deve retornar: 'A pessoa é menor de idade'", () => {
+      expect(legalAge(17)).toBe("A pessoa é menor de idade.");
     });
-    it("Verifica o retorno para maior de idade.", () => {
-      expect(legalAge(18)).toEqual("A pessoa é maior de idade.");
+    it("Ao passar o argumento 18, deve retornar: 'A pessoa é maior de idade'", () => {
+      expect(legalAge(18)).toBe("A pessoa é maior de idade.");
     });
   });
 
-  describe(" 08- Testando a Função foundYoungerPerson.", () => {
-    it("Verifica o retorno correto sendo Marina a mais velha.", () => {
-      expect(foundYoungerPerson(18, 19, 20)).toEqual(
+  describe("08 - Testando a Função findYoungerPerson", () => {
+    it(`Ao passar os argumentos 18, 19, 20, deve retornar: 
+         'Marina é a mais jovem e possui 18 anos de idade'.`, () => {
+      expect(findYoungerPerson(18, 19, 20)).toBe(
         "Marina é a mais jovem e possui 18 anos de idade."
       );
     });
-    it("Verifica o retorno correto sendo Silvia a mais velha.", () => {
-      expect(foundYoungerPerson(20, 18, 19)).toEqual(
+    it(`Ao passar os argumentos 20, 18, 19, deve retornar: 
+         'Silvia é a mais jovem e possui 18 anos de idade.'.`, () => {
+      expect(findYoungerPerson(20, 18, 19)).toBe(
         "Silvia é a mais jovem e possui 18 anos de idade."
       );
     });
-    it("Verifica o retorno correto sendo Iza a mais velha.", () => {
-      expect(foundYoungerPerson(20, 19, 18)).toEqual(
+    it(`Ao passar os argumentos 20, 19, 18, deve retornar: 
+        'Iza é a mais jovem e possui 18 anos de idade'.`, () => {
+      expect(findYoungerPerson(20, 19, 18)).toBe(
         "Iza é a mais jovem e possui 18 anos de idade."
       );
     });
   });
 
-  describe(" 09- Testando a Função reviewProjectApproval.", () => {
-    it("Verifica o retorno correto para aprovação sem recuperação.", () => {
+  describe("09- Testando a Função evaluateProject.", () => {
+    it(`Ao passar o argumento {
+      rec: false,
+      reqs: 100,
+      totalReqs: 120,
+      completed: 80,
+    }, 
+    deve retornar: 'Parabéns, você está aprovado(a)!'.`, () => {
       expect(
-        reviewProjectApproval({
+        evaluateProject({
           rec: false,
           reqs: 100,
           totalReqs: 120,
           completed: 80,
         })
-      ).toEqual("Parabéns, você está aprovado(a)!");
+      ).toBe("Parabéns, você está aprovado(a)!");
     });
-    it("Verifica o retorno correto para NÃO aprovação sem recuperação.", () => {
+    it(`Ao passar o argumento {
+      rec: false,
+      reqs: 100,
+      totalReqs: 120,
+      completed: 79,
+    }, deve retornar: 'Você ainda precisa entregar mais requisitos ;)'.`, () => {
       expect(
-        reviewProjectApproval({
+        evaluateProject({
           rec: false,
           reqs: 100,
           totalReqs: 120,
           completed: 79,
         })
-      ).toEqual("Você ainda precisa entregar mais requisitos ;)");
+      ).toBe("Você ainda precisa entregar mais requisitos ;)");
     });
-    it("Verifica o retorno correto para aprovação em recuperação.", () => {
+    it(`Ao passar o argumento {
+      rec: true,
+      reqs: 80,
+      totalReqs: 100,
+      completed: 90,
+    }, deve retornar: 'Parabéns, você está aprovado(a)!'.`, () => {
       expect(
-        reviewProjectApproval({
+        evaluateProject({
           rec: true,
           reqs: 80,
           totalReqs: 100,
           completed: 90,
         })
-      ).toEqual("Parabéns, você está aprovado(a)!");
+      ).toBe("Parabéns, você está aprovado(a)!");
     });
-    it("Verifica o retorno correto para NÃO aprovação em recuperação.", () => {
+    it(`Ao passar o argumento {
+      rec: true,
+      reqs: 80,
+      totalReqs: 100,
+      completed: 89,
+    }, deve retornar: 'Você ainda precisa entregar mais requisitos ;)'.`, () => {
       expect(
-        reviewProjectApproval({
+        evaluateProject({
           rec: true,
           reqs: 80,
           totalReqs: 100,
           completed: 89,
         })
-      ).toEqual("Você ainda precisa entregar mais requisitos ;)");
+      ).toBe("Você ainda precisa entregar mais requisitos ;)");
     });
   });
 
-/*   describe.only(" 10 - Testando a Função droneDelivery.", () => {
+  /*   describe.only(" 10 - Testando a Função droneDelivery.", () => {
     it("Verifica o retorno quando é possível a entrega.", () => {
-      expect(droneDelivery).toEqual("É possível realizar a entrega.");
+      expect(droneDelivery).toBe("É possível realizar a entrega.");
     });
     it("Verifica o retorno quando NÃO é possível a entrega.", () => {
-      expect(droneDelivery).toEqual("Não é possível realizar a entrega.");
+      expect(droneDelivery).toBe("Não é possível realizar a entrega.");
     });
   }); */
 
-  describe(" 11 - Testando a Função triVowels.", () => {
-    it("Verifica o retorno em caso de vogais.", () => {
-      expect(triVowels("Daniel")).toEqual("Daaaniiieeel");
+  describe("09- Testando a Função triVowels.", () => {
+    it("Ao passar o argumento Daniel, deve retornar: 'Daaaniiieeel'", () => {
+      expect(triVowels("Daniel")).toBe("Daaaniiieeel");
     });
-    it("Verifica o retorno em caso de não existir vogais.", () => {
-      expect(triVowels("JC")).toEqual("JC");
+    it("Ao passar o argumento JC, deve retornar: 'JC'", () => {
+      expect(triVowels("JC")).toBe("JC");
     });
   });
 
   describe(" 12 - Testando a Função IMC.", () => {
-    it("Verifica o retorno para o caso Magreza.", () => {
-      expect(IMC(50, 1.75)).toEqual(
+    it(`Ao passar os argumentos 50, 1.75, deve retornar: 
+         'Seu IMC é: 16.3 kg/m2. O Resultado foi: Magreza'.`, () => {
+      expect(IMC(50, 1.75)).toBe(
         "Seu IMC é: 16.3 kg/m2. O Resultado foi: Magreza"
       );
     });
-    it("Verifica o retorno para o caso Normal.", () => {
-      expect(IMC(70, 1.75)).toEqual(
+    it(`Ao passar os argumentos 70, 1.75, deve retornar: 
+         'Seu IMC é: 22.9 kg/m2. O Resultado foi: Normal'.`, () => {
+      expect(IMC(70, 1.75)).toBe(
         "Seu IMC é: 22.9 kg/m2. O Resultado foi: Normal"
       );
     });
-    it("Verifica o retorno para o caso Sobrepeso.", () => {
-      expect(IMC(90, 1.75)).toEqual(
+    it(`Ao passar o argumento 90, 1.75, deve retornar: 
+         'Seu IMC é: 29.4 kg/m2. O Resultado foi: Sobrepeso'.`, () => {
+      expect(IMC(90, 1.75)).toBe(
         "Seu IMC é: 29.4 kg/m2. O Resultado foi: Sobrepeso"
       );
     });
-    it("Verifica o retorno para o caso Obesidade.", () => {
-      expect(IMC(100, 1.75)).toEqual(
+    it(`Ao passar o argumento 100, 1.75, deve retornar: 
+         'Seu IMC é: 32.7 kg/m2. O Resultado foi: Obesidade'.`, () => {
+      expect(IMC(100, 1.75)).toBe(
         "Seu IMC é: 32.7 kg/m2. O Resultado foi: Obesidade"
       );
     });
   });
 
-  describe(" 13 - Testando a Função chessPoint.", () => {
-    it("Verifica o retorno para o caso de diferença maior que 200.", () => {
-      expect(chessPoint(1500, 2000)).toEqual(
-        "Jogador 1: 1510 pontos; Jogador 2: 1990 pontos."
+  describe(" 13 - Testando a Função chessRating.", () => {
+    it(`Ao passar os argumentos 1500 e 2000, deve retornar: 
+         'Enxadrista1: 1510 pontos. Enxadrista2: 1990 pontos.'.`, () => {
+      expect(chessRating(1500, 2000)).toBe(
+        "Enxadrista1: 1510 pontos. Enxadrista2: 1990 pontos."
       );
     });
-    it("Verifica o retorno para o caso de diferença menor do que 200.", () => {
-      expect(chessPoint(1500, 1600)).toEqual(
-        "Jogador 1: 1520 pontos; Jogador 2: 1580 pontos."
+    it(`Ao passar os argumentos 1500, 1600, deve retornar: 
+         'Enxadrista1: 1520 pontos. Enxadrista2: 1580 pontos.'.`, () => {
+      expect(chessRating(1500, 1600)).toBe(
+        "Enxadrista1: 1520 pontos. Enxadrista2: 1580 pontos."
       );
     });
   });
 
   describe(" 14 - Testando a Função ATM.", () => {
-    it("Verifica o retorno para argumento 'xablau' como valor de saque .", () => {
-      expect(ATM(10, "xablau")).toEqual("Valor de saldo inválido");
+    it("Ao passar os argumento 10 e xablau, deve retornar: 'Valor de saldo inválido'", () => {
+      expect(ATM(10, "xablau")).toBe("Valor de saldo inválido");
     });
-    it("Verifica o retorno para argumento 0 como valor de saque .", () => {
-      expect(ATM(10, 0)).toEqual("Valor de saldo inválido");
+    it("Ao passar os argumentos 10 e 0, deve retornar: 'Valor de saldo inválido'", () => {
+      expect(ATM(10, 0)).toBe("Valor de saldo inválido");
     });
-    it("Verifica o retorno em caso de saldo insuficiente.", () => {
-      expect(ATM(0, 10)).toEqual("Saldo insuficiente");
+    it("Ao passar os argumentos 0, 10, deve retornar: 'Saldo insuficiente'", () => {
+      expect(ATM(0, 10)).toBe("Saldo insuficiente");
     });
-    it("Verifica o retorno em caso do valor não encaixa na premissa de notas de 10 e 50.", () => {
-      expect(ATM(50, 32)).toEqual(
+    it(`Ao passar os argumentos 50, 32, deve retornar: 
+         'Valor inválido para as notas disponíveis: R$10, R$50, R$100'`, () => {
+      expect(ATM(50, 32)).toBe(
         "Valor inválido para as notas disponíveis: R$10, R$50, R$100"
       );
     });
-    it("Verifica o retorno em caso de saque efetuado com sucesso.", () => {
-      expect(ATM(20, 10)).toEqual("Saque efetuado! Novo saldo: R$10");
+    it("Ao passar os argumentos 20, 10 , deve retornar: 'Saque efetuado! Novo saldo: R$10'", () => {
+      expect(ATM(20, 10)).toBe("Saque efetuado! Novo saldo: R$10");
     });
   });
 
   describe(" 15 - Testando a Função rockPaperScissors.", () => {
-    it("Verifica caso de vitória do jogador 1 com paper 'papel'.", () => {
-      expect(rockPaperScissors("paper", "rock")).toEqual("Player 1 won");
+    it("Ao passar os argumentos 'paper' e 'rock', deve retornar: 'Player 1 won'", () => {
+      expect(rockPaperScissors("paper", "rock")).toBe("Player 1 won");
     });
-    it("Verifica caso de vitória do jogador 1 com rock 'pédra'.", () => {
-      expect(rockPaperScissors("rock", "scissors")).toEqual("Player 1 won");
+    it("Ao passar os argumentos 'rock' e 'scissors', deve retornar: 'Player 1 won'", () => {
+      expect(rockPaperScissors("rock", "scissors")).toBe("Player 1 won");
     });
-    it("Verifica caso de vitória do jogador 1 com scissors 'tesoura'.", () => {
-      expect(rockPaperScissors("scissors", "paper")).toEqual("Player 1 won");
+    it("Ao passar os argumentos 'scissors' e 'paper', deve retornar: 'Player 1 won'", () => {
+      expect(rockPaperScissors("scissors", "paper")).toBe("Player 1 won");
     });
-    it("Verifica casos de empate.", () => {
-      expect(rockPaperScissors("paper", "paper")).toEqual("A Ties");
+    it("Ao passar os argumentos 'paper' e 'paper', deve retornar: 'A Ties'", () => {
+      expect(rockPaperScissors('paper', 'paper')).toBe("A Ties");
     });
-    it("Verifica casos de vitória de jogador 2.", () => {
-      expect(rockPaperScissors("rock", "paper")).toEqual("Player 2 won");
+    it("Ao passar os argumentos 'rock', 'paper', deve retornar: 'Player 2 won'", () => {
+      expect(rockPaperScissors("rock", "paper")).toBe("Player 2 won");
     });
   });
 
   describe(" 16 - Testando a Função sortAgeAsc.", () => {
-    it("Verifica o retorno para ordem: Maria, Silvia e Iza.", () => {
-      expect(sortAgeAsc(18, 19, 20)).toEqual("18, 19, 20");
+    it("Ao passar os argumentos 18, 19 e 20 , deve retornar: '18, 19, 20'", () => {
+      expect(sortAgeAsc(18, 19, 20)).toBe("18, 19, 20");
     });
-    it("Verifica o retorno para ordem: Iza, Maria, Silvia.", () => {
-      expect(sortAgeAsc(20, 19, 18)).toEqual("18, 19, 20");
+    it("Ao passar os argumentos 20, 19, 18, deve retornar: '18, 19, 20'", () => {
+      expect(sortAgeAsc(20, 19, 18)).toBe("18, 19, 20");
     });
-    it("Verifica o retorno para ordem: Silvia, Iza, Maria.", () => {
-      expect(sortAgeAsc(19, 18, 20)).toEqual("18, 19, 20");
+    it("Ao passar o argumento 19, 18, 20, deve retornar: '18, 19, 20'", () => {
+      expect(sortAgeAsc(19, 18, 20)).toBe("18, 19, 20");
     });
   });
 
   describe(" 17 - Testando a Função oddOreEven.", () => {
-    it("Verifica caso de vitória com escolha par para Ana.", () => {
-      expect(oddOreEven(2, 2, 0)).toEqual("Ana venceu");
+    it("Ao passar os argumentos 2, 2, 0, deve retornar: 'Ana venceu'", () => {
+      expect(oddOreEven(2, 2, 0)).toBe("Ana venceu");
     });
-    it("Verifica caso de vitória com escolha par para Lúcio.", () => {
-      expect(oddOreEven(2, 2, 1)).toEqual("Lúcio venceu");
+    it("Ao passar os argumentos 2, 2, 1, deve retornar: 'Lúcio venceu'", () => {
+      expect(oddOreEven(2, 2, 1)).toBe("Lúcio venceu");
     });
-    it("Verifica caso de vitória com escolha ímpar para Ana.", () => {
-      expect(oddOreEven(2, 1, 1)).toEqual("Ana venceu");
+    it("Ao passar os argumentos 2, 1, 1, deve retornar: 'Ana venceu'", () => {
+      expect(oddOreEven(2, 1, 1)).toBe("Ana venceu");
     });
-    it("Verifica caso de vitória com escolha ímpar para Lúcio.", () => {
-      expect(oddOreEven(2, 1, 0)).toEqual("Lúcio venceu");
+    it("Ao passar os argumentos 2, 1, 0, deve retornar: 'Lúcio venceu'", () => {
+      expect(oddOreEven(2, 1, 0)).toBe("Lúcio venceu");
     });
   });
 
-  describe(" 18 - Testando a Função cardGames.", () => {
-    it("Verifica caso de vitória de Mara com duas quartas iguais.", () => {
-      expect(cardGames(10, 10, 5, 5)).toEqual("Mara venceu com 40 pontos");
+  describe(" 18 - Testando a Função cardsGame.", () => {
+    it("Ao passar os argumentos 10, 10, 5, 5, deve retornar: 'Mara venceu com 40 pontos'", () => {
+      expect(cardsGame(10, 10, 5, 5)).toBe("Mara venceu com 40 pontos");
     });
-    it("Verifica caso de vitória de Mara com cartas sequências.", () => {
-      expect(cardGames(10, 11, 11, 11)).toEqual("Mara venceu com 63 pontos");
+    it("Ao passar os argumentos 10, 10, 5, 5, deve retornar: 'Mara venceu com 63 pontos'", () => {
+      expect(cardsGame(10, 11, 11, 11)).toBe("Mara venceu com 63 pontos");
     });
-    it("Verifica caso de vitória de Sara com duas quartas iguais.", () => {
-      expect(cardGames(5, 5, 10, 10)).toEqual("Sara venceu com 40 pontos");
+    it("Ao passar os argumentos 10, 10, 5, 5, deve retornar: 'Sara venceu com 40 pontos'", () => {
+      expect(cardsGame(5, 5, 10, 10)).toBe("Sara venceu com 40 pontos");
     });
-    it("Verifica caso de vitória de Sara com cartas sequências.", () => {
-      expect(cardGames(12, 12, 11, 12)).toEqual("Sara venceu com 69 pontos");
+    it("Ao passar os argumentos 10, 10, 5, 5, deve retornar: 'Sara venceu com 69 pontos'", () => {
+      expect(cardsGame(12, 12, 11, 12)).toBe("Sara venceu com 69 pontos");
     });
-    it("Verifica caso de empate com cartas iguais.", () => {
-      expect(cardGames(12, 12, 12, 12)).toEqual("O jogo empatou");
+    it("Ao passar os argumentos 10, 10, 5, 5, deve retornar: 'O jogo empatou'", () => {
+      expect(cardsGame(12, 12, 12, 12)).toBe("O jogo empatou");
     });
-    it("Verifica caso de empate com cartas sequencias.", () => {
-      expect(cardGames(11, 12, 11, 12)).toEqual("O jogo empatou");
+    it("Ao passar os argumentos 10, 10, 5, 5, deve retornar: 'O jogo empatou'", () => {
+      expect(cardsGame(11, 12, 11, 12)).toBe("O jogo empatou");
     });
   });
 });

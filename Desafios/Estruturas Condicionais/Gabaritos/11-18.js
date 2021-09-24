@@ -37,7 +37,7 @@ function IMC(weight, height) {
 }
 
 /*  13 - Pontos no Xadrez */
-function chessPoint(ratingPlayOne,ratingPlayTwo) {
+function chessRating(ratingPlayOne,ratingPlayTwo) {
   let winner = 1;
 
   let difference = Math.abs(ratingPlayOne -ratingPlayTwo);
@@ -61,7 +61,7 @@ function chessPoint(ratingPlayOne,ratingPlayTwo) {
    ratingPlayTwo += bigDiff;
   }
 
-  return `Jogador 1: ${ratingPlayOne} pontos; Jogador 2: ${ratingPlayTwo} pontos.`;
+  return `Enxadrista1: ${ratingPlayOne} pontos. Enxadrista2: ${ratingPlayTwo} pontos.`;
 }
 
 /* 14 - Caixa eletrônico */
@@ -77,7 +77,6 @@ function ATM(balance, withdrew) {
     return `Saque efetuado! Novo saldo: R$${balance}`;
   }
 }
-
 
 /* 15 - Pedra,papel e tesoura */
 function rockPaperScissors(signPerson1, signPerson2) {
@@ -139,7 +138,7 @@ function oddOreEven(lucioFingers, anaFingers, even) {
 }
 
 /*  18 - Jogo de cartas */
-function cardGames(maraCard1, maraCard2, saraCard1, saraCard2) {
+function cardsGame(maraCard1, maraCard2, saraCard1, saraCard2) {
   let maraScore = 0;
   let saraScore= 0;
 
@@ -158,14 +157,13 @@ function cardGames(maraCard1, maraCard2, saraCard1, saraCard2) {
     : `Sara venceu com ${saraScore} pontos`;
 }
 
-
 module.exports = {
   triVowels,
   IMC,
-  chessPoint,
+  chessRating,
   ATM,
   rockPaperScissors,
   sortAgeAsc,
   oddOreEven,
-  cardGames,
+  cardsGame,
 }

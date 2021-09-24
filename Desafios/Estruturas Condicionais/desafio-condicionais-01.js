@@ -4,7 +4,7 @@
 
 A Trybe abriu uma lanchonete e precisa criar um menu de opções para que as pessoas consigam escolher qual lanche maravilhoso irão pedir.
 
-Para isso escreva um algoritmo que recebe o número da opção escolhida conforme tabela abaixo e retorne o respectivo lanche.
+Para isso escreva um algoritmo que recebe o número da opção escolhida conforme tabela abaixo e retorne o respectivo lanche:
 
 "1 - Trybe Lanche Feliz"
 "2 - McTrybe"
@@ -12,7 +12,8 @@ Para isso escreva um algoritmo que recebe o número da opção escolhida conform
 "4 - X-Trybe"
 "5 - Triplo Trybe com JS"
 
-Caso a pessoa escolha uma opção que não existe na tabela acima, exiba a mensagem: "Não temos esta opção ainda :("
+Caso a pessoa escolha uma opção que não existe na tabela acima, retorne:
+"Não temos esta opção ainda :("
 
 Utilize Switch/Case para resolver este problema.
 
@@ -20,7 +21,6 @@ Utilize Switch/Case para resolver este problema.
 
 function optionsMenu(number){
   // Desenvolva seu código nessa função
-  return
 }
 
 module.exports = optionsMenu;

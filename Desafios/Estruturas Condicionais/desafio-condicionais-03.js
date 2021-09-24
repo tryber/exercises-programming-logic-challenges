@@ -2,11 +2,14 @@
 
 03 - Mostre a classe do aventureiro
 
-A Trybe tem um grupo de aventureiros. Quando o nome de algum é invocado, a classe a qual essa pessoa faz parte é apresentada.
+A Trybe tem um grupo de aventureiros. 
+
+Quando o nome de algum é invocado, a classe a qual essa pessoa faz parte é apresentada.
 
 É sua função é escrever um algoritmo que recebe o nome de um aventureiro e, de acordo com este nome, retorna o nome da sua classe conforme tabela baixo:
 
 |  Aventureiro  |       Classe        |
+
 |   Tunico      |  Mestre dos Magos   |
 |   Cremoso     |  Cavaleiro Negro    |
 |   Gordinho    |  Pirata             |
@@ -14,13 +17,13 @@ A Trybe tem um grupo de aventureiros. Quando o nome de algum é invocado, a clas
 |   Ousado      |  Mago               |
 |   Anjo        |  Loiro Clérigo      |
 
-Caso o nome informado não faça parte do esquadrão, exiba a mensagem: "Não foi possível encontrar um aventureiro com esse nome."
+Caso o nome informado não faça parte do esquadrão, retorne:
+"Aventureiro não encontrado"
 
  */
 
-function foundAdventurous(adventurous){
+function findAdventurous(adventurous){
   // Desenvolva seu código nessa função
-  return
 }
 
-module.exports = foundAdventurous;
+module.exports = findAdventurous;

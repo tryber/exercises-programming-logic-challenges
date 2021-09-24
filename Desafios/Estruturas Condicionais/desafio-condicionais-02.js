@@ -2,7 +2,7 @@
 
 02 - Switch Case
 
-Refatore a função abaixo para utilizar if/else
+Refatore a função abaixo para utilizar if/else.
 
 NOTAS
 abaixo de 10: PÉSSIMO
@@ -41,7 +41,6 @@ function studentSituation(studentNote) {
 
 function studentSituation(studentNote){
   // Desenvolva seu código nessa função
-  return
 }
 
 module.exports = studentSituation;
