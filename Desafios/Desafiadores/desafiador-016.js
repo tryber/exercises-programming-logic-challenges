@@ -17,17 +17,18 @@ A saída da sua função deve ser uma string. Quando o CPF for válido, o retorn
 **Importante:**
 Uma sequência de números iguais, como por exemplo `'000.000.000-00'`, também é um CPF inválido 😉 
 
-Exemplos:
-Entrada: '397-606-448-34'
-Saída: 'CPF inválido'
+Exemplo De CPF Válido:
+Entrada:
+"397-606-448-34"
 
-Entrada: '166.354.840-43'
-Saída: 'CPF válido'
+Saída:
+"CPF inválido"
 
+Exemplo De CPF Inválido:
+Entrada:
+"166.354.840-43"
 
-**O que será verificado:**
-- A função deve retornar a mensagem `'CPF inválido'`, quando o CPF for inválido
-- A função deve retornar a mensagem `'CPF válido'`, quando o CPF for válido.
+Saída: "CPF válido"
 
 */
 

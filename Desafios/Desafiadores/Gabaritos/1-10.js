@@ -167,7 +167,7 @@ function viewerTvShows(dataViewer) {
   let { age, country, likeSports } = dataViewer;
 
   let message = {
-    ufc: "UFC",
+    ufc: "UFC.",
     simpsons: "The Simpsons.",
     madagascar: "The Penguins of Madagascar.",
     fishing: "Sport Fishing.",

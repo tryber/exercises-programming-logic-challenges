@@ -1,10 +1,14 @@
 /*
 
-01 - Verifica se pessoa tem idade para dar entrada na CNH.
+01 - Verifica se pessoa tem idade para dar entrada na CNH
 
-Escreva um algoritmo que recebe o nome e ano de nascimento de uma pessoa e verifica se ela pode dar entrada na CNH.
+Escreva um algoritmo que recebe o nome e ano de nascimento de uma pessoa e verifique se ela pode dar entrada na CNH.
 
-Se a pessoa tiver menos de 18 anos retorne a seguinte mensagem: "(name) tem (x) anos de idade e não pode iniciar o processo.", senão retorne "(name) tem (x) anos de idade e pode iniciar o processo."
+Se a pessoa tiver menos de 18 anos retorne:
+"x tem y anos de idade e não pode iniciar o processo."
+
+Caso contrário:
+"x tem y anos de idade e pode iniciar o processo."
 
 */
 
