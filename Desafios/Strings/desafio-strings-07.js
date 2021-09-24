@@ -5,19 +5,19 @@
 Escreva um algoritmo que recebe uma palavra e checa se ela possui a letra "a" considerando as seguintes premissas para cada tipo de retorno.
 
 Se apenas começa com letra "a":
-Retornar: A palavra X possui a letra 'a' apenas no início.
+Retornar: "A palavra x possui a letra 'a' apenas no início."
 
 Se apenas termina com a letra "a".
-Retornar: A palavra X possui a letra 'a' apenas no final.
+Retornar: "A palavra x possui a letra "a" apenas no final."
 
 Se apenas termina e começa com a letra "a".
-Retornar: A palavra X possui a letra 'a' apenas no começo e no fim da palavra.
+Retornar: "A palavra x possui a letra "a" apenas no começo e no fim da palavra."
 
 Se apenas possui o "a" sem o mesmo ser a primeira ou a última letra da palavra.
-Retornar: A palavra X possui 'a', porém ela não está nem no início nem no fim.
+Retornar: "A palavra x possui "a", porém ela não está nem no início nem no fim."
 
 Senão.
-Retornar 'A palavra X não contém "a".'
+Retornar "A palavra x não contém "a"."
 
 */
 
