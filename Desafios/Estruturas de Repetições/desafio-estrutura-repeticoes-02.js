@@ -10,14 +10,12 @@ Maria está aprendendo lógica de programação e recebeu o seguinte código:
 		accumulator = accumulator + 1;
 }
 
-Considerando a mesma lógica, escreva um algoritmo que irá somar todos números de 1 até o limite usando o For em vez de while.
+Considerando a mesma lógica, escreva um algoritmo que irá somar todos números de 1 até o limite usando o For em vez de while e o retorne.
 
 */
 
-
 function accumulator(limit){
   // Desenvolva seu código nessa função
-  return
 }
 
 module.exports = accumulator;

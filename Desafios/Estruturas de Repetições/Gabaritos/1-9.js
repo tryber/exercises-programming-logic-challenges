@@ -1,7 +1,7 @@
 /* 01 - Mensagem codificada  */
-function decodeString(word) {
+function encode(string) {
   let stringDecoded = "";
-  for (let index = 0; index < word.length; index += 1) {
+  for (let index = 0; index < string.length; index += 1) {
     stringDecoded += index * 3;
   }
   return stringDecoded;
@@ -78,7 +78,7 @@ function sortDec() {
 }
 
 /* 09 - Incluído nos arrays */
-function includesInArrays(a, b) {
+function includesArrays(a, b) {
   let newArray = [];
 
   for (let index = 0; index < a.length; index += 1) {
@@ -93,7 +93,7 @@ function includesInArrays(a, b) {
 }
 
 module.exports = {
-  decodeString,
+  encode,
   accumulator,
   accumulatorThousand,
   repeatName,
@@ -101,5 +101,5 @@ module.exports = {
   oddNumbers,
   findIndexOf,
   sortDec,
-  includesInArrays,
+  includesArrays,
 };

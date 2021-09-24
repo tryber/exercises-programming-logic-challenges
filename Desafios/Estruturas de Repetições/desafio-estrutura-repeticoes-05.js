@@ -4,16 +4,18 @@
 
 Escreva um algoritmo que recebe o inicio e o fim de uma sequência de números inteiros de razão 1.
 
-Conte a quantidade de números da sequência que são diviseis por 3, se houver 50 ou mais retorne a seguinte mensagem:
+Conte a quantidade de números da sequência que são diviseis por 3 e considere:
 
-"Há 50 ou mais números diviseis por 3.", caso o contrário retorne: "Sequência muito pequena."
+Se houver 50 ou mais retorne:
+"Há 50 ou mais números diviseis por 3."
+
+Caso o contrário:
+"Sequência muito pequena."
 
 */
 
-
 function numbersDivisibleBy3(start, limit){
   // Desenvolva seu código nessa função
-  return
 }
 
 module.exports = numbersDivisibleBy3;
