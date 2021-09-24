@@ -1,13 +1,19 @@
 /*  11 - Loja de ração */
+function formatBrazilianMoney(number) {
+  const beforeComma = Math.floor(number);
+  let afterComma = Math.round(number * 100 - beforeComma * 100);
+  afterComma = afterComma !== 0 ? afterComma : `00`;
+  return `${beforeComma},${afterComma}`;
+}
 function paymentOptions(price) {
   let inCash = price - price * 0.1;
   let creditCard = price + price * 0.15;
   return (
-    "Preço do produto: R$" +
-    price +
-    "- À Vista: R$" +
-    inCash +
-    ("- 4x de: R$" + creditCard / 4)
+    "- Preço do produto: R$" +
+    formatBrazilianMoney(price) +
+    "\n- À Vista: R$" +
+    formatBrazilianMoney(inCash) +
+    "\n- 4x de: R$" + formatBrazilianMoney(creditCard / 4)
   );
 }
 
@@ -88,9 +94,9 @@ function carTrip(spBh, bhSal, salNat) {
 }
 
 /*  20 - Aprovado ou reprovado? */
-function avaliador(score1, score2, score3){
+function avaliador(score1, score2, score3) {
   let averageScore = (score1 + score2 + score3) / 3;
-  
+
   if (averageScore > 6) {
     "Aprovação, média: " + averageScore;
   } else {
@@ -98,7 +104,7 @@ function avaliador(score1, score2, score3){
   }
 }
 
-module.exports ={
+module.exports = {
   paymentOptions,
   weightAndValue,
   randomRGBColor,

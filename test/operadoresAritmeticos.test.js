@@ -158,8 +158,15 @@ describe("Desafios de Operadores Aritméticos.", () => {
 
 
   describe(" 11 - Testando a Função paymentOptions.", () => {
-    it(".", () => {
-      expect().toEqual();
+    it("Se o preço do produto for 10, deve retornar '- Preço do produto: R$10,00\n- À Vista: R$9,00\n- 4x de: R$2,88'", () => {
+      const expected = '- Preço do produto: R$10,00\n- À Vista: R$9,00\n- 4x de: R$2,88'
+      expect(paymentOptions(10))
+        .toBe(expected);
+    });
+    it("Se o preço for 80, deve retornar '- Preço do produto: R$80,00\n- À Vista: R$72,00\n- 4x de: R$23", () => {
+      const expected = '- Preço do produto: R$80,00\n- À Vista: R$72,00\n- 4x de: R$23,00'
+      expect(paymentOptions(80))
+        .toBe(expected);
     });
   });
 

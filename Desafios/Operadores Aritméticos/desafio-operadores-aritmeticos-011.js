@@ -12,13 +12,15 @@ Entrada:
 80
 
 Saída:
-"À Vista: R$72 ou 4x de: R$23."
+- Preço do produto: R$80,00
+- À Vista: R$72,00
+- 4x de: R$23,00
 
 Obs: seguir o mesmo formato de retorno da mensagem de saída.
 
 */
 
-function paymentOptions(price){
+function paymentOptions(price) {
   // Desenvolva seu código nessa função
 }
 
