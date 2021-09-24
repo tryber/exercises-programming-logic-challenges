@@ -5,7 +5,6 @@
 Dado um array de pessoas, escreva um algoritmo que identifique qual tem a maior idade e retorne o nome da pessoa e sua idade.
 
 O array terá o seguinte formato:
-
 people = [
   { name: 'Ramon', age: 35 },
   { name: 'José', age: 28 },
@@ -13,7 +12,7 @@ people = [
 ];
 
 O retorno deve ser no seguinte formato:
-'X tem a maior idade com X anos.'
+"x tem a maior idade com y anos."
 
 */
 
