@@ -1,8 +1,13 @@
 /*
+
 13 - Cor aleatória
 
-Elabore uma função que retorne uma cor aleatória no formato "rgb(123, 231, 56)"
+Elabore uma função que retorne uma cor aleatória no formato "rgb(xyz, xyz, xyz)"
 
  */
 
-// Desenvolva seu código aqui
+function generateColor(){
+  // Desenvolva seu código nessa função
+}
+
+module.exports = generateColor;

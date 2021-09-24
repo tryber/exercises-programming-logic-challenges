@@ -1,8 +1,15 @@
 /*
+
 16 - Verdadeiro ou falso?
 
-Elabore uma função que retorne de forma aleatória true ou false.
+Escreva um algoritmo que retorne de forma aleatória true ou false.
+
+Obs: O retorne deve ser do tipo boolean.
 
 */
 
-// Desenvolva seu código aqui
+function randomBoolean(){
+  // Desenvolva seu código nessa função
+}
+
+module.exports = randomBoolean;

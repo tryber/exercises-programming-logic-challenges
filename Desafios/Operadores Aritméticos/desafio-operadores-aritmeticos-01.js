@@ -2,10 +2,14 @@
 
 01 - Calcular a média
 
-Escreva um algoritmo que recebe 3 valores, calcule e retorne o valor da média no formato abaixo.
+Escreva um algoritmo que recebe 3 valores, calcule e retorne o valor da média no formato abaixo:
 
-O Valor médio é: X.
+"O Valor médio é: x."
 
 */
 
-// Desenvolva seu código aqui
+function average(number1, number2, number3){
+  // Desenvolva seu código nessa função
+}
+
+module.exports = average;

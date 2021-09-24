@@ -1,9 +1,15 @@
 /*
+
 03 - Antecessor e Sucessor
 
-Crie um algoritmo que recebe um número inteiro e retorne o seu antecessor e sucessor no seguinte 
-formato: O antecessor de "number" é "predecessor" e seu sucessor é "successor". 
+Crie um algoritmo que recebe um número inteiro e retorne o seu antecessor e sucessor no seguinte formato:
+
+"O antecessor de "number" é x e seu sucessor é y."" 
 
 */
 
-// Desenvolva seu código aqui
+function showNeighbors(number){
+  // Desenvolva seu código nessa função
+}
+
+module.exports = showNeighbors;

@@ -2,8 +2,12 @@
 
 04 - Potência de um número
 
-Faça um algoritmo que leia dois números A e Z e retorne o valor de A elevado a Z.
+Escreva um algoritmo que recebe a base e o expoente e retorne o resultando da exponenciação.
 
 */
 
-// Desenvolva seu código aqui
+function powerNumber(base, exponent){
+  // Desenvolva seu código nessa função
+}
+
+module.exports = powerNumber;

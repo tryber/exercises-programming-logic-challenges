@@ -18,9 +18,9 @@ function calculateScore(distance) {
 }
 
 /*  23 - Divisões sucessivas */
-function successiveDivisions(myNumber, count) {
-  for (count; myNumber >= 1; count = count + 1) {
-    myNumber = myNumber / 2;
+function successiveDivisions(number, count) {
+  for (count; number >= 1; count = count + 1) {
+    number = number / 2;
   }
   return "Quantidade total de divisões: " + (count - 1);
 }

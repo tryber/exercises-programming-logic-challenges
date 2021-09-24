@@ -8,7 +8,7 @@ Uma das tarefas para a viagem acontecer é calcular quantos dias ela irá levar.
 
 Você está em São Paulo, o João está em Belo Horizonte e a Joana está em Salvador.
 
-Levando em conta que o destino do grupo é Natal, no Rio Grande do Norte, crie um algoritmo que calcula a duração de dias de uma viagem levando em conta a quantidade total de horas.
+Levando em conta que o destino do grupo é Natal, no Rio Grande do Norte, crie um algoritmo que calcula a duração de dias de uma viagem levando em conta a quantidade total de horas e o retorne.
 
 O total de dias deve ter precisão de 3 dígitos.
 
@@ -19,4 +19,8 @@ Salvador até Natal = 15 horas e 32 minutos.
 
 */
 
-// Desenvolva seu código aqui
+function carTrip(spBh, bhSal, salNat){
+  // Desenvolva seu código nessa função
+}
+
+module.exports = carTrip;

@@ -1,9 +1,15 @@
 /*
+
 14 - Tempo de viagem
 
-Elabore uma função que receba a duração total de uma viagem em minutos e retorne a duração em
-horas e minutos no seguinte formato: "A viagem terá duração de __ hora(s) e __ minuto(s)"
+Escreva um algoritmo que recebe a duração total de uma viagem em minutos e retorne a duração em horas e minutos no seguinte formato:
+
+"A viagem terá duração de x hora(s) e y minuto(s)"
 
 */
 
-// Desenvolva seu código aqui
+function timeTravel(minutes){
+  // Desenvolva seu código nessa função
+}
+
+module.exports = timeTravel;

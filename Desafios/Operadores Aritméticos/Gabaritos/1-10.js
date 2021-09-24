@@ -15,7 +15,7 @@ function totalReceive(salary, sales) {
 }
 
 /* 03 - Antecessor e Sucessor */
-function showNeighborsNumber(number) {
+function showNeighbors(number) {
   let previous = number - 1;
   let next = number + 1;
   return (
@@ -75,7 +75,7 @@ function fahrenheitToCelsius(fahrenheit){
 module.exports = {
   average,
   totalReceive,
-  showNeighborsNumber,
+  showNeighbors,
   powerNumber,
   triangleArea,
   IMC,

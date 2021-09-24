@@ -1,10 +1,10 @@
 /*  11 - Loja de ração */
-function showPaymentOptions(dogFoodPrice) {
-  let inCash = dogFoodPrice - dogFoodPrice * 0.1;
-  let creditCard = dogFoodPrice + dogFoodPrice * 0.15;
+function paymentOptions(price) {
+  let inCash = price - price * 0.1;
+  let creditCard = price + price * 0.15;
   return (
     "Preço do produto: R$" +
-    dogFoodPrice +
+    price +
     "- À Vista: R$" +
     inCash +
     ("- 4x de: R$" + creditCard / 4)
@@ -17,19 +17,19 @@ function weightAndValue(priceKg, plateWeight) {
   return "Peso: " + plateWeight + " gramas" + "Valor: R$" + totalPrice;
 }
 
-/*  13 - Cor aleatória */
 function generateOneColor() {
   let uniqueColor = Math.floor(Math.random() * 256);
   return uniqueColor;
 }
 
+/*  13 - Cor aleatória */
 function randomRGBColor() {
   let finalColor = `rgb(${generateOneColor()}, ${generateOneColor()}, ${generateOneColor()})`;
   return finalColor;
 }
 
 /*  14 - Tempo de viagem */
-function calculateHoursAndMinutes(totalMinutes) {
+function timeTravel(totalMinutes) {
   let hours = Math.floor(totalMinutes / 60);
   let minutes = totalMinutes % 60;
   return (
@@ -56,7 +56,7 @@ function randomBoolean() {
 }
 
 /*  17 - Financiamento de veículo */
-function vehicleFinancing(carPrice, entranceValue, quota) {
+function carFinancing(carPrice, entranceValue, quota) {
   let financing = carPrice - entranceValue;
   let tax = 0.05;
   return (
@@ -88,7 +88,7 @@ function carTrip(spBh, bhSal, salNat) {
 }
 
 /*  20 - Aprovado ou reprovado? */
-function checkApproved(score1, score2, score3){
+function avaliador(score1, score2, score3){
   let averageScore = (score1 + score2 + score3) / 3;
   
   if (averageScore > 6) {
@@ -99,16 +99,14 @@ function checkApproved(score1, score2, score3){
 }
 
 module.exports ={
-  showPaymentOptions,
+  paymentOptions,
   weightAndValue,
-  generateOneColor,
-  calculateHoursAndMinutes,
+  randomRGBColor,
+  timeTravel,
   areaCircle,
   randomBoolean,
-  vehicleFinancing,
+  carFinancing,
   rollDice,
   carTrip,
-  checkApproved,
+  avaliador,
 }
-
-
