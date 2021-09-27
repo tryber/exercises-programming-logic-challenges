@@ -19,8 +19,8 @@ function paymentOptions(price) {
 
 /* 12 - Peso e preço do prato */
 function weightAndValue(priceKg, plateWeight) {
-  let totalPrice = ((priceKg * plateWeight) / 1000).toFixed(2);
-  return "Peso: " + plateWeight + " gramas" + "Valor: R$" + totalPrice;
+  let totalPrice = ((priceKg * plateWeight) / 1000).toFixed(2).replace('.', ',');
+  return `Peso: ${plateWeight} gramas. Preço: R$ ${totalPrice}`;
 }
 
 function generateOneColor() {

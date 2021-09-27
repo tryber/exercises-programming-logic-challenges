@@ -170,13 +170,28 @@ describe("Desafios de Operadores Aritméticos.", () => {
     });
   });
 
-  /* Escrito os testes até aqui 
-    describe(" 12 - Testando a Função weightAndValue.", () => {
-      it(".", () => {
-        expect().toEqual();
-      });
+  describe(" 12 - Testando a Função weightAndValue.", () => {
+
+    it("Com o preço do kg sendo 37,90 reais e o peso sem 735 gramas, deve retornar 'Peso: 735 gramas. Preço: R$ 27,86'", () => {
+      const expected = 'Peso: 735 gramas. Preço: R$ 27,86';
+      const received = weightAndValue(37.90, 735)
+      expect(received).toEqual(expected);
     });
-  
+
+    it("Com o preço do kg sendo 30 reais e o peso sem 1000 gramas, deve retornar 'Peso: 1000 gramas. Preço: R$ 30,00'", () => {
+      const expected = 'Peso: 1000 gramas. Preço: R$ 30,00';
+      const received = weightAndValue(30, 1000)
+      expect(received).toEqual(expected);
+    });
+
+    it("Com o preço do kg sendo 49,90 reais e o peso sem 1234 gramas, deve retornar 'Peso: 1234 gramas. Preço: R$ 61,58'", () => {
+      const expected = 'Peso: 1234 gramas. Preço: R$ 61,58';
+      const received = weightAndValue(49.9, 1234)
+      expect(received).toEqual(expected);
+    });
+  });
+
+  /* Escrito os testes até aqui 
     describe(" 13 - Testando a Função generateColor.", () => {
       it(".", () => {
         expect().toEqual();

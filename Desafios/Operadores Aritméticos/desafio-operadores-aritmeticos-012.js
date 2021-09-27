@@ -6,14 +6,14 @@ Um restaurante comprou uma balança nova e precisa adicionar um programa que cal
 
 O valor do quilo é R$37,90.
 
-Desenvolva esse programa levando em consideração que a balança mostra o peso em gramas e que o valor precisa conter duas casas depois da vírgula.
+Desenvolva esse programa levando em consideração que a balança mostra o peso em gramas e que o preço precisa conter duas casas depois da vírgula.
 
 Retorne os valores da seguinte forma:
-"Peso: 735 gramas. Valor: R$ 27,86"
+"Peso: 735 gramas. Preço: R$ 27,86"
 
 */
 
-function weightAndValue(priceKg, plateWeight ){
+function weightAndValue(priceKg, plateWeight) {
   // Desenvolva seu código nessa função
 }
 
