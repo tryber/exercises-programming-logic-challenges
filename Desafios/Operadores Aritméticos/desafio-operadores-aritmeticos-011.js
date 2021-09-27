@@ -1,6 +1,6 @@
 /*
 
-11 - Loja de raçãoLoja de ração
+11 - Loja de ração
 
 Escreva uma algoritmo para uma loja de ração que recebe o preço de um produto e retorna as formas de pagamentos disponíveis.
 
