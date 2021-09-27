@@ -146,87 +146,87 @@ describe("Desafios de Operadores Aritméticos.", () => {
   
   describe(" 10 - Testando a Função fahrenheitToCelsius.", () => {
     it("Ao passar o argumento 100, deve retornar: 37.78", () => {
-      expect(fahrenheitToCelsius(100)).toEqual(37.78);
+      expect(fahrenheitToCelsius(100)).toBe(37.78);
     });
   });
   
   /* Escrito os testes até aqui */
 
 /*   describe(" 11 - Testando a Função paymentOptions.", () => {
-    it(".", () => {
-      expect().toEqual();
+    it("Ao passar o argumento , deve retornar:", () => {
+      expect().toBe();
     });
   });
 
   describe(" 12 - Testando a Função weightAndValue.", () => {
-    it(".", () => {
-      expect().toEqual();
+    it("Ao passar o argumento , deve retornar:.", () => {
+      expect().toBe();
     });
   });
 
   describe(" 13 - Testando a Função generateColor.", () => {
-    it(".", () => {
-      expect().toEqual();
+    it("Ao passar o argumento , deve retornar:.", () => {
+      expect().toBe();
     });
   });
 
   describe(" 14 - Testando a Função timeTravel.", () => {
-    it(".", () => {
-      expect().toEqual();
+    it("Ao passar o argumento , deve retornar:.", () => {
+      expect().toBe();
     });
   });
 
   describe(" 15 - Testando a Função areaCircle.", () => {
-    it(".", () => {
-      expect().toEqual();
+    it("Ao passar o argumento , deve retornar:.", () => {
+      expect().toBe();
     });
   });
 
   describe(" 16 - Testando a Função randomBoolean.", () => {
-    it(".", () => {
-      expect().toEqual();
+    it("Ao passar o argumento , deve retornar:.", () => {
+      expect().toBe();
     });
   });
 
   describe(" 17 - Testando a Função carFinancing.", () => {
-    it(".", () => {
-      expect().toEqual();
+    it("Ao passar o argumento , deve retornar:.", () => {
+      expect().toBe();
     });
   });
 
   describe(" 18 - Testando a Função rollDice.", () => {
-    it(".", () => {
-      expect().toEqual();
+    it("Ao passar o argumento , deve retornar:.", () => {
+      expect().toBe();
     });
   });
 
   describe(" 19 - Testando a Função carTrip.", () => {
-    it(".", () => {
-      expect().toEqual();
+    it("Ao passar o argumento , deve retornar:.", () => {
+      expect().toBe();
     });
   });
 
   describe(" 20 - Testando a Função avaliador.", () => {
-    it(".", () => {
-      expect().toEqual();
+    it("Ao passar o argumento , deve retornar:.", () => {
+      expect().toBe();
     });
   });
 
   describe(" 21 - Testando a Função weightedAverage.", () => {
-    it(".", () => {
-      expect().toEqual();
+    it("Ao passar o argumento , deve retornar:.", () => {
+      expect().toBe();
     });
   });
 
   describe(" 22 - Testando a Função weightedAverage.", () => {
-    it(".", () => {
-      expect().toEqual();
+    it("Ao passar o argumento , deve retornar:.", () => {
+      expect().toBe();
     });
   });
 
   describe(" 23 - Testando a Função successiveDivisions.", () => {
-    it(".", () => {
-      expect().toEqual();
+    it("Ao passar o argumento , deve retornar:.", () => {
+      expect().toBe();
     });
   });  */
 });

@@ -1,20 +1,15 @@
 /*  11 - Loja de ração */
 function paymentOptions(price) {
-  let inCash = price - price * 0.1;
-  let creditCard = price + price * 0.15;
-  return (
-    "Preço do produto: R$" +
-    price +
-    "- À Vista: R$" +
-    inCash +
-    ("- 4x de: R$" + creditCard / 4)
-  );
+  let cash = price * 0.9;
+  let creditCard = (price * 1.15) / 4;
+
+  return `À vista: R$${cash} ou 4 x de: R$${creditCard}.`;
 }
 
 /* 12 - Peso e preço do prato */
-function weightAndValue(priceKg, plateWeight) {
-  let totalPrice = ((priceKg * plateWeight) / 1000).toFixed(2);
-  return "Peso: " + plateWeight + " gramas" + "Valor: R$" + totalPrice;
+function weightAndValue(price, gram) {
+  let totalPrice = ((price * gram) / 1000).toFixed(2);
+  return "O prato de " + gram + " gramas" + " custa: R$" + totalPrice + "."
 }
 
 function generateOneColor() {
@@ -88,9 +83,9 @@ function carTrip(spBh, bhSal, salNat) {
 }
 
 /*  20 - Aprovado ou reprovado? */
-function avaliador(score1, score2, score3){
+function avaliador(score1, score2, score3) {
   let averageScore = (score1 + score2 + score3) / 3;
-  
+
   if (averageScore > 6) {
     "Aprovação, média: " + averageScore;
   } else {
@@ -98,7 +93,7 @@ function avaliador(score1, score2, score3){
   }
 }
 
-module.exports ={
+module.exports = {
   paymentOptions,
   weightAndValue,
   randomRGBColor,
@@ -109,4 +104,4 @@ module.exports ={
   rollDice,
   carTrip,
   avaliador,
-}
+};

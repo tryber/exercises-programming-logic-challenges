@@ -4,16 +4,16 @@
 
 Um restaurante comprou uma balança nova e precisa adicionar um programa que calcula o valor que a pessoa vai pagar.
 
-O valor do quilo é R$37,90.
+Escreva um algoritmo que recebe o valor por kilo e o peso do prato e
+calcule o valor da refeição e retorne uma mensagem no seguinte formato:
 
-Desenvolva esse programa levando em consideração que a balança mostra o peso em gramas e que o valor precisa conter duas casas depois da vírgula.
+"O prato de x gramas custa: R$x,yz."
 
-Retorne os valores da seguinte forma:
-"Peso: 735 gramas. Valor: R$ 27,86"
+Obs: O valor do prato tem que ter duas casas decimais após a virgula.
 
 */
 
-function weightAndValue(priceKg, plateWeight ){
+function weightAndValue(price, gram ){
   // Desenvolva seu código nessa função
 }
 
