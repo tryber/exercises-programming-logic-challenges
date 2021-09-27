@@ -13,8 +13,10 @@ Escreva um algoritmo que recebe:
 * A pontuação das pessoas que jogam (antes da partida): número maior que zero;
 * A pessoa vencedora: 1 ou 2.
 
-E retorne uma mensagem com pontuação de cada enxadrista (após a partida) no seguinte formato: 
+E retorne uma mensagem com pontuação de cada enxadrista (após a partida) no seguinte formato:
+-----------------------------------------------------
 "Enxadrista1: 1500 pontos. Enxadrista2: 1600 pontos."
+-----------------------------------------------------
 
 */
 

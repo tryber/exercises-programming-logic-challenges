@@ -17,10 +17,14 @@ Considere a seguinte tabela:
 |    Belatriz Lestrange    |    Nogueira e Fibra de Dragão       |
 
 Se a varinha escolher a pessoa aspirante de acordo com a tabela, retorne:
+-----------------------------
 "Curioso... muito curioso..."
+-----------------------------
 
 Caso o contrário:
+--------------------------------
 "Não, não! Decididamente, não.!"
+--------------------------------
 
 Desafio: faça usando apenas um único IF acompanhado por um único Else.
 

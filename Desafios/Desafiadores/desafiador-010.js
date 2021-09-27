@@ -5,11 +5,13 @@
 Escreva uma algoritmo que recebe um array de números, retorne uma cópia do array com todos os números negados.
 
 Por exemplo:
+--------------
 Entrada:
 [2 ,-3 ,4 ]
 
 Saída:
 [-2, 3 ,-4 ]
+--------------
 
 */
 

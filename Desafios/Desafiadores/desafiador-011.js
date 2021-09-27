@@ -12,13 +12,16 @@ Além disso, cada nota forma um acorde chamado tríade.
 A tríade é composta por uma sequência a partir dela com a "primeira" nota, a "terça" e a "quinta".
 
 Exemplos:
+
 Tríade de Dó: Dó (a primeira), Mi (a terça), Sol (a quinta).
 Tríade de Ré: Ré (a primeira), Fá (a terça), Lá (a quinta).
 
 Escreva um algoritmo que recebe um array de notas, e retorne um outro array de objetos com os graus das notas na escala de dó e as notas que formam sua tríade.
 
 Por exemplo:
-Entrada: ['Ré', 'Sol', 'Dó']
+-------------------------------
+Entrada: 
+['Ré', 'Sol', 'Dó']
 
 Saída:
  [
@@ -35,6 +38,7 @@ Saída:
      triad: ['Dó', 'Mi', 'Sol']
    },
  ]
+--------------------------------
 
 */
 

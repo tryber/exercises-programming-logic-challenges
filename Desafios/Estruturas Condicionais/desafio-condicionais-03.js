@@ -18,7 +18,9 @@ Quando o nome de algum é invocado, a classe a qual essa pessoa faz parte é apr
 |   Anjo        |  Loiro Clérigo      |
 
 Caso o nome informado não faça parte do esquadrão, retorne:
+----------------------------
 "Aventureiro não encontrado"
+----------------------------
 
  */
 

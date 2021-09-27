@@ -14,11 +14,13 @@ Escreva um algoritmo que recebe o nome da classe e retorne os pontos de vida do(
 |   Cavaleiro  |        20PV        |
 
 Por exemplo:
+------------
 Entrada:
 "Mago"'
 
 Saída:
 "Mago, 5PV"
+------------
 
 Desafio: faça sem usar estruturas condicionais (ifs ou switches) 
 

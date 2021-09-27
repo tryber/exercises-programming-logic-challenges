@@ -9,11 +9,13 @@ letras do seu doce favorito.
 Escreva um algoritmo que recebe o nome do salgadinho e o nome do doce e retorne o nome do cachorrinho de Joana.
 
 Por exemplo:
+--------------------
 Entradas:
 "Chocolate", "Pudim"
 
 Saída:
 "Chodim"
+--------------------
 
 */
 

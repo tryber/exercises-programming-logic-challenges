@@ -17,7 +17,9 @@ Fórmula para mulheres:
 * (altura em centímetros x 6,25) + (peso em quilogramas x 9,99) – (idade x 4,92) – 161
 
 O retorno deve ser no seguinte formato:
+---------------------------------------
 "A taxa metabólica basal é: x Kcal"
+---------------------------------------
 
 */
 

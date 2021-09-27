@@ -7,7 +7,9 @@ Um restaurante comprou uma balança nova e precisa adicionar um programa que cal
 Escreva um algoritmo que recebe o valor por kilo e o peso do prato e
 calcule o valor da refeição e retorne uma mensagem no seguinte formato:
 
+------------------------------------
 "O prato de x gramas custa: R$x,yz."
+------------------------------------
 
 Obs: O valor do prato tem que ter duas casas decimais após a virgula.
 

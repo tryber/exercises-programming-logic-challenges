@@ -16,7 +16,10 @@ Escreva um algoritmo para calcular o IMC e retorne a faixa do resultado.
 
 Obs:
 IMC precisa ter 1 casa decimal depois da vírgula;
-Retorne a resultado no seguinte formato: "Seu IMC é: 23.7 kg/m2. O resultado foi: Normal"
+Retorne a resultado no seguinte formato:
+------------------------------------------------
+"Seu IMC é: 23.7 kg/m2. O resultado foi: Normal"
+------------------------------------------------
 
  */
 

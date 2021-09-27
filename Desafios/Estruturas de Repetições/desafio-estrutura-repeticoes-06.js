@@ -6,7 +6,10 @@ A Dora aventureira gostaria de ter uma lista com todos o números ímpares entre
 
 Crie um algoritmo que retorne uma string com todos os números inteiros ímpares desse intervalo.
 
-Use a seguinte estrutura no retorno: "x, y, z, ...n."
+Use a seguinte estrutura no retorno:
+----------------
+"x, y, z, ...n."
+----------------
 
 */
 

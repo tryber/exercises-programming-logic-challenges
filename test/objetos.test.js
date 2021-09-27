@@ -106,6 +106,5 @@ describe("Desafios de Objetos.", () => {
     it("Ao passar os argumentos 'Guerreiro' e 2 , deve retornar: 'Cavaleiro, nível 2: 25PV, Armadura Completa.'", () => {
       expect(fantasyGame3("Cavaleiro", 2)).toBe("Cavaleiro, nível 2: 25PV, Armadura Completa.");
     });
-
   });
 });

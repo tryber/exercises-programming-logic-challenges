@@ -5,11 +5,13 @@
 Escreva um algoritmo usando a estrutura "FOR" que irá receber um nome e a quantidade de vezes que o mesmo deve ser repetido e retorná-lo.
 
 Por exemplo:
+-------------------------------
 Entradas:
-"Daniel", 5
+"João", 5
 
 Saída:
-"Daniel, Daniel, Daniel, Daniel, Daniel."
+"João, João, João, João, João."
+-------------------------------
 
 */
 

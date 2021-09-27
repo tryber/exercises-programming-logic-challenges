@@ -23,19 +23,23 @@ Da caixa:
 * profundidade;
 
 Da Janela:
-* altura
-* largura
+* altura;
+* largura.
 
 Em caso de ser possível efetuar a entrega, retorne a mensagem:
+--------------------------------
 "É possível realizar a entrega."
+--------------------------------
 
 Caso o contrário, retorne:
+------------------------------------
 "Não é possível realizar a entrega."
+------------------------------------
 
 */
 
-function robotFriend(mon, dad, me, brother, sister){
+function droneDelivery(heightBox, widthBox, depthBox, heightWindow, widthWindow, depthWindow){
   // Desenvolva seu código nessa função
 }
 
-module.exports = robotFriend;
+module.exports = droneDelivery;

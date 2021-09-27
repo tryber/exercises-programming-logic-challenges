@@ -8,11 +8,13 @@ Considere as premissa:
 * À vista possui 10% de desconto e parcelado em 4x possui juros de 15%.
 
 Exemplo:
+-------------------------------
 Entrada: 
 80
 
 Saída:
 "À Vista: R$72 ou 4x de: R$23."
+-------------------------------
 
 Obs: seguir o mesmo formato de retorno da mensagem de saída.
 

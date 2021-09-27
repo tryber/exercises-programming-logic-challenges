@@ -23,16 +23,17 @@ Escreva um algoritmo que receba o nome de uma classe e um nível (maior que 0), 
 
 Reforme nos padrões dos exemplo baixo:
 
-----------------------------------
 Exemplo 1:
+-----------------------------------------------------------------
 Entradas:
 "Mago", 2
 
 Saída:
 "Mago, nível 2: 7PV, varinha."
 
-----------------------------------
+
 Exemplo 2:
+-----------------------------------------------------------------
 Entradas:
 "Cavaleiro", 4
 
@@ -40,8 +41,7 @@ Saída:
 "Cavaleiro", nível 4: 35PV, Armadura Completa."
 
 Desafio: faça sem usar estruturas condicionais (ifs ou switches).
-
-----------------------------------
+-----------------------------------------------------------------
 
 */
 

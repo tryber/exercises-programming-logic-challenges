@@ -19,9 +19,13 @@ Para a pontuação vamos considerar apenas números inteiros de 1 a 13.
 Escreva um algoritmo que retorne quando houver empate no jogo ou quem foi a pessoa vencedora do Xablau e qual foi sua pontuação baseando-se nas informações dadas anteriormente.
 
 Possíveis retornos:
+--------------------------
 "Mara venceu com x pontos"
+--------------------------
 "Sara venceu com x pontos"
+--------------------------
 "O jogo empatou"
+----------------
 
 Os seus retornos devem seguir o mesmo padrão dos exemplos acima.
 

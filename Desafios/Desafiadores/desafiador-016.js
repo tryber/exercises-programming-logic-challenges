@@ -14,21 +14,25 @@ Sabendo que isso vale para 100% dos CPFs, sua missão é implementar uma funçã
 
 A saída da sua função deve ser uma string. Quando o CPF for válido, o retorno deve ser `'CPF válido'`; quando o CPF for inválido, o retorno deve ser `'CPF inválido'`
 
-**Importante:**
+***Importante***:
 Uma sequência de números iguais, como por exemplo `'000.000.000-00'`, também é um CPF inválido 😉 
 
 Exemplo De CPF Válido:
+----------------------
 Entrada:
 "397-606-448-34"
 
 Saída:
 "CPF inválido"
+----------------------
 
 Exemplo De CPF Inválido:
+------------------------
 Entrada:
 "166.354.840-43"
 
 Saída: "CPF válido"
+------------------------
 
 */
 
