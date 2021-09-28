@@ -37,7 +37,7 @@ function timeTravel(totalMinutes) {
     hours +
     " hora(s) e " +
     minutes +
-    " minuto(s)."
+    " minuto(s)"
   );
 }
 

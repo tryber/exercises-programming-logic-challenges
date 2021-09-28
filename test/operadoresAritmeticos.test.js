@@ -208,13 +208,28 @@ describe("Desafios de Operadores Aritméticos.", () => {
     });
   });
 
-  /* Escrito os testes até aqui 
   describe(" 14 - Testando a Função timeTravel.", () => {
-    it(".", () => {
-      expect().toEqual();
+    // A viagem terá duração de x hora(s) e y minuto(s)
+    it("Ao receber 60 como parâmetro, deve retornar 'A viagem terá duração de 1 hora(s) e 0 minuto(s)'", () => {
+      const expected = 'A viagem terá duração de 1 hora(s) e 0 minuto(s)';
+      const received = timeTravel(60);
+      expect(received).toEqual(expected);
+    });
+
+    it("Ao receber 73 como parâmetro, deve retornar 'A viagem terá duração de 1 hora(s) e 13 minuto(s)'", () => {
+      const expected = 'A viagem terá duração de 1 hora(s) e 13 minuto(s)';
+      const received = timeTravel(73);
+      expect(received).toEqual(expected);
+    });
+
+    it("Ao receber 1734 como parâmetro, deve retornar 'A viagem terá duração de 28 hora(s) e 54 minuto(s)'", () => {
+      const expected = 'A viagem terá duração de 28 hora(s) e 54 minuto(s)';
+      const received = timeTravel(1734);
+      expect(received).toEqual(expected);
     });
   });
 
+  /* Escrito os testes até aqui 
     describe(" 15 - Testando a Função areaCircle.", () => {
       it(".", () => {
         expect().toEqual();
