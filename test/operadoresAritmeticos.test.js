@@ -280,13 +280,18 @@ Valor Total do Carro: R$10500,00.`;
     });
   });
 
-  /* Escrito os testes até aqui 
-    describe(" 18 - Testando a Função rollDice.", () => {
-      it(".", () => {
-        expect().toEqual();
-      });
+  describe(" 18 - Testando a Função rollDice.", () => {
+    it("Deve sortear valores de 1 a N sendo N o valor recebido por parâmetro", () => {
+      for (let index = 0; index < 100; index += 1) {
+        const d = Math.floor(Math.random() * 10) + 6; // números de 6 a 15
+        const received = rollDice(d);
+        expect(received).toBeGreaterThan(0);
+        expect(received).toBeLessThanOrEqual(d);
+      }
     });
-  
+  });
+
+  /* Escrito os testes até aqui 
     describe(" 19 - Testando a Função carTrip.", () => {
       it(".", () => {
         expect().toEqual();
