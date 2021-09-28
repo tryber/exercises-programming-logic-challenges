@@ -62,9 +62,9 @@ function getOldPerson(arrPeople) {
 }
 
 /* 05 - Jogo de fantasia- Parte 3 */
-function fantasyGame3(className) {
-  let role = "Guerreiro";
-  let level = 1;
+function fantasyGame3(className, level) {
+  let role = className;
+  /* let level = 1; */
   let roles = {
     Mago: {
       lifePoints: 5,
@@ -92,8 +92,11 @@ function fantasyGame3(className) {
   let levelsAfterFirst = level - 1;
   let additionalLifePoints = levelsAfterFirst * lifePointsPerLevel;
   let totalLifePoints = lifePoints + additionalLifePoints;
-  console.log(`${role}, nível ${level}: ${totalLifePoints}PV, ${equipment}.`);
+
+  return `${role}, nível ${level}: ${totalLifePoints}PV, ${equipment}.`;
 }
+
+console.log(fantasyGame3("Cavaleiro", 2));
 
 module.exports = {
   fantasyGame,

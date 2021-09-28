@@ -4,7 +4,9 @@
 
 Crie um algoritmo que recebe um número inteiro e retorne o seu antecessor e sucessor no seguinte formato:
 
-"O antecessor de "number" é x e seu sucessor é y."" 
+--------------------------------------------------
+"O antecessor de "number" é x e seu sucessor é y."
+-------------------------------------------------- 
 
 */
 

@@ -9,11 +9,16 @@ Data a escala natural de Dó, cada uma das 7 notas possui um grau representado p
 | Dó | Ré | Mi  | Fá | Sol | Lá | Si  |
 | I  | II | III | IV |  V  | VI | VII |
 
-Escreva um algoritmo que recebe um array de notas e retorna um outro array com os respectivos graus da escala de Dó.
+Escreva um algoritmo que recebe um array de notas e retorne um outro array com os respectivos graus da escala de Dó.
 
 Por exemplo:
-Entrada: ['Ré', 'Sol', 'Dó']
-Saída: ['II', 'V', 'I']
+----------------------------
+Entrada:
+['Ré', 'Sol', 'Dó']
+
+Saída:
+['II', 'V', 'I']
+----------------------------
 
  */
 

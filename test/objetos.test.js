@@ -94,8 +94,17 @@ describe("Desafios de Objetos.", () => {
   });
 
   describe("05 - Testando a Função fantasyGame3.", () => {
-    it(".", () => {
-      expect().toBe();
+    it("Ao passar os argumentos 'Mago' e 5, deve retornar: 'Mago, nível 5: 13PV, Varinha.'", () => {
+      expect(fantasyGame3("Mago", 5)).toBe("Mago, nível 5: 13PV, Varinha.");
+    });
+    it("Ao passar os argumentos 'Arqueiro' e 3, deve retornar: 'Arqueiro, nível 3: 16PV, Arco Curto.'", () => {
+      expect(fantasyGame3("Arqueiro", 3)).toBe("Arqueiro, nível 3: 16PV, Arco Curto.");
+    });
+    it("Ao passar os argumentos 'Guerreiro' e 7, deve retornar: 'Guerreiro, nível 7: 39PV, Espada.'", () => {
+      expect(fantasyGame3("Guerreiro", 7)).toBe("Guerreiro, nível 7: 39PV, Espada.");
+    });
+    it("Ao passar os argumentos 'Guerreiro' e 2 , deve retornar: 'Cavaleiro, nível 2: 25PV, Armadura Completa.'", () => {
+      expect(fantasyGame3("Cavaleiro", 2)).toBe("Cavaleiro, nível 2: 25PV, Armadura Completa.");
     });
   });
 });

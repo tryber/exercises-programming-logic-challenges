@@ -158,13 +158,13 @@ describe("Desafios de Operadores Aritméticos.", () => {
 
 
   describe(" 11 - Testando a Função paymentOptions.", () => {
-    it("Se o preço do produto for 10, deve retornar '- Preço do produto: R$10,00\n- À Vista: R$9,00\n- 4x de: R$2,88'", () => {
-      const expected = '- Preço do produto: R$10,00\n- À Vista: R$9,00\n- 4x de: R$2,88'
+    it("Se o preço do produto for 10, deve retornar 'À Vista: R$9 ou 4x de: R$2.88'", () => {
+      const expected = 'À Vista: R$9 ou 4x de: R$2.88';
       expect(paymentOptions(10))
         .toBe(expected);
     });
-    it("Se o preço for 80, deve retornar '- Preço do produto: R$80,00\n- À Vista: R$72,00\n- 4x de: R$23", () => {
-      const expected = '- Preço do produto: R$80,00\n- À Vista: R$72,00\n- 4x de: R$23,00'
+    it("Se o preço for 80, deve retornar 'À Vista: R$72 ou 4x de: R$23'", () => {
+      const expected = 'À Vista: R$72 ou 4x de: R$23';
       expect(paymentOptions(80))
         .toBe(expected);
     });
@@ -172,20 +172,20 @@ describe("Desafios de Operadores Aritméticos.", () => {
 
   describe(" 12 - Testando a Função weightAndValue.", () => {
 
-    it("Com o preço do kg sendo 37,90 reais e o peso sem 735 gramas, deve retornar 'Peso: 735 gramas. Preço: R$ 27,86'", () => {
-      const expected = 'Peso: 735 gramas. Preço: R$ 27,86';
+    it("Com o preço do kg sendo 37,90 reais e o peso sem 735 gramas, deve retornar 'O prato de 735 gramas custa: R$ 27,86'", () => {
+      const expected = 'O prato de 735 gramas custa: R$ 27,86';
       const received = weightAndValue(37.90, 735)
       expect(received).toEqual(expected);
     });
 
-    it("Com o preço do kg sendo 30 reais e o peso sem 1000 gramas, deve retornar 'Peso: 1000 gramas. Preço: R$ 30,00'", () => {
-      const expected = 'Peso: 1000 gramas. Preço: R$ 30,00';
+    it("Com o preço do kg sendo 30 reais e o peso sem 1000 gramas, deve retornar 'O prato de 1000 gramas custa: R$ 30,00'", () => {
+      const expected = 'O prato de 1000 gramas custa: R$ 30,00';
       const received = weightAndValue(30, 1000)
       expect(received).toEqual(expected);
     });
 
-    it("Com o preço do kg sendo 49,90 reais e o peso sem 1234 gramas, deve retornar 'Peso: 1234 gramas. Preço: R$ 61,58'", () => {
-      const expected = 'Peso: 1234 gramas. Preço: R$ 61,58';
+    it("Com o preço do kg sendo 49,90 reais e o peso sem 1234 gramas, deve retornar 'O prato de 1234 gramas custa: R$ 61,58'", () => {
+      const expected = 'O prato de 1234 gramas custa: R$ 61,58';
       const received = weightAndValue(49.9, 1234)
       expect(received).toEqual(expected);
     });

@@ -12,7 +12,9 @@ people = [
 ];
 
 O retorno deve ser no seguinte formato:
+---------------------------------
 "x tem a maior idade com y anos."
+---------------------------------
 
 */
 

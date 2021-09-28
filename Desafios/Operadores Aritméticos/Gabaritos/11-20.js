@@ -8,19 +8,13 @@ function formatBrazilianMoney(number) {
 function paymentOptions(price) {
   let inCash = price - price * 0.1;
   let creditCard = price + price * 0.15;
-  return (
-    "- Preço do produto: R$" +
-    formatBrazilianMoney(price) +
-    "\n- À Vista: R$" +
-    formatBrazilianMoney(inCash) +
-    "\n- 4x de: R$" + formatBrazilianMoney(creditCard / 4)
-  );
+  return `À Vista: R$${inCash} ou 4x de: R$${Math.round((creditCard / 4 * 100)) / 100}`;
 }
 
 /* 12 - Peso e preço do prato */
 function weightAndValue(priceKg, plateWeight) {
   let totalPrice = ((priceKg * plateWeight) / 1000).toFixed(2).replace('.', ',');
-  return `Peso: ${plateWeight} gramas. Preço: R$ ${totalPrice}`;
+  return `O prato de ${plateWeight} gramas custa: R$ ${totalPrice}`;
 }
 
 function generateOneColor() {
@@ -115,4 +109,4 @@ module.exports = {
   rollDice,
   carTrip,
   avaliador,
-}
+};

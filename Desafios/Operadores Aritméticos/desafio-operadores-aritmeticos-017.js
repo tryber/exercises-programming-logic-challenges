@@ -14,11 +14,13 @@ A loja em questão usa uma taxa de juros fixa de 5% sobre o valor do financiamen
 
 Desenvolva a solução e retorne conforme o exemplo (o valor da parcela precisa ter 2 casas decimais após a vírgula):
 
-* Valor Financiado: R$35000,
-* Valor do Juros: R$1750;
-* Quantidade de Parcelas: 36;
-* Valor da Parcela: R$1020.83;
-* Valor Total do Carro: R$46750.
+--------------------------------
+" Valor Financiado: R$35000,
+  Valor do Juros: R$1750;
+  Quantidade de Parcelas: 36;
+  Valor da Parcela: R$1020.83;
+  Valor Total do Carro: R$46750."
+--------------------------------
 
 */
 

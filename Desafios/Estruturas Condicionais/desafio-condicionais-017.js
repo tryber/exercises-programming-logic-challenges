@@ -12,15 +12,23 @@ O algoritmo irá receber os seguinte parâmetros:
 Tendo a informação de quem gritou par e o número de dedos estendidos de cada pessoa.
 
 Exemplo:
-lucioFingers = 3, anaFingers = 2, even = 1
+lucioFingers = 3,
+anaFingers = 2,
+even = 1
+
+Então:
 3 + 2 = 5 (Ímpar)
 No caso acima, Ana venceu.
 
 Em caso de vitória de Ana retorne a mensagem no seguinte formato:
+------------
 "Ana venceu"
+------------
 
 Caso o contrário retorne:
+--------------
 "Lúcio venceu"
+--------------
 
 */
 

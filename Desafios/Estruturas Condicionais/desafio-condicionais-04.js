@@ -25,7 +25,9 @@ Use a tabela abaixo para te auxiliar:
 |        as duas       |  'Ai eu caio, né!!  |
 
 Caso o comando não for reconhecido, retorne:
+----------------------
 "Comando desconhecido"
+----------------------
 
 */
 

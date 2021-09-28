@@ -5,12 +5,16 @@
 Escreva um algoritmo que verifica se a pessoa é maior ou menor de idade.
 
 Caso a pessoa for maior idade retorna:
+-----------------------------
 "A pessoa é maior de idade.".
+-----------------------------
 
 Caso contrário: 
+-----------------------------
 "A pessoa é menor de idade."
+-----------------------------
 
-Bônus: Crie a condição utilizando operador ternário. 
+Bônus: Crie a condição utilizando O Operador Ternário. 
 
 */
 

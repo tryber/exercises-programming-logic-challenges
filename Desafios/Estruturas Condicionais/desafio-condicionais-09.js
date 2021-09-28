@@ -23,10 +23,14 @@ Considere as seguintes premissas:
 * Se a pessoa estiver em período de recuperação, é preciso entregar 90% dos requisitos totais (obrigatórios + bônus) para obter aprovação;
 
 Caso a pessoa tenha conseguido entregar o projeto retorne:
+----------------------------------
 "Parabéns, você está aprovado(a)!"
+----------------------------------
 
 Caso a pessoa não tenha conseguido entregar o projeto retorne:
+-----------------------------------------------
 "Você ainda precisa entregar mais requisitos;)"
+-----------------------------------------------
 
 */
 

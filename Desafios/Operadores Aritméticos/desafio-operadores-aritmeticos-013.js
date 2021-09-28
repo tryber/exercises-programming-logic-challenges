@@ -2,7 +2,10 @@
 
 13 - Cor aleatória
 
-Elabore uma função que retorne uma cor aleatória no formato "rgb(xyz, xyz, xyz)"
+Elabore uma função que retorne uma cor RGB aleatória no formato:
+--------------
+"rgb(x, y, z)"
+--------------
 
  */
 

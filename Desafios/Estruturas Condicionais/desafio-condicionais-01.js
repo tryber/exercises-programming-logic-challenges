@@ -13,7 +13,9 @@ Para isso escreva um algoritmo que recebe o número da opção escolhida conform
 "5 - Triplo Trybe com JS"
 
 Caso a pessoa escolha uma opção que não existe na tabela acima, retorne:
+-------------------------------
 "Não temos esta opção ainda :("
+-------------------------------
 
 Utilize Switch/Case para resolver este problema.
 

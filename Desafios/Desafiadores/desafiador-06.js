@@ -2,14 +2,16 @@
 
 6 - Analise de preços da lista de compras
 
-Faça um algoritmo que irá receber um array de produtos e retorne uma string no formato da saída contendo:
+Faça um algoritmo que irá receber um array de produtos e retorne uma string no formato da saída que contem:
 
 * O produto com maior preço;
 * O preço do produto;
 * A média do preços dos produtos.
 
 Por exemplo:
-Entrada: [
+---------------------------------------------------------------------------------------------------
+Entrada:
+[
   { name: 'lápis', price: 2 },
   { name: 'borracha', price: 4 },
   { name: 'caneta', price: 5 },
@@ -23,6 +25,7 @@ Entrada: [
 
 Saída:
 "O produto mais caro é teclado gamer e custa: R$ 180, a média de preços dos produtos é de: R$36.11."
+----------------------------------------------------------------------------------------------------
 
 */
 

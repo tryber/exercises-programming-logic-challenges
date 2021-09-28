@@ -16,12 +16,14 @@ Tudo isso deve ser feito no mesmo código, seguindo a seguinte tabela:
 
 Escreva um algoritmo que recebe o nome de uma classe e retorne os pontos de vida e o equipamento inicial do(a) personagem.
 
-O retorno deve ser no seguinte formato:
+Por exemplo:
+---------------
 Entrada:
 "Guerreiro"
 
 Saída:
 "15PV, Espada."
+---------------
 
 Desafio: faça sem usar estruturas condicionais (ifs ou switches).
 

@@ -5,12 +5,16 @@
 Escreva uma algoritmo que recebe um array de dados quaisquer e verifique se todos são do mesmo tipo.
 
 Se todos forem retorne:
+------
 true
+------
 
 Caso contrário:
+-------
 false
+-------
 
-Obs: true e false tem que ser retornos do tipo boolean em JavaScript.
+Obs: Os retornos tem que ser dados do tipo boolean.
 
 */
 

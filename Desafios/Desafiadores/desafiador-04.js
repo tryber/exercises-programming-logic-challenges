@@ -20,7 +20,10 @@ Considerando a tabela abaixo:
 Escreva um algoritmo que recebe um array de notas e retorne um outro array de objetos com os respectivos graus, terças e escalas.
 
 Por exemplo:
-Entrada: ['Ré', 'Sol', 'Dó']
+-----------------------------
+Entrada:
+['Ré', 'Sol', 'Dó']
+
 Saída:
 [
   {
@@ -39,9 +42,9 @@ Saída:
     scale: 'Jônia'
   }
 ] 
+-----------------------------
 
 */
-
 function musicalNotes2(notes){
   // Desenvolva seu código nessa função
 }
