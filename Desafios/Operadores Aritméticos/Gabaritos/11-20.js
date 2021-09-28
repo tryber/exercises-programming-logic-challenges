@@ -1,15 +1,20 @@
 /*  11 - Loja de ração */
+function formatBrazilianMoney(number) {
+  const beforeComma = Math.floor(number);
+  let afterComma = Math.round(number * 100 - beforeComma * 100);
+  afterComma = afterComma !== 0 ? afterComma : `00`;
+  return `${beforeComma},${afterComma}`;
+}
 function paymentOptions(price) {
-  let cash = price * 0.9;
-  let creditCard = (price * 1.15) / 4;
-
-  return `À vista: R$${cash} ou 4 x de: R$${creditCard}.`;
+  let inCash = price - price * 0.1;
+  let creditCard = price + price * 0.15;
+  return `À Vista: R$${inCash} ou 4x de: R$${Math.round((creditCard / 4 * 100)) / 100}`;
 }
 
 /* 12 - Peso e preço do prato */
-function weightAndValue(price, gram) {
-  let totalPrice = ((price * gram) / 1000).toFixed(2);
-  return "O prato de " + gram + " gramas" + " custa: R$" + totalPrice + "."
+function weightAndValue(priceKg, plateWeight) {
+  let totalPrice = ((priceKg * plateWeight) / 1000).toFixed(2).replace('.', ',');
+  return `O prato de ${plateWeight} gramas custa: R$ ${totalPrice}`;
 }
 
 function generateOneColor() {
@@ -32,7 +37,7 @@ function timeTravel(totalMinutes) {
     hours +
     " hora(s) e " +
     minutes +
-    " minuto(s)."
+    " minuto(s)"
   );
 }
 
@@ -40,9 +45,9 @@ function timeTravel(totalMinutes) {
 function areaCircle(diameter) {
   let radius = diameter / 2;
   let area = Math.PI * Math.pow(radius, 2);
-  return `A circumferência de raio ${radius} cm possui uma área de ${area.toFixed(
+  return `A circunferência de raio ${radius} cm possui uma área de ${area.toFixed(
     2
-  )} cm²`;
+  )} cm quadrados`;
 }
 
 /*  16 - Verdadeiro ou falso? */

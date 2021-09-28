@@ -1,5 +1,5 @@
 
-const { getRandomInt} = require('../test/mocks')
+const { getRandomInt } = require('../test/mocks')
 
 /* É importada nesse arquivo tanto as funções do gabarito quanto dos desafios */
 /* Gabaritos */
@@ -32,7 +32,7 @@ const {
   weightedAverage,
   calculateScore,
   successiveDivisions,
-} = require("../Desafios/Operadores Aritméticos/Gabaritos/21-23")
+} = require("../Desafios/Operadores Aritméticos/Gabaritos/21-23");
 
 /* Exercícios */
 /* 
@@ -66,11 +66,11 @@ describe("Desafios de Operadores Aritméticos.", () => {
   describe(" 01 - Testando a Função average.", () => {
     it(`Ao passar os argumentos -2,-5 e -7, deve retornar:
          'O Valor médio é: -4.666666666666667'`, () => {
-      expect(average(-2,-5,-7)).toBe("O Valor médio é: -4.666666666666667");
+      expect(average(-2, -5, -7)).toBe("O Valor médio é: -4.666666666666667");
     });
     it(`Ao passar os argumentos 12,50.85 e -1212, deve retornar:
          'O Valor médio é: -383.05'`, () => {
-      expect(average(12,50.85,-1212)).toBe("O Valor médio é: -383.05");
+      expect(average(12, 50.85, -1212)).toBe("O Valor médio é: -383.05");
     });
   });
 
@@ -89,11 +89,11 @@ describe("Desafios de Operadores Aritméticos.", () => {
   });
 
   describe(" 04 - Testando a Função powerNumber.", () => {
-    const base = getRandomInt (1,20);;
-    const exponent =getRandomInt (1,10);
+    const base = getRandomInt(1, 20);;
+    const exponent = getRandomInt(1, 10);
     const result = base ** exponent;
     it("Ao passar os argumentos 4 e 5, deve retornar: 1024", () => {
-      expect(powerNumber(4,5)).toBe(1024);
+      expect(powerNumber(4, 5)).toBe(1024);
     });
     it(`Ao passar os argumentos ${base} e ${exponent}, deve retornar: ${result}`, () => {
       expect(powerNumber(base, exponent)).toBe(result);
@@ -101,25 +101,25 @@ describe("Desafios de Operadores Aritméticos.", () => {
   });
 
   describe(" 05 - Testando a Função triangleArea.", () => {
-    const base = getRandomInt (1,10);
-    const height = getRandomInt (1,5)
-    const result = (base * height) /2;
+    const base = getRandomInt(1, 10);
+    const height = getRandomInt(1, 5)
+    const result = (base * height) / 2;
     it(`Ao passar o argumento 10 e 10, deve retornar:
          'A área do triângulo de base 10 e altura 10 é: 50'`, () => {
-      expect(triangleArea(10,10)).toBe("A área do triângulo de base 10 e altura 10 é: 50");
+      expect(triangleArea(10, 10)).toBe("A área do triângulo de base 10 e altura 10 é: 50");
     });
     it(`Ao passar o argumento ${base} e ${height}, deve retornar:
           A área do triângulo de base ${base} e altura ${height} é: ${result}`, () => {
-      expect(triangleArea(base,height)).toBe(`A área do triângulo de base ${base} e altura ${height} é: ${result}`);
+      expect(triangleArea(base, height)).toBe(`A área do triângulo de base ${base} e altura ${height} é: ${result}`);
     });
   });
 
   describe(" 06 - Testando a Função IMC.", () => {
-    const height = +`1.${getRandomInt(40,99)}`
-    const weight = getRandomInt(40,120);
-    const imc = (height * height) / weight;    
+    const height = +`1.${getRandomInt(40, 99)}`
+    const weight = getRandomInt(40, 120);
+    const imc = (height * height) / weight;
     it("Ao passar os argumentos 70 e 1.8 , deve retornar: 0.04628571428571429", () => {
-      expect(IMC(70,1.8)).toBe(0.04628571428571429);
+      expect(IMC(70, 1.8)).toBe(0.04628571428571429);
     });
     it(`Ao passar os argumentos ${weight} e ${height}, deve retornar: ${imc}`, () => {
       expect(IMC(weight, height)).toBe(imc);
@@ -129,7 +129,7 @@ describe("Desafios de Operadores Aritméticos.", () => {
   describe(" 07 - Testando a Função readingTime.", () => {
     it(`Ao passar os argumentos 100, 1 e 1, deve retornar:
          'Ana levará 100 minutos para ler o livro todo'`, () => {
-      expect(readingTime(100,1,1)).toBe("Ana levará 100 minutos para ler o livro todo");
+      expect(readingTime(100, 1, 1)).toBe("Ana levará 100 minutos para ler o livro todo");
     });
   });
 
@@ -143,90 +143,162 @@ describe("Desafios de Operadores Aritméticos.", () => {
       expect(celsiusToFahrenheit(1)).toBe(33.8);
     });
   });
-  
+
   describe(" 10 - Testando a Função fahrenheitToCelsius.", () => {
     it("Ao passar o argumento 100, deve retornar: 37.78", () => {
       expect(fahrenheitToCelsius(100)).toBe(37.78);
     });
+    it("Ao passar o argumento 32, deve retornar: 0", () => {
+      expect(fahrenheitToCelsius(32)).toBe(0);
+    });
+    it("Ao passar o argumento 0, deve retornar: -17.78", () => {
+      expect(fahrenheitToCelsius(0)).toBe(-17.78);
+    });
   });
-  
-  /* Escrito os testes até aqui */
 
-/*   describe(" 11 - Testando a Função paymentOptions.", () => {
-    it("Ao passar o argumento , deve retornar:", () => {
-      expect().toBe();
+
+  describe(" 11 - Testando a Função paymentOptions.", () => {
+    it("Se o preço do produto for 10, deve retornar 'À Vista: R$9 ou 4x de: R$2.88'", () => {
+      const expected = 'À Vista: R$9 ou 4x de: R$2.88';
+      expect(paymentOptions(10))
+        .toBe(expected);
+    });
+    it("Se o preço for 80, deve retornar 'À Vista: R$72 ou 4x de: R$23'", () => {
+      const expected = 'À Vista: R$72 ou 4x de: R$23';
+      expect(paymentOptions(80))
+        .toBe(expected);
     });
   });
 
   describe(" 12 - Testando a Função weightAndValue.", () => {
-    it("Ao passar o argumento , deve retornar:.", () => {
-      expect().toBe();
+
+    it("Com o preço do kg sendo 37,90 reais e o peso sem 735 gramas, deve retornar 'O prato de 735 gramas custa: R$ 27,86'", () => {
+      const expected = 'O prato de 735 gramas custa: R$ 27,86';
+      const received = weightAndValue(37.90, 735)
+      expect(received).toEqual(expected);
+    });
+
+    it("Com o preço do kg sendo 30 reais e o peso sem 1000 gramas, deve retornar 'O prato de 1000 gramas custa: R$ 30,00'", () => {
+      const expected = 'O prato de 1000 gramas custa: R$ 30,00';
+      const received = weightAndValue(30, 1000)
+      expect(received).toEqual(expected);
+    });
+
+    it("Com o preço do kg sendo 49,90 reais e o peso sem 1234 gramas, deve retornar 'O prato de 1234 gramas custa: R$ 61,58'", () => {
+      const expected = 'O prato de 1234 gramas custa: R$ 61,58';
+      const received = weightAndValue(49.9, 1234)
+      expect(received).toEqual(expected);
     });
   });
 
-  describe(" 13 - Testando a Função generateColor.", () => {
-    it("Ao passar o argumento , deve retornar:.", () => {
-      expect().toBe();
+  describe(" 13 - Testando a Função randomRGBColor.", () => {
+    // rgb(x, y, z)
+    it(`Deve retornar uma string no formato 'rgb(x, y, z)', sendo x, y e z números inteiros`, () => {
+      const received = randomRGBColor();
+      expect(received).toMatch(/rgb\(\d+, \d+, \d+\)/);
+    });
+
+    it("Deve gerar valores maiores ou iguais a 0 e menores que 256", () => {
+      const received = randomRGBColor();
+      const values = received.replace(/[^\d,]/g, '').split(',');
+      Array(...values).map((v) => parseFloat(v)).forEach((value) => {
+        expect(value).toBeGreaterThanOrEqual(0);
+        expect(value).toBeLessThan(256);
+      })
     });
   });
 
   describe(" 14 - Testando a Função timeTravel.", () => {
-    it("Ao passar o argumento , deve retornar:.", () => {
-      expect().toBe();
+    // A viagem terá duração de x hora(s) e y minuto(s)
+    it("Ao receber 60 como parâmetro, deve retornar 'A viagem terá duração de 1 hora(s) e 0 minuto(s)'", () => {
+      const expected = 'A viagem terá duração de 1 hora(s) e 0 minuto(s)';
+      const received = timeTravel(60);
+      expect(received).toEqual(expected);
+    });
+
+    it("Ao receber 73 como parâmetro, deve retornar 'A viagem terá duração de 1 hora(s) e 13 minuto(s)'", () => {
+      const expected = 'A viagem terá duração de 1 hora(s) e 13 minuto(s)';
+      const received = timeTravel(73);
+      expect(received).toEqual(expected);
+    });
+
+    it("Ao receber 1734 como parâmetro, deve retornar 'A viagem terá duração de 28 hora(s) e 54 minuto(s)'", () => {
+      const expected = 'A viagem terá duração de 28 hora(s) e 54 minuto(s)';
+      const received = timeTravel(1734);
+      expect(received).toEqual(expected);
     });
   });
 
   describe(" 15 - Testando a Função areaCircle.", () => {
-    it("Ao passar o argumento , deve retornar:.", () => {
-      expect().toBe();
+    // 'A circunferência de raio R cm possui uma área de A cm quadrados'
+    it("Ao receber 256 como parâmetro deve retornar 'A circunferência de raio 128 cm possui uma área de 51471.85 cm quadrados'", () => {
+      const expected = 'A circunferência de raio 128 cm possui uma área de 51471.85 cm quadrados';
+      const received = areaCircle(256);
+      expect(received).toEqual(expected);
+    });
+
+    it("Ao receber 16 como parâmetro deve retornar 'A circunferência de raio 8 cm possui uma área de 201.06 cm quadrados'", () => {
+      const expected = 'A circunferência de raio 8 cm possui uma área de 201.06 cm quadrados';
+      const received = areaCircle(16);
+      expect(received).toEqual(expected);
     });
   });
 
   describe(" 16 - Testando a Função randomBoolean.", () => {
-    it("Ao passar o argumento , deve retornar:.", () => {
-      expect().toBe();
+    it("Deve retornar sempre um valor booleano de forma aleatória", () => {
+      let countTrue = 0, countFalse = 0;
+
+      for (let index = 0; index < 123; index += 1) {
+        const received = randomBoolean();
+        expect(typeof received).toEqual('boolean');
+        received ? countTrue += 1 : countFalse += 1;
+      }
+
+      expect(countFalse).toBeGreaterThan(0);
+      expect(countTrue).toBeGreaterThan(0);
     });
   });
 
-  describe(" 17 - Testando a Função carFinancing.", () => {
-    it("Ao passar o argumento , deve retornar:.", () => {
-      expect().toBe();
+  /* Escrito os testes até aqui 
+    describe(" 17 - Testando a Função carFinancing.", () => {
+      it(".", () => {
+        expect().toEqual();
+      });
     });
-  });
-
-  describe(" 18 - Testando a Função rollDice.", () => {
-    it("Ao passar o argumento , deve retornar:.", () => {
-      expect().toBe();
+  
+    describe(" 18 - Testando a Função rollDice.", () => {
+      it(".", () => {
+        expect().toEqual();
+      });
     });
-  });
-
-  describe(" 19 - Testando a Função carTrip.", () => {
-    it("Ao passar o argumento , deve retornar:.", () => {
-      expect().toBe();
+  
+    describe(" 19 - Testando a Função carTrip.", () => {
+      it(".", () => {
+        expect().toEqual();
+      });
     });
-  });
-
-  describe(" 20 - Testando a Função avaliador.", () => {
-    it("Ao passar o argumento , deve retornar:.", () => {
-      expect().toBe();
+  
+    describe(" 20 - Testando a Função avaliador.", () => {
+      it(".", () => {
+        expect().toEqual();
+      });
     });
-  });
-
-  describe(" 21 - Testando a Função weightedAverage.", () => {
-    it("Ao passar o argumento , deve retornar:.", () => {
-      expect().toBe();
+  
+    describe(" 21 - Testando a Função weightedAverage.", () => {
+      it(".", () => {
+        expect().toEqual();
+      });
     });
-  });
-
-  describe(" 22 - Testando a Função weightedAverage.", () => {
-    it("Ao passar o argumento , deve retornar:.", () => {
-      expect().toBe();
+  
+    describe(" 22 - Testando a Função weightedAverage.", () => {
+      it(".", () => {
+        expect().toEqual();
+      });
     });
-  });
-
-  describe(" 23 - Testando a Função successiveDivisions.", () => {
-    it("Ao passar o argumento , deve retornar:.", () => {
-      expect().toBe();
-    });
-  });  */
+  
+    describe(" 23 - Testando a Função successiveDivisions.", () => {
+      it(".", () => {
+        expect().toEqual();
+      });
+    });  */
 });
