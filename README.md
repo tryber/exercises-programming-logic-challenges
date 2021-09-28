@@ -1,10 +1,25 @@
-# Desafios de Lógica de Programação
-Este repositório tem por finalidade apresentar alguns exercícios de lógica de programação e materiais de estudo complementares sobre os temas que são abordados.
+# Lógica de Programação
+"Eu acho que todas as pessoas neste país deveriam aprender como programar um computardor porque isto te ensina como pensar."
+Steve Jobs – Invetor
+
+Lógica de Programação é a forma como nós Pessoas Desenvolvedoras pensamos e escrevemos algoritmos para resoluções de problemas ou execuções de tarefas processados por uma máquina.
+
+Nesse [artigo](https://blog.betrybe.com/javascript/) de nosso blog, vocẽ poderá ler mais acerca da importância da Lógica de Programcão e como aprendê-la.
+
+# Desafios
+Este repositório tem por finalidade apresentar alguns exercícios de Lógica de Programação e materiais de estudo complementares sobre os temas que são abordados.
 
 Você verá que alguns links estão em inglês, mas disponibilizamos no final da página um tutorial para te ajudar a traduzir o site.
 
-Confira abaixo os links para estudo:
+Na pasta raiz do projeto, temos a pasta "tests". Ela contém os testes unitários correspondentes a cada bloco de desafios, por exemplo: os testes unitários do bloco Arrays é o "arrays.test.js.", do bloco Desafiadores é o "desafiadores.test.js.".
 
+Para rodar o testes de todos blocos, abra o terminal dentro da pasta raiz do projeto e rode o comando: "npm test".
+
+Caso você queria rodar apenas um bloco específico, basta após o comando "npm test" escrever o nome do arquivo da pasta "test" que deseja rodar, por exemplo: desejo rodar apenas os testes do bloco de Strings, então vou até o terminal e rodo o comando: "npm test strings.test.js"
+
+Atenção, nos exercícios, não troque os nomes das funções ou a retire do module.exports.
+
+Confira abaixo os links para estudo:
 ## Gerais
 * [Blog Trybe](https://blog.betrybe.com/javascript/)
 * [Laços e iterações MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Loops_and_iteration)
