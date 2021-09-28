@@ -6,7 +6,7 @@ A Trybe tem um grupo de aventureiros.
 
 Quando o nome de algum é invocado, a classe a qual essa pessoa faz parte é apresentada.
 
-É sua função é escrever um algoritmo que recebe o nome de um aventureiro e, de acordo com este nome, retorna o nome da sua classe conforme tabela baixo:
+Escreva um algoritmo que recebe o nome de um aventureiro e, de acordo com este nome, retorna o nome da sua classe conforme tabela baixo:
 
 |  Aventureiro  |       Classe        |
 

@@ -2,7 +2,7 @@
 
 6 - Analise de preços da lista de compras
 
-Faça um algoritmo que irá receber um array de produtos e retorne uma string no formato da saída que contem:
+Escreva um algoritmo que irá receber um array de produtos e retorne uma string no formato da saída que contem:
 
 * O produto com maior preço;
 * O preço do produto;

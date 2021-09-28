@@ -10,7 +10,7 @@ A classificação dessa Copa é baseada no número de pontos ganhos pelas equipe
 * se o jogo termina empatado, ambas as equipes recebem 1 ponto;
 * a equipe perdedora não recebe nenhum ponto.
 
-Escreva um algoritmo que recebe a quantidade de partidas jogadas e um objeto no qual as chaves são os nomes dos times e os valores da pontuação alcançada por cada um e retorne a quantidade de partidas empatadas.
+Escreva um algoritmo que recebe a quantidade de partidas jogadas e um objeto no qual as chaves são os nomes dos times e os valores a pontuação alcançada por cada um e retorne a quantidade de partidas empatadas.
 
 */
 

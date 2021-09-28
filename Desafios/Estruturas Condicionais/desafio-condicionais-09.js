@@ -12,7 +12,7 @@ allReqs: number int,
 completed: number int,
 }
 
-Aonde:
+Onde:
 * rec: informando se a pessoa estudante está ou não em recuperação;
 * reqs: são os requisitos obrigatórios;
 * allReqs: são os requisitos obrigatórios mais os bônus:
