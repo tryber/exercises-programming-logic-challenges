@@ -229,13 +229,16 @@ describe("Desafios de Operadores Aritméticos.", () => {
     });
   });
 
-  /* Escrito os testes até aqui 
-    describe(" 15 - Testando a Função areaCircle.", () => {
-      it(".", () => {
-        expect().toEqual();
-      });
+  describe(" 15 - Testando a Função areaCircle.", () => {
+    // 'A circunferência de raio (raio) cm possui uma área de (area) cm quadrados'
+    it(".", () => {
+      const expected = 'A circunferência de raio (raio) cm possui uma área de (area) cm quadrados';
+      const received = areaCircle(256);
+      expect(received).toEqual(expected);
     });
-  
+  });
+
+  /* Escrito os testes até aqui 
     describe(" 16 - Testando a Função randomBoolean.", () => {
       it(".", () => {
         expect().toEqual();
