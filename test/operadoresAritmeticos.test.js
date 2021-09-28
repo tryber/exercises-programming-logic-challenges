@@ -32,7 +32,7 @@ const {
   weightedAverage,
   calculateScore,
   successiveDivisions,
-} = require("../Desafios/Operadores Aritméticos/Gabaritos/21-23")
+} = require("../Desafios/Operadores Aritméticos/Gabaritos/21-23");
 
 /* Exercícios */
 /* 
@@ -191,19 +191,30 @@ describe("Desafios de Operadores Aritméticos.", () => {
     });
   });
 
+  describe(" 13 - Testando a Função randomRGBColor.", () => {
+    // rgb(x, y, z)
+    it(`Deve retornar uma string no formato 'rgb(x, y, z)', sendo x, y e z números inteiros`, () => {
+      const received = randomRGBColor();
+      expect(received).toMatch(/rgb\(\d+, \d+, \d+\)/);
+    });
+
+    it("Deve gerar valores maiores ou iguais a 0 e menores que 256", () => {
+      const received = randomRGBColor();
+      const values = received.replace(/[^\d,]/g, '').split(',');
+      Array(...values).map((v) => parseFloat(v)).forEach((value) => {
+        expect(value).toBeGreaterThanOrEqual(0);
+        expect(value).toBeLessThan(256);
+      })
+    });
+  });
+
   /* Escrito os testes até aqui 
-    describe(" 13 - Testando a Função generateColor.", () => {
-      it(".", () => {
-        expect().toEqual();
-      });
+  describe(" 14 - Testando a Função timeTravel.", () => {
+    it(".", () => {
+      expect().toEqual();
     });
-  
-    describe(" 14 - Testando a Função timeTravel.", () => {
-      it(".", () => {
-        expect().toEqual();
-      });
-    });
-  
+  });
+
     describe(" 15 - Testando a Função areaCircle.", () => {
       it(".", () => {
         expect().toEqual();
