@@ -244,13 +244,22 @@ describe("Desafios de Operadores Aritméticos.", () => {
     });
   });
 
-  /* Escrito os testes até aqui 
-    describe(" 16 - Testando a Função randomBoolean.", () => {
-      it(".", () => {
-        expect().toEqual();
-      });
+  describe(" 16 - Testando a Função randomBoolean.", () => {
+    it("Deve retornar sempre um valor booleano de forma aleatória", () => {
+      let countTrue = 0, countFalse = 0;
+
+      for (let index = 0; index < 123; index += 1) {
+        const received = randomBoolean();
+        expect(typeof received).toEqual('boolean');
+        received ? countTrue += 1 : countFalse += 1;
+      }
+
+      expect(countFalse).toBeGreaterThan(0);
+      expect(countTrue).toBeGreaterThan(0);
     });
-  
+  });
+
+  /* Escrito os testes até aqui 
     describe(" 17 - Testando a Função carFinancing.", () => {
       it(".", () => {
         expect().toEqual();
