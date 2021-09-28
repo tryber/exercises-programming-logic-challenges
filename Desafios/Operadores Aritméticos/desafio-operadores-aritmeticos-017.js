@@ -12,19 +12,19 @@ A pessoa que quer fazer o financiamento precisa informar:
 
 A loja em questão usa uma taxa de juros fixa de 5% sobre o valor do financiamento.
 
-Desenvolva a solução e retorne conforme o exemplo (o valor da parcela precisa ter 2 casas decimais após a vírgula):
+Desenvolva a solução e retorne conforme o exemplo (os valores monetários precisam ter 2 casas decimais após a virgula):
 
 --------------------------------
-" Valor Financiado: R$35000,
-  Valor do Juros: R$1750;
-  Quantidade de Parcelas: 36;
-  Valor da Parcela: R$1020.83;
-  Valor Total do Carro: R$46750."
+Valor Financiado: R$35000,00;
+Valor do Juros: R$1750,00;
+Quantidade de Parcelas: 36;
+Valor da Parcela: R$1020,83;
+Valor Total do Carro: R$46750,00.
 --------------------------------
 
 */
 
-function carFinancing(carPrice, entranceValue, quota){
+function carFinancing(carPrice, entranceValue, quota) {
   // Desenvolva seu código nessa função
 }
 

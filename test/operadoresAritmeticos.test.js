@@ -259,13 +259,28 @@ describe("Desafios de Operadores Aritméticos.", () => {
     });
   });
 
-  /* Escrito os testes até aqui 
-    describe(" 17 - Testando a Função carFinancing.", () => {
-      it(".", () => {
-        expect().toEqual();
-      });
+  describe(" 17 - Testando a Função carFinancing.", () => {
+    it("Deve retornar a saída correta para os parâmetros 50000, 10000, 48", () => {
+      const expected = `Valor Financiado: R$40000,00;
+Valor do Juros: R$2000,00;
+Quantidade de Parcelas: 48;
+Valor da Parcela: R$875,00;
+Valor Total do Carro: R$52000,00.`;
+      const received = carFinancing(50000, 10000, 48);
+      expect(received).toEqual(expected);
     });
-  
+    it("Deve retornar a saída correta para os parâmetros 10000, 0, 32", () => {
+      const expected = `Valor Financiado: R$10000,00;
+Valor do Juros: R$500,00;
+Quantidade de Parcelas: 32;
+Valor da Parcela: R$328,13;
+Valor Total do Carro: R$10500,00.`;
+      const received = carFinancing(10000, 0, 32);
+      expect(received).toEqual(expected);
+    });
+  });
+
+  /* Escrito os testes até aqui 
     describe(" 18 - Testando a Função rollDice.", () => {
       it(".", () => {
         expect().toEqual();

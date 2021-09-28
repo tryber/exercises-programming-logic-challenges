@@ -61,15 +61,15 @@ function carFinancing(carPrice, entranceValue, quota) {
   let tax = 0.05;
   return (
     "Valor Financiado: R$" +
-    financing +
-    "Valor do Juros: R$" +
-    financing * tax +
-    "Quantidade de Parcelas: " +
+    formatBrazilianMoney(financing) +
+    ";\nValor do Juros: R$" +
+    formatBrazilianMoney(financing * tax) +
+    ";\nQuantidade de Parcelas: " +
     quota +
-    "Valor da Parcela: R$" +
-    ((financing * tax + financing) / quota).toFixed(2) +
-    "Valor Total do Carro: R$" +
-    (financing * tax + financing + entranceValue)
+    ";\nValor da Parcela: R$" +
+    formatBrazilianMoney((financing * tax + financing) / quota) +
+    ";\nValor Total do Carro: R$" +
+    formatBrazilianMoney(financing * tax + financing + entranceValue) + '.'
   );
 }
 
