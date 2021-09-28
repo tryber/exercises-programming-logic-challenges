@@ -230,10 +230,16 @@ describe("Desafios de Operadores Aritméticos.", () => {
   });
 
   describe(" 15 - Testando a Função areaCircle.", () => {
-    // 'A circunferência de raio (raio) cm possui uma área de (area) cm quadrados'
-    it(".", () => {
-      const expected = 'A circunferência de raio (raio) cm possui uma área de (area) cm quadrados';
+    // 'A circunferência de raio R cm possui uma área de A cm quadrados'
+    it("Ao receber 256 como parâmetro deve retornar 'A circunferência de raio 128 cm possui uma área de 51471.85 cm quadrados'", () => {
+      const expected = 'A circunferência de raio 128 cm possui uma área de 51471.85 cm quadrados';
       const received = areaCircle(256);
+      expect(received).toEqual(expected);
+    });
+
+    it("Ao receber 16 como parâmetro deve retornar 'A circunferência de raio 8 cm possui uma área de 201.06 cm quadrados'", () => {
+      const expected = 'A circunferência de raio 8 cm possui uma área de 201.06 cm quadrados';
+      const received = areaCircle(16);
       expect(received).toEqual(expected);
     });
   });

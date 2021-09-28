@@ -45,9 +45,9 @@ function timeTravel(totalMinutes) {
 function areaCircle(diameter) {
   let radius = diameter / 2;
   let area = Math.PI * Math.pow(radius, 2);
-  return `A circumferência de raio ${radius} cm possui uma área de ${area.toFixed(
+  return `A circunferência de raio ${radius} cm possui uma área de ${area.toFixed(
     2
-  )} cm²`;
+  )} cm quadrados`;
 }
 
 /*  16 - Verdadeiro ou falso? */

@@ -8,7 +8,7 @@ Também sabemos que o raio (r) é a metade do diâmetro.
 
 Escreva um algoritmo que calcula a área de uma circunferência com **diâmetro** de 10cm e o retorne.
 
-Obs1: Exiba o resultado no seguinte formato 'A circunferência de raio (raio) cm possui uma área de (area) cm quadrados', onde raio é o valor do raio da circunferência e área é o valor da área da circunferência.
+Obs1: Exiba o resultado no seguinte formato 'A circunferência de raio R cm possui uma área de A cm quadrados', onde R é o valor do raio da circunferência e A é o valor da área da circunferência.
 
 Obs2: Exiba a área com apenas duas casas decimais.
 
