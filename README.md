@@ -13,9 +13,9 @@ Você verá que alguns links estão em inglês, mas disponibilizamos no final da
 
 Na pasta raiz do projeto, temos a pasta "tests". Ela contém os testes unitários correspondentes a cada bloco de desafios, por exemplo: os testes unitários do bloco Arrays é o "arrays.test.js.", do bloco Desafiadores é o "desafiadores.test.js.".
 
-Para rodar o testes de todos blocos, abra o terminal dentro da pasta raiz do projeto e rode o comando: "npm test".
+Para rodar o testes de todos blocos, abra o terminal dentro da pasta raiz do projeto e execute o comando: "npm test".
 
-Caso você queria rodar apenas um bloco específico, basta após o comando "npm test" escrever o nome do arquivo da pasta "test" que deseja rodar, por exemplo: desejo rodar apenas os testes do bloco de Strings, então vou até o terminal e rodo o comando: "npm test strings.test.js"
+Caso você queria rodar apenas um bloco específico, basta após o comando "npm test" escrever o nome do arquivo da pasta "test" que deseja rodar, por exemplo: desejo verificar apenas os testes do bloco de Strings, então vou até o terminal e executo o comando: "npm test strings.test.js"
 
 Atenção, nos exercícios, não troque os nomes das funções ou a retire do module.exports.
 
