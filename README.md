@@ -11,7 +11,7 @@ Este repositório tem por finalidade apresentar alguns exercícios de Lógica de
 
 Você verá que alguns links estão em inglês, mas disponibilizamos no final da página um tutorial para te ajudar a traduzir o site.
 
-Na pasta raiz do projeto, temos a pasta "tests". Ela contém os testes unitários correspondentes a cada bloco de desafios, por exemplo: os testes unitários do bloco Arrays é o "arrays.test.js.", do bloco Desafiadores é o "desafiadores.test.js.".
+Na pasta raiz do projeto, temos a pasta "tests". Ela contém os testes unitários correspondentes a cada bloco de desafios, por exemplo: os testes unitários do bloco Arrays estão no arquivo"arrays.test.js.", do bloco Desafiadores estão no "desafiadores.test.js.".
 
 Para rodar o testes de todos blocos, abra o terminal dentro da pasta raiz do projeto e execute o comando: "npm test".
 
