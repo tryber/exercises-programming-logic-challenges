@@ -383,10 +383,26 @@ Valor Total do Carro: R$10500,00.`;
     });
   });
 
-  /* Escrito os testes até aqui 
-    describe(" 23 - Testando a Função successiveDivisions.", () => {
-      it(".", () => {
-        expect().toEqual();
-      });
-    });  */
+  describe(" 23 - Testando a Função successiveDivisions.", () => {
+    it("Ao receber 0 como parâmetro deve retornar 'Quantidade total de divisões: 0'", () => {
+      const expected = 'Quantidade total de divisões: 0';
+      const received = successiveDivisions(0);
+      expect(received).toEqual(expected);
+    });
+    it("Ao receber 1 como parâmetro deve retornar 'Quantidade total de divisões: 1'", () => {
+      const expected = 'Quantidade total de divisões: 1';
+      const received = successiveDivisions(1);
+      expect(received).toEqual(expected);
+    });
+    it("Ao receber 2 como parâmetro deve retornar 'Quantidade total de divisões: 2'", () => {
+      const expected = 'Quantidade total de divisões: 2';
+      const received = successiveDivisions(2);
+      expect(received).toEqual(expected);
+    });
+    it("Ao receber 512 como parâmetro deve retornar 'Quantidade total de divisões: 10'", () => {
+      const expected = 'Quantidade total de divisões: 10';
+      const received = successiveDivisions(512);
+      expect(received).toEqual(expected);
+    });
+  });
 });

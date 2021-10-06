@@ -18,11 +18,12 @@ function calculateScore(distance) {
 }
 
 /*  23 - Divisões sucessivas */
-function successiveDivisions(number, count) {
-  for (count; number >= 1; count = count + 1) {
+function successiveDivisions(number) {
+  let count;
+  for (count = 0; number >= 1; count = count + 1) {
     number = number / 2;
   }
-  return "Quantidade total de divisões: " + (count - 1);
+  return "Quantidade total de divisões: " + count;
 }
 
 module.exports = {
