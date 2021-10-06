@@ -308,13 +308,33 @@ Valor Total do Carro: R$10500,00.`;
     });
   });
 
-  /* Escrito os testes até aqui 
-    describe(" 20 - Testando a Função avaliador.", () => {
-      it(".", () => {
-        expect().toEqual();
-      });
+  describe(" 20 - Testando a Função avaliador.", () => {
+    it("Ao receber as notas 0, 0 e 0 deve retornar 'Reprovação, média: 0'", () => {
+      const expected = 'Reprovação, média: 0';
+      const received = avaliador(0, 0, 0);
+      expect(received).toBe(expected);
     });
-  
+
+    it("Ao receber as notas 10, 10 e 10 deve retornar 'Aprovação, média: 10'", () => {
+      const expected = 'Aprovação, média: 10';
+      const received = avaliador(10, 10, 10);
+      expect(received).toBe(expected);
+    });
+
+    it("Ao receber as notas 8, 4 e 7 deve retornar 'Aprovação, média: 6'", () => {
+      const expected = 'Aprovação, média: 6';
+      const received = avaliador(8, 4, 7);
+      expect(received).toBe(expected);
+    });
+
+    it("Ao receber as notas 10, 6 e 0 deve retornar 'Reprovação, média: 5'", () => {
+      const expected = 'Reprovação, média: 5';
+      const received = avaliador(10, 6, 0);
+      expect(received).toBe(expected);
+    });
+  });
+
+  /* Escrito os testes até aqui 
     describe(" 21 - Testando a Função weightedAverage.", () => {
       it(".", () => {
         expect().toEqual();

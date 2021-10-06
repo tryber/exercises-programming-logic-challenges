@@ -89,13 +89,12 @@ function carTrip(spBh, bhSal, salNat) {
 
 /*  20 - Aprovado ou reprovado? */
 function avaliador(score1, score2, score3) {
-  let averageScore = (score1 + score2 + score3) / 3;
+  let averageScore = Math.round((score1 + score2 + score3) / 3);
 
-  if (averageScore > 6) {
-    "Aprovação, média: " + averageScore;
-  } else {
-    "Reprovação, média: " + averageScore;
+  if (averageScore >= 6) {
+    return "Aprovação, média: " + averageScore;
   }
+  return "Reprovação, média: " + averageScore;
 }
 
 module.exports = {
