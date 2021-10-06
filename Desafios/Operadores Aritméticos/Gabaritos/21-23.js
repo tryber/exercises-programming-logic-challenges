@@ -1,8 +1,8 @@
 /* 21 - Média ponderada */
 function weightedAverage(score1, score2, score3) {
-  let averageScore = (score1 * 3 + score2 * 3 + score3 * 4) / 10;
+  let averageScore = parseFloat((score1 * 0.3 + score2 * 0.3 + score3 * 0.4).toFixed(2));
 
-  if (averageScore > 6) {
+  if (averageScore >= 6) {
     return "Aprovação, média: " + averageScore;
   } else {
     return "Reprovação, média: " + averageScore;
