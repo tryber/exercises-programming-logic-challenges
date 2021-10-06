@@ -360,13 +360,30 @@ Valor Total do Carro: R$10500,00.`;
     });
   });
 
-  /* Escrito os testes até aqui 
-    describe(" 22 - Testando a Função weightedAverage.", () => {
-      it(".", () => {
-        expect().toEqual();
-      });
+  describe(" 22 - Testando a Função calculateScore.", () => {
+    it("Ao receber 1 como parâmetro, deve retornar 'A pontuação da pessoa jogadora foi de 1'", () => {
+      const expected = 'A pontuação da pessoa jogadora foi de 1';
+      const received = calculateScore(1)
+      expect(received).toEqual(expected);
     });
-  
+    it("Ao receber 5 como parâmetro, deve retornar 'A pontuação da pessoa jogadora foi de 7'", () => {
+      const expected = 'A pontuação da pessoa jogadora foi de 7';
+      const received = calculateScore(5)
+      expect(received).toEqual(expected);
+    });
+    it("Ao receber 15 como parâmetro, deve retornar 'A pontuação da pessoa jogadora foi de 21'", () => {
+      const expected = 'A pontuação da pessoa jogadora foi de 21';
+      const received = calculateScore(15)
+      expect(received).toEqual(expected);
+    });
+    it("Ao receber 555 como parâmetro, deve retornar 'A pontuação da pessoa jogadora foi de 555'", () => {
+      const expected = 'A pontuação da pessoa jogadora foi de 777';
+      const received = calculateScore(555)
+      expect(received).toEqual(expected);
+    });
+  });
+
+  /* Escrito os testes até aqui 
     describe(" 23 - Testando a Função successiveDivisions.", () => {
       it(".", () => {
         expect().toEqual();

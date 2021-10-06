@@ -11,10 +11,10 @@ function weightedAverage(score1, score2, score3) {
 
 /*  22 - Jogo do arremesso de peso */
 function calculateScore(distance) {
-  let addScore = Math.trunc((distance / 5) * 2);
+  let addScore = Math.trunc((distance / 5)) * 2;
   let totalScore = Math.trunc(distance + addScore);
 
-  return `A pontuação do jogador foi de ${totalScore}`;
+  return `A pontuação da pessoa jogadora foi de ${totalScore}`;
 }
 
 /*  23 - Divisões sucessivas */
