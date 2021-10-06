@@ -49,24 +49,24 @@ function fibonnaci(n) {
     let n2 = fib[count - 2];
     fib.push(n1 + n2);
   }
-  return fib[n -1];
+  return fib[n - 1];
 }
 
 function isPrimo(number) {
   if (number <= 1) return false;
-  
+
   for (let index = 2; index < number; index += 1) {
     if (number % index === 0) return false;
   }
-  
+
   return true;
 }
 
 /*  14 - Soma de números primos */
-function sumPrimesNumbers(){
+function sumPrimesNumbers() {
   let sum = 0;
-  for(let index = 1; index <= 150; index += 1) {
-    if(isPrimo(index)){
+  for (let index = 1; index <= 150; index += 1) {
+    if (isPrimo(index)) {
       sum = sum + index
     }
   }
@@ -74,7 +74,7 @@ function sumPrimesNumbers(){
 }
 
 /*  15 - Fatorial e média */
-function fatorial(number) {
+function factorial15(number) {
   if (number === 0 || number === 1) {
     return 1;
   }
@@ -85,6 +85,14 @@ function fatorial(number) {
   }
 
   return fat;
+}
+
+function meanFactorialFromAToB(a, b) {
+  let sum = 0;
+  for (let n = a; n <= b; n += 1) {
+    sum += factorial(n);
+  }
+  return parseFloat((sum / (b - a + 1)).toFixed(2));
 }
 
 function calcCpfFirstDigit(cpfArray) {
@@ -133,6 +141,7 @@ module.exports = {
   factorial,
   fibonnaci,
   sumPrimesNumbers,
-  fatorial,
+  factorial15,
+  meanFactorialFromAToB,
   cpfValidator,
 };

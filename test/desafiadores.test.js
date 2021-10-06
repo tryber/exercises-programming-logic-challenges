@@ -24,7 +24,8 @@ const {
   factorial,
   fibonnaci,
   sumPrimesNumbers,
-  // fatorial
+  factorial15,
+  meanFactorialFromAToB,
   cpfValidator,
 } = require("../Desafios/Desafiadores/Gabaritos/11-16");
 
@@ -116,7 +117,7 @@ describe("Desafios Desafiadores.", () => {
         "Curioso... muito curioso..."
       );
     });
-     it(`Ao passar os argumentos 'Hermione Granger' e 'Videira e Fibra de Dragão', deve retornar:
+    it(`Ao passar os argumentos 'Hermione Granger' e 'Videira e Fibra de Dragão', deve retornar:
           'Curioso... muito curioso...'`, () => {
       expect(magicWand("Hermione Granger", "Videira e Fibra de Dragão")).toBe(
         "Curioso... muito curioso..."
@@ -133,8 +134,8 @@ describe("Desafios Desafiadores.", () => {
       expect(magicWand("Belatriz Lestrange", "Nogueira e Fibra de Dragão")).toBe(
         "Curioso... muito curioso..."
       );
-    }); 
-    
+    });
+
     it(`Ao passar os argumentos 'Belatriz Lestrange' e 'Azevinho e Pena de Fênix', deve retornar:
          'Não, não! Decididamente, não!'`, () => {
       expect(
@@ -269,17 +270,73 @@ describe("Desafios Desafiadores.", () => {
     });
   });
 
-  describe(" 14- Testando a Função sumPrimesNumbers.", () => {
+  describe("14 - Testando a Função sumPrimesNumbers.", () => {
     it("Deve retornar: 2276", () => {
       expect(sumPrimesNumbers()).toBe(2276);
     });
   });
 
-  /*   describe(" 15- Testando a Função fatorial.", () => {
-    it(".", () => {
-      expect().toEqual();
+  describe("15 - Testando as funções 'factorial15' e 'meanFactorialFromAToB'", () => {
+    describe('Função factorial15', () => {
+      it("Ao receber 0 como parâmetro, deve retornar 1", () => {
+        const expected = 1;
+        const received = factorial15(0);
+        expect(received).toEqual(expected);
+      });
+
+      it("Ao receber 1 como parâmetro, deve retornar 1", () => {
+        const expected = 1;
+        const received = factorial15(1);
+        expect(received).toEqual(expected);
+      });
+      it("Ao receber 2 como parâmetro, deve retornar 2", () => {
+        const expected = 2;
+        const received = factorial15(2);
+        expect(received).toEqual(expected);
+      });
+      it("Ao receber 3 como parâmetro, deve retornar 6", () => {
+        const expected = 6;
+        const received = factorial15(3);
+        expect(received).toEqual(expected);
+      });
+      it("Ao receber 10 como parâmetro, deve retornar 3628800", () => {
+        const expected = 3628800;
+        const received = factorial15(10);
+        expect(received).toEqual(expected);
+      });
     });
-  }); */
+
+    describe('Função meanFactorialFromAToB', () => {
+      it("Ao receber 0 e 0 como parâmetro, deve retornar 1", () => {
+        const expected = 1;
+        const received = meanFactorialFromAToB(0, 0);
+        expect(received).toEqual(expected);
+      });
+
+      it("Ao receber 0 e 1 como parâmetro, deve retornar 1", () => {
+        const expected = 1;
+        const received = meanFactorialFromAToB(0, 1);
+        expect(received).toEqual(expected);
+      });
+
+      it("Ao receber 0 e 5 como parâmetro, deve retornar 25.67", () => {
+        const expected = 25.67;
+        const received = meanFactorialFromAToB(0, 5);
+        expect(received).toEqual(expected);
+      });
+      it("Ao receber 5 e 8 como parâmetro, deve retornar 11550", () => {
+        const expected = 11550;
+        const received = meanFactorialFromAToB(5, 8);
+        expect(received).toEqual(expected);
+      });
+      it("Ao receber 10 e 15 como parâmetro, deve retornar 233600371200", () => {
+        const expected = 233600371200;
+        const received = meanFactorialFromAToB(10, 15);
+        expect(received).toEqual(expected);
+      });
+
+    });
+  });
 
   describe("16 - Testando a Função cpfValidator.", () => {
     it("Ao passar o argumento 000.000.000-00, deve retornar: 'CPF inválido'", () => {
