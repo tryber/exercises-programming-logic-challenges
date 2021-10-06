@@ -84,7 +84,7 @@ function carTrip(spBh, bhSal, salNat) {
   let totalHours = spBh + bhSal + salNat;
   let days = totalHours / 24;
 
-  return days.toPrecision(3);
+  return parseFloat(days.toFixed(3));
 }
 
 /*  20 - Aprovado ou reprovado? */

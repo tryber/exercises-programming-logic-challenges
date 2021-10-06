@@ -291,13 +291,24 @@ Valor Total do Carro: R$10500,00.`;
     });
   });
 
-  /* Escrito os testes até aqui 
-    describe(" 19 - Testando a Função carTrip.", () => {
-      it(".", () => {
-        expect().toEqual();
-      });
+  describe(" 19 - Testando a Função carTrip.", () => {
+    it("Ao receber como parâmetro 7.3, 19.9 e 15.51, deve retornar 1.78", () => {
+      const received = carTrip(7.3, 19.9, 15.51);
+      expect(received).toEqual(1.78);
     });
-  
+
+    it("Ao receber como parâmetro 7, 19 e 15, deve retornar 1.71", () => {
+      const received = carTrip(7, 19, 15);
+      expect(received).toEqual(1.708);
+    });
+
+    it("Ao receber como parâmetro 13, 17 e 40, deve retornar 2.92", () => {
+      const received = carTrip(13, 17, 40);
+      expect(received).toEqual(2.917);
+    });
+  });
+
+  /* Escrito os testes até aqui 
     describe(" 20 - Testando a Função avaliador.", () => {
       it(".", () => {
         expect().toEqual();
