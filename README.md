@@ -1,23 +1,25 @@
 # Lógica de Programação
-"Eu acho que todas as pessoas neste país deveriam aprender como programar um computardor porque isto te ensina como pensar."
-Steve Jobs – Invetor
+"Eu acho que todas as pessoas neste país deveriam aprender como programar um computador porque isto te ensina como pensar."
+Steve Jobs – Inventor
 
 Lógica de Programação é a forma como nós Pessoas Desenvolvedoras pensamos e escrevemos algoritmos para resoluções de problemas ou execuções de tarefas processados por uma máquina.
 
-Nesse [artigo](https://blog.betrybe.com/tecnologia/logica-de-programacao/) de nosso blog, vocẽ poderá ler mais acerca da importância da Lógica de Programcão e como aprendê-la.
+Nesse [artigo](https://blog.betrybe.com/tecnologia/logica-de-programacao/) de nosso blog, você poderá ler mais acerca da importância da Lógica de Programação e como aprendê-la.
 
 # Desafios
 Este repositório tem por finalidade apresentar alguns exercícios de Lógica de Programação e materiais de estudo complementares sobre os temas que são abordados.
 
 Você verá que alguns links estão em inglês, mas disponibilizamos no final da página um tutorial para te ajudar a traduzir o site.
 
-Na pasta raiz do projeto, temos a pasta "tests". Ela contém os testes unitários correspondentes a cada bloco de desafios, por exemplo: os testes unitários do bloco Arrays estão no arquivo"arrays.test.js.", do bloco Desafiadores estão no "desafiadores.test.js.".
+Na pasta raiz do projeto, temos a pasta "tests". Ela contém os testes unitários correspondentes a cada bloco de desafios, por exemplo: os testes unitários do bloco Arrays estão no arquivo "arrays.test.js.", do bloco Desafiadores estão no "desafiadores.test.js.".
 
-Para rodar o testes de todos blocos, abra o terminal dentro da pasta raiz do projeto e execute o comando: "npm test".
+Para executar os testes de todos os blocos, abra o terminal dentro da pasta raiz do projeto e execute o comando: ```"npm install"``` para instalar as dependências do projeto.
 
-Caso você queria rodar apenas um bloco específico, basta após o comando "npm test" escrever o nome do arquivo da pasta "test" que deseja rodar, por exemplo: desejo verificar apenas os testes do bloco de Strings, então vou até o terminal e executo o comando: "npm test strings.test.js"
+Em seguida execute o comando para executar todos os testes: ```"npm test"```.
 
-Atenção, nos exercícios, não troque os nomes das funções ou a retire do module.exports.
+Caso você queira executar apenas um bloco específico, basta após o comando ```"npm test"``` escrever o nome do arquivo da pasta "test" que deseja executar, por exemplo: se deseja verificar apenas os testes do bloco de Strings, então vá até o terminal e executo o comando: ```"npm test strings.test.js"```.
+
+Atenção, nos exercícios, não troque os nomes das funções ou as retire do module.exports.
 
 Confira abaixo os links para estudo:
 ## Gerais

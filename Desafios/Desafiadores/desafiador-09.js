@@ -11,17 +11,17 @@ Caso a pessoa goste de Esportes, tem 16 anos ou mais e mora no Brasil, retorne:
 "UFC."
 ------
 
-Caso ela tenha o mesmo perfil de do UFC, porém não gosta de Esportes retorne:
+Caso ela tenha o mesmo perfil do UFC, porém não gosta de Esportes, retorne:
 ---------------
 "The Simpsons."
 ---------------
 
-Caso a pessoa possuir menos de 16 anos, mora no Chile e não gosta de Esportes retorne:
+Caso a pessoa tenha menos de 16 anos, more no Chile e não goste de Esportes, retorne:
 -----------------------------
 "The Penguins of Madagascar."
 -----------------------------
 
-Caso possuir menos de 16 anos, gosta Esportes e more em um país que não seja o Chile, retorne:
+Caso a pessoa tenha menos de 16 anos, goste de Esportes e more em um país que não seja o Chile, retorne:
 ----------------
 "Sport Fishing."
 ----------------
