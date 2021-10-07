@@ -2,7 +2,7 @@
 
 15 - Área de uma circunferência
 
-Sabemos que a área de uma circunferência é calculada da seguinte forma: π * r ^ 2 (PI vezes R ao quadrado.
+Sabemos que a área de uma circunferência é calculada da seguinte forma: π * r ^ 2 (PI vezes R ao quadrado).
 
 Também sabemos que o raio (r) é a metade do diâmetro.
 
