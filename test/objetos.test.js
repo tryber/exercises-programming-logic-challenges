@@ -1,22 +1,22 @@
 /* É importada nesse arquivo tanto as funções do gabarito quanto dos desafios */
 const { objetosMock : {mock4A,mock4B, mock4C }} = require('../test/mocks')
 /* Gabaritos */
-const {
-  fantasyGame,
-  fantasyGame2,
-  musicalScale,
-  getOldPerson,
-  fantasyGame3,
-} = require("../Desafios/Objetos/Gabaritos/1-5");
-
-/* Exercícios */
 /* const {
   fantasyGame,
   fantasyGame2,
   musicalScale,
   getOldPerson,
   fantasyGame3,
- } = require("../Desafios/Objetos") */
+} = require("../Desafios/Objetos/Gabaritos/1-5");
+ */
+/* Exercícios */
+ const {
+  fantasyGame,
+  fantasyGame2,
+  musicalScale,
+  getOldPerson,
+  fantasyGame3,
+ } = require("../Desafios/Objetos");
 
 describe("Desafios de Objetos.", () => {
   describe("01 - Testando a Função fantasyGame.", () => {

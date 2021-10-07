@@ -5,19 +5,6 @@ const {
  É importada nesse arquivo tanto as funções do gabarito quanto dos desafios 
 */
 /* Gabaritos */
-const {
-  encode,
-  accumulator,
-  accumulatorThousand,
-  repeatName,
-  numbersDivisibleBy3,
-  oddNumbers,
-  findIndexOf,
-  sortDec,
-  includesArrays,
-} = require("../Desafios/Estruturas de Repetições/Gabaritos/1-9");
-
-/* Exercícios */
 /* const {
   encode,
   accumulator,
@@ -28,7 +15,20 @@ const {
   findIndexOf,
   sortDec,
   includesArrays,
-} */
+} = require("../Desafios/Estruturas de Repetições/Gabaritos/1-9"); */
+
+/* Exercícios */
+ const {
+  encode,
+  accumulator,
+  accumulatorThousand,
+  repeatName,
+  numbersDivisibleBy3,
+  oddNumbers,
+  findIndexOf,
+  sortDec,
+  includesArrays,
+} = require("../Desafios/Estruturas de Repetições")
 
 describe("Desafios de Estruturas de Repetições.", () => {
   describe("01 - Testando a Função encode.", () => {

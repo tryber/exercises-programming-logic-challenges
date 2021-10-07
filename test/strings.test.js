@@ -2,18 +2,6 @@ const {
   stringMock: { test9, resp9 },
 } = require("./mocks");
 /* Gabaritos */
-const {
-  reverseNames,
-  converteType,
-  personalPresentation,
-  mathOperations,
-  firstLastLetter,
-  dogName,
-  includeA,
-  countLetters,
-  encodeMessage,
-} = require("../Desafios/Strings/Gabaritos/1-9");
-
 /* const {
   reverseNames,
   converteType,
@@ -24,7 +12,19 @@ const {
   includeA,
   countLetters,
   encodeMessage,
-} = require("../Desafios/Strings"); */
+} = require("../Desafios/Strings/Gabaritos/1-9"); */
+
+ const {
+  reverseNames,
+  converteType,
+  personalPresentation,
+  mathOperations,
+  firstLastLetter,
+  dogName,
+  includeA,
+  countLetters,
+  encodeMessage,
+} = require("../Desafios/Strings");
 
 describe("Desafios de Strings.", () => {
   describe("01 - Testando a Função reverseNames .", () => {

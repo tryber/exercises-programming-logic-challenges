@@ -3,7 +3,7 @@ const { getRandomInt } = require('../test/mocks')
 
 /* É importada nesse arquivo tanto as funções do gabarito quanto dos desafios */
 /* Gabaritos */
-const {
+/* const {
   average,
   totalReceive,
   showNeighbors,
@@ -32,10 +32,9 @@ const {
   weightedAverage,
   calculateScore,
   successiveDivisions,
-} = require("../Desafios/Operadores Aritméticos/Gabaritos/21-23");
+} = require("../Desafios/Operadores Aritméticos/Gabaritos/21-23"); */
 
 /* Exercícios */
-/* 
 const {
   average,
   totalReceive,
@@ -60,8 +59,8 @@ const {
   weightedAverage,
   calculateScore,
   successiveDivisions,
-} = require("../Desafios/Operadores Aritméticos")
- */
+} = require("../Desafios/Operadores Aritméticos");
+
 describe("Desafios de Operadores Aritméticos.", () => {
   describe(" 01 - Testando a Função average.", () => {
     it(`Ao passar os argumentos -2,-5 e -7, deve retornar:

@@ -6,7 +6,7 @@ const {
  É importada nesse arquivo tanto as funções do gabarito quanto dos desafios 
 */
 /* Gabaritos */
-const {
+/* const {
   cnhProcess,
   squareRoot,
   musicalNotes,
@@ -27,12 +27,12 @@ const {
   factorial15,
   meanFactorialFromAToB,
   cpfValidator,
-} = require("../Desafios/Desafiadores/Gabaritos/11-16");
+} = require("../Desafios/Desafiadores/Gabaritos/11-16"); */
 
 /* 
 Exercícios
 */
-/* const {
+ const {
   cnhProcess,
   squareRoot,
   musicalNotes,
@@ -49,8 +49,7 @@ Exercícios
   sumPrimesNumbers,
   //fatorial,
   cpfValidator,
-} = require("../Desafios/Desafiadores")
- */
+} = require("../Desafios/Desafiadores");
 
 describe("Desafios Desafiadores.", () => {
   describe("01 - Testando a Função cnhProcess.", () => {

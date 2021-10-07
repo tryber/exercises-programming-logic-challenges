@@ -2,7 +2,7 @@
  É importada nesse arquivo tanto as funções do gabarito quanto dos desafios 
 */
 /* Gabaritos */
-const {
+ /* const {
   optionsMenu,
   studentSituation,
   findAdventurous,
@@ -12,7 +12,7 @@ const {
   legalAge,
   findYoungerPerson,
   evaluateProject,
-  /*   droneDelivery, */
+   droneDelivery, 
 } = require("../Desafios/Estruturas Condicionais/Gabaritos/1-10");
 
 const {
@@ -24,10 +24,10 @@ const {
   sortAgeAsc,
   oddOreEven,
   cardsGame,
-} = require("../Desafios/Estruturas Condicionais/Gabaritos/11-18");
+} = require("../Desafios/Estruturas Condicionais/Gabaritos/11-18"); */
 
 /* Exercícios */
-/* const {
+ const {
   triVowels,
   IMC,
   chessRating,
@@ -46,15 +46,7 @@ const {
   findYoungerPerson,
   evaluateProject,
   droneDelivery,
-  triVowels,
-  IMC,
-  chessRating,
-  ATM,
-  rockPaperScissors,
-  sortAgeAsc,
-  oddOreEven,
-  cardsGame,
-} = require("../Desafios/Estruturas Condicionais") */
+} = require("../Desafios/Estruturas Condicionais");
 
 describe("Desafios de Estruturas Condicionais.", () => {
   describe("01 - Testando a Função optionsMenu.", () => {

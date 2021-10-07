@@ -1,22 +1,22 @@
 /* É importada nesse arquivo tanto as funções do gabarito quanto dos desafios */
 
 /* Gabaritos */
-const {
-  getMaxNumber,
-  getMinNumber,
-  findQuest,
-  dataType,
-  findOldestSon,
-} = require("../Desafios/Arrays/Gabaritos/1-5");
-
-/* Exercícios */
 /* const {
   getMaxNumber,
   getMinNumber,
   findQuest,
   dataType,
   findOldestSon,
-} = require("../Desafios/Arrays/") */
+} = require("../Desafios/Arrays/Gabaritos/1-5"); */
+
+/* Exercícios */
+const {
+  getMaxNumber,
+  getMinNumber,
+  findQuest,
+  dataType,
+  findOldestSon,
+} = require("../Desafios/Arrays/");
 
 describe("Desafios de Arrays.", () => {
   describe("01 - Testando a Função getMaxNumber.", () => {
