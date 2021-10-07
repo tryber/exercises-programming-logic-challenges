@@ -5,7 +5,7 @@
 Um restaurante comprou uma balança nova e precisa adicionar um programa que calcula o valor que a pessoa vai pagar.
 
 Escreva um algoritmo que recebe o valor por kilo e o peso do prato e
-calcule o valor da refeição e retorne uma mensagem no seguinte formato:
+calcule o valor da refeição, retornando uma mensagem no seguinte formato:
 
 ------------------------------------
 "O prato de x gramas custa: R$x,yz"
