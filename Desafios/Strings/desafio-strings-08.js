@@ -6,7 +6,7 @@ Escreva um algoritmo que recebe 2 parâmetros: uma string (frase ou palavra) e u
 
 A função deve retornar quantas letras passadas como 2º parâmetro existem na string.
 
-Obs: Trata as vogais com acento como não tendo, por exemplo:
+Obs: Trate as vogais com acento como não tendo, por exemplo:
 a = á, ã, à.
 
 */
