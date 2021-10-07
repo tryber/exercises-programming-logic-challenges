@@ -24,7 +24,7 @@ Da caixa:
 
 Da Janela:
 * altura;
-* largura.
+* largura;
 * profundidade.
 Em caso de ser possível efetuar a entrega, retorne a mensagem:
 --------------------------------
