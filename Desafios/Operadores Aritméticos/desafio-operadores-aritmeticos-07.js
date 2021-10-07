@@ -1,6 +1,6 @@
 /*
 
-07 - Calcule quanto tempo de leitura
+07 - Calcule o tempo de leitura
 
 Ana começou a ler o livro "O guia do mochileiro das galáxias", que tem 208 páginas.
 Após 2 minutos ela tinha lido  4 páginas. 
