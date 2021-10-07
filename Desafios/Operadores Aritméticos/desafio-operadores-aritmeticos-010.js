@@ -2,7 +2,8 @@
 
 10 - Fahrenheit
 
-Escreva um algoritmo que faça conversão de temperatura em graus Fahrenheit para graus Celsius e retorne a temperatura em Celcius.
+Escreva um algoritmo que faça conversão de temperatura em graus Fahrenheit para graus Celsius e retorne
+  a temperatura em celsius.
 
 */
 

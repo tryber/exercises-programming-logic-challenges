@@ -12,7 +12,7 @@
   legalAge,
   findYoungerPerson,
   evaluateProject,
-   droneDelivery, 
+  droneDelivery, 
 } = require("../Desafios/Estruturas Condicionais/Gabaritos/1-10");
 
 const {

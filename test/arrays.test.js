@@ -43,7 +43,7 @@ describe("Desafios de Arrays.", () => {
         "O nome está na lista."
       );
     });
-    it("Ao passar os argumentos ['Silvia', 'Isa', 'Mica', 'Amanda']' e 'Daniel', deve retornar: 'O nome não está na lista.'", () => {
+    it("Ao passar os argumentos ['Bruna', 'Joaquim', 'Julia', 'Amanda'] e 'Daniel', deve retornar: 'O nome não está na lista.'", () => {
       expect(findQuest(['Silvia', 'Isa', 'Mica', 'Amanda'], 'Daniel')).toBe(
         'O nome não está na lista.'
       );

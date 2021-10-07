@@ -9,15 +9,15 @@ Nesse [artigo](https://blog.betrybe.com/tecnologia/logica-de-programacao/) de no
 # Desafios
 Este repositório tem por finalidade apresentar alguns exercícios de Lógica de Programação e materiais de estudo complementares sobre os temas que são abordados.
 
-Você verá que alguns links estão em inglês, mas disponibilizamos no final da página um tutorial para te ajudar a traduzir o site.
+Você verá que alguns links estão em inglês, mas disponibilizamos no final da página um tutorial para te ajudar a traduzir os sites.
 
-Na pasta raiz do projeto, temos a pasta "tests". Ela contém os testes unitários correspondentes a cada bloco de desafios, por exemplo: os testes unitários do bloco Arrays estão no arquivo "arrays.test.js.", do bloco Desafiadores estão no "desafiadores.test.js.".
+Dentro da pasta raiz do projeto, temos a pasta "tests". Ela contém os testes unitários correspondentes a cada bloco de desafios, por exemplo: os testes unitários do bloco Arrays estão no arquivo "arrays.test.js.", do bloco Desafiadores estão no "desafiadores.test.js.".
 
 Para executar os testes de todos os blocos, abra o terminal dentro da pasta raiz do projeto e execute o comando: ```"npm install"``` para instalar as dependências do projeto.
 
-Em seguida execute o comando para executar todos os testes: ```"npm test"```.
+Em seguida execute o comando para rodar todos os testes: ```"npm test"```.
 
-Caso você queira executar apenas um bloco específico, basta após o comando ```"npm test"``` escrever o nome do arquivo da pasta "test" que deseja executar, por exemplo: se deseja verificar apenas os testes do bloco de Strings, então vá até o terminal e executo o comando: ```"npm test strings.test.js"```.
+Caso você queira executar apenas um bloco específico, basta após o comando ```"npm test"``` escrever o nome do arquivo da pasta "test" que deseja executar, por exemplo: se deseja verificar apenas os testes do bloco de Strings, então vá até o terminal e execute o comando: ```"npm test strings.test.js"```.
 
 Atenção, nos exercícios, não troque os nomes das funções ou as retire do module.exports.
 

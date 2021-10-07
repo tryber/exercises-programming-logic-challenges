@@ -12,7 +12,7 @@ A partir da distância recebida por parâmetro,
 calcule a pontuação final da pessoa jogadora e a retorne no formato:
 
 -----------------------------------------
-"A pontuação da pessoa jogadora foi de X"
+"A pontuação da pessoa jogadora foi de x"
 -----------------------------------------
 
 */

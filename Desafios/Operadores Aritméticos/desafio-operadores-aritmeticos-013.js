@@ -4,7 +4,7 @@
 
 Elabore uma função que retorne uma cor RGB aleatória no formato:
 --------------
-"rgb(x, y, z)"
+"rgb(r, g, b)"
 --------------
 
  */

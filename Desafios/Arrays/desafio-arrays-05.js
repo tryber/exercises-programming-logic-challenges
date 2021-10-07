@@ -9,9 +9,9 @@ Considere as premissas abaixo:
 * Esse ano ele notou que a soma da idade de seus filhos é igual à idade dele.
 
 A saída deve ter o seguinte formato:
-------------------------------------
+--------------------------------
 "O filho mais velho tem x anos."
-------------------------------------
+--------------------------------
 
 */
 
