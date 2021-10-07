@@ -4,7 +4,7 @@
 
 Escreva uma algoritmo para uma loja de ração que recebe o preço de um produto e retorna as formas de pagamentos disponíveis.
 
-Considere as premissa:
+Considere as seguintes premissas:
 * À vista possui 10% de desconto e parcelado em 4x possui juros de 15%.
 
 Exemplo:
