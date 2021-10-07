@@ -2,7 +2,7 @@
 "Eu acho que todas as pessoas neste país deveriam aprender como programar um computador porque isto te ensina como pensar."
 Steve Jobs – Inventor
 
-Lógica de Programação é a forma como nós Pessoas Desenvolvedoras pensamos e escrevemos algoritmos para resoluções de problemas ou execuções de tarefas processados por uma máquina.
+Lógica de Programação é a forma como nós, Pessoas Desenvolvedoras, pensamos e escrevemos algoritmos para resoluções de problemas ou execuções de tarefas processadas por uma máquina.
 
 Nesse [artigo](https://blog.betrybe.com/tecnologia/logica-de-programacao/) de nosso blog, você poderá ler mais acerca da importância da Lógica de Programação e como aprendê-la.
 
