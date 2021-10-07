@@ -47,7 +47,8 @@ Exercícios
   factorial,
   fibonnaci,
   sumPrimesNumbers,
-  //fatorial,
+  factorial15,
+  meanFactorialFromAToB,
   cpfValidator,
 } = require("../Desafios/Desafiadores");
 

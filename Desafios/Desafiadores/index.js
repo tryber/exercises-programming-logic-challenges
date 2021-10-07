@@ -12,7 +12,7 @@ const musicalNotes3 = require('./desafiador-011');
 const factorial = require('./desafiador-012');
 const fibonnaci = require('./desafiador-013');
 const sumPrimesNumbers = require('./desafiador-014');
-const fatorial = require('./desafiador-015');
+const { factorial15, meanFactorialFromAToB } = require('./desafiador-015');
 const cpfValidator = require('./desafiador-016');
 
 module.exports = {
@@ -30,6 +30,7 @@ module.exports = {
   factorial,
   fibonnaci,
   sumPrimesNumbers,
-  fatorial,
+  factorial15,
+  meanFactorialFromAToB,
   cpfValidator,
 };
