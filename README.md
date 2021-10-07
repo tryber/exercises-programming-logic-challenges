@@ -1,10 +1,27 @@
-# Desafios de Lógica de Programação
-Este repositório tem por finalidade apresentar alguns exercícios de lógica de programação e materiais de estudo complementares sobre os temas que são abordados.
+# Lógica de Programação
+"Eu acho que todas as pessoas neste país deveriam aprender como programar um computador porque isto te ensina como pensar."
+Steve Jobs – Inventor
 
-Você verá que alguns links estão em inglês, mas disponibilizamos no final da página um tutorial para te ajudar a traduzir o site.
+Lógica de Programação é a forma como nós, Pessoas Desenvolvedoras, pensamos e escrevemos algoritmos para resoluções de problemas ou execuções de tarefas processadas por uma máquina.
+
+Nesse [artigo](https://blog.betrybe.com/tecnologia/logica-de-programacao/) de nosso blog, você poderá ler mais acerca da importância da Lógica de Programação e como aprendê-la.
+
+# Desafios
+Este repositório tem por finalidade apresentar alguns exercícios de Lógica de Programação e materiais de estudo complementares sobre os temas que são abordados.
+
+Você verá que alguns links estão em inglês, mas disponibilizamos no final da página um tutorial para te ajudar a traduzir os sites.
+
+Dentro da pasta raiz do projeto, temos a pasta "tests". Ela contém os testes unitários correspondentes a cada bloco de desafios, por exemplo: os testes unitários do bloco Arrays estão no arquivo "arrays.test.js.", do bloco Desafiadores estão no "desafiadores.test.js.".
+
+Para executar os testes de todos os blocos, abra o terminal dentro da pasta raiz do projeto e execute o comando: ```"npm install"``` para instalar as dependências do projeto.
+
+Em seguida execute o comando para rodar todos os testes: ```"npm test"```.
+
+Caso você queira executar apenas um bloco específico, basta após o comando ```"npm test"``` escrever o nome do arquivo da pasta "test" que deseja executar, por exemplo: se deseja verificar apenas os testes do bloco de Strings, então vá até o terminal e execute o comando: ```"npm test strings.test.js"```.
+
+Atenção, nos exercícios, não troque os nomes das funções ou as retire do module.exports.
 
 Confira abaixo os links para estudo:
-
 ## Gerais
 * [Blog Trybe](https://blog.betrybe.com/javascript/)
 * [Laços e iterações MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Loops_and_iteration)
