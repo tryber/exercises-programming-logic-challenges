@@ -4,7 +4,7 @@
 /* const {
   getMaxNumber,
   getMinNumber,
-  findQuest,
+  findGuest,
   dataType,
   findOldestSon,
 } = require("../Desafios/Arrays/Gabaritos/1-5"); */
@@ -13,7 +13,7 @@
 const {
   getMaxNumber,
   getMinNumber,
-  findQuest,
+  findGuest,
   dataType,
   findOldestSon,
 } = require("../Desafios/Arrays/");
@@ -37,14 +37,14 @@ describe("Desafios de Arrays.", () => {
     });
   });
 
-  describe("03 - Testando a Função findQuest.", () => {
+  describe("03 - Testando a Função findGuest.", () => {
     it("Ao passar os argumentos ['Silvia', 'Isa', 'Mica', 'Amanda'] e 'Mica', deve retornar: 'O nome está na lista.'", () => {
-      expect(findQuest(['Silvia', 'Isa', 'Mica', 'Amanda'], 'Mica')).toBe(
+      expect(findGuest(['Silvia', 'Isa', 'Mica', 'Amanda'], 'Mica')).toBe(
         "O nome está na lista."
       );
     });
     it("Ao passar os argumentos ['Bruna', 'Joaquim', 'Julia', 'Amanda'] e 'Daniel', deve retornar: 'O nome não está na lista.'", () => {
-      expect(findQuest(['Silvia', 'Isa', 'Mica', 'Amanda'], 'Daniel')).toBe(
+      expect(findGuest(['Silvia', 'Isa', 'Mica', 'Amanda'], 'Daniel')).toBe(
         'O nome não está na lista.'
       );
     });

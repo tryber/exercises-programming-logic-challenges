@@ -151,7 +151,7 @@ function evaluateProject(obj) {
 
 /* 10 - Entrega do drone */
 function droneDelivery(heightBox, widthBox, depthBox, heightWindow, widthWindow, depthWindow) {
-  if ((heightBox < heightWindow && widthBox < widthWindow) || depthBox < depthWindow) {
+  if ((heightBox < heightWindow && widthBox < widthWindow) && depthBox < depthWindow) {
     return `É possível realizar a entrega.`;
   } else {
     return `Não é possível realizar a entrega.`;
