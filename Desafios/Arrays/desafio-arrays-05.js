@@ -1,3 +1,4 @@
+
 /*
 
 05 - Encontre o filho mais velho
@@ -15,9 +16,16 @@ A saída deve ter o seguinte formato:
 
 */
 
-function findOldestSon(pedroAge, kidsAge){
-  // Desenvolva seu código aqui.
-  return // Retorne o resultado aqui
+const { getMaxNumber } = require("./Gabaritos/1-5");
+
+function findOldestSon(pedrosAge,kidsAge){
+  let sumOfAge = 0
+  kidsAge.forEach(age => {
+    sumOfAge += age
+  });
+  let olderSon = pedrosAge - sumOfAge
+  return `O filho mais velho tem ${olderSon} anos.`
+  
 }
 
 module.exports = findOldestSon;

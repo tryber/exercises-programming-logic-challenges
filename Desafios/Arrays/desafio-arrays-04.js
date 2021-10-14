@@ -19,8 +19,12 @@ Obs: Os retornos tem que ser dados do tipo boolean.
 */
 
 function dataType(types){
-  // Desenvolva seu código aqui.
-  return // Retorne o resultado aqui
-}
 
+  for(element of types){
+    if (typeof types[0] != typeof element){
+      return false
+    }
+  }
+  return true
+}
 module.exports = dataType;

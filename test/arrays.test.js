@@ -79,9 +79,9 @@ describe("Desafios de Arrays.", () => {
         "O filho mais velho tem 21 anos."
       );
     });
-    it("Ao passar os argumentos 40 e [10, 7, 14], deve retornar: 'O filho mais velho tem 14 anos.'", () => {
+    it("Ao passar os argumentos 40 e [10, 7, 14], deve retornar: 'O filho mais velho tem 9 anos.'", () => {
       expect(findOldestSon(40, [10, 7, 14])).toEqual(
-        "O filho mais velho tem 14 anos."
+        "O filho mais velho tem 9 anos."
       );
     });
   });

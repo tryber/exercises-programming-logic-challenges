@@ -7,8 +7,9 @@ Escreva um algoritmo que recebe uma array de números inteiros, procure o menor 
 */
 
 function getMinNumber(numbers) {
-  // Desenvolva seu código nessa função
-  return // Retorne o resultado aqui
+  numbers.sort((a,b) => a-b)
+  return numbers[0]
 }
+
 
 module.exports = getMinNumber;
