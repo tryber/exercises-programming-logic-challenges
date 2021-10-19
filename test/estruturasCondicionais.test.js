@@ -2,7 +2,7 @@
  É importada nesse arquivo tanto as funções do gabarito quanto dos desafios 
 */
 /* Gabaritos */
- /* const {
+ const {
   optionsMenu,
   studentSituation,
   findAdventurous,
@@ -24,10 +24,10 @@ const {
   sortAgeAsc,
   oddOreEven,
   cardsGame,
-} = require("../Desafios/Estruturas Condicionais/Gabaritos/11-18"); */
+} = require("../Desafios/Estruturas Condicionais/Gabaritos/11-18");
 
 /* Exercícios */
- const {
+/*  const {
   triVowels,
   IMC,
   chessRating,
@@ -46,7 +46,7 @@ const {
   findYoungerPerson,
   evaluateProject,
   droneDelivery,
-} = require("../Desafios/Estruturas Condicionais");
+} = require("../Desafios/Estruturas Condicionais"); */
 
 describe("Desafios de Estruturas Condicionais.", () => {
   describe("01 - Testando a Função optionsMenu.", () => {
@@ -279,16 +279,18 @@ describe("Desafios de Estruturas Condicionais.", () => {
     });
   });
 
-  /*   describe.only(" 10 - Testando a Função droneDelivery.", () => {
-    it("Verifica o retorno quando é possível a entrega.", () => {
-      expect(droneDelivery).toBe("É possível realizar a entrega.");
+  describe.only(" 10 - Testando a Função droneDelivery.", () => {
+    it(`Ao passar os argumentos 48, 87, 74, 50, 99 e 99,, deve retornar:
+          É possível realizar a entrega.`, () => {
+      expect(droneDelivery(48, 87, 74, 50, 99, 99)).toBe("É possível realizar a entrega.");
     });
-    it("Verifica o retorno quando NÃO é possível a entrega.", () => {
-      expect(droneDelivery).toBe("Não é possível realizar a entrega.");
+    it(`Ao passar os argumentos 90, 134, 99, 76, 150 e 78, deve retorna:
+          Não é possível realizar a entrega.`, () => {
+      expect(droneDelivery(90, 134, 99, 76, 150, 78)).toBe("Não é possível realizar a entrega.");
     });
-  }); */
+  });
 
-  describe("09- Testando a Função triVowels.", () => {
+  describe("11- Testando a Função triVowels.", () => {
     it("Ao passar o argumento Daniel, deve retornar: 'Daaaniiieeel'", () => {
       expect(triVowels("Daniel")).toBe("Daaaniiieeel");
     });
