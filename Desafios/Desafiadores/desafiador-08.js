@@ -15,7 +15,9 @@ Escreva um algoritmo que recebe a quantidade de partidas jogadas e um objeto no 
 */
 
 function numberTies(matches, scores){
-  // Desenvolva seu código nessa função
+  const winPoints = 3;
+  const sumPoints = Object.values(scores).reduce((sum, number) => sum + number);
+  return Math.abs((winPoints * matches) - sumPoints)
 }
 
 module.exports = numberTies;

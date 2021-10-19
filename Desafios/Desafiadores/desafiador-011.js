@@ -43,7 +43,20 @@ Saída:
 */
 
 function musicalNotes3(notes){
-  // Desenvolva seu código nessa função
+  const Notes = {
+    'Dó' : {degree : 'I', triad : ['Dó','Mi', 'Sol']},
+    'Ré' : {degree : 'II', triad : ['Ré','Fá', 'Lá']},
+    'Mi' : {degree : 'III', triad : ['Mi','Sol', 'Si']},
+    'Fá' : {degree : 'IV', triad : ['Fá','Lá', 'Dó']},
+    'Sol' : {degree : 'V', triad : ['Sol','Si', 'Ré']},
+    'Lá' : {degree : 'VI', triad : ['Lá','Dó', 'Mi']},
+    'Si' : {degree : 'VII', triad : ['Si','Ré', 'Fá']}
+  }
+  let triads = []
+  notes.forEach(note => {
+    triads.push(Notes[note])
+  });
+  return triads
 }
 
 module.exports = musicalNotes3;

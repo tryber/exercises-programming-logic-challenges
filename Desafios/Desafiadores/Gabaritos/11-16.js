@@ -55,38 +55,24 @@ function fibonnaci(n) {
 function isPrimo(number) {
   if (number <= 1) return false;
 
-  for (let index = 2; index < number; index += 1) {
+  for (let index = 2; index < number; index ++) {
     if (number % index === 0) return false;
   }
-
   return true;
 }
 
 /*  14 - Soma de números primos */
 function sumPrimesNumbers() {
   let sum = 0;
-  for (let index = 1; index <= 150; index += 1) {
+  for (let index = 1; index <= 150; index ++) {
     if (isPrimo(index)) {
-      sum = sum + index
+      sum += index
     }
   }
   return sum;
 }
 
 /*  15 - Fatorial e média */
-function factorial15(number) {
-  if (number === 0 || number === 1) {
-    return 1;
-  }
-
-  let fat = 1;
-  for (let index = 2; index <= number; index += 1) {
-    fat *= index;
-  }
-
-  return fat;
-}
-
 function meanFactorialFromAToB(a, b) {
   let sum = 0;
   for (let n = a; n <= b; n += 1) {
@@ -94,6 +80,8 @@ function meanFactorialFromAToB(a, b) {
   }
   return parseFloat((sum / (b - a + 1)).toFixed(2));
 }
+
+/*  16 - Validação de CPF */
 
 function calcCpfFirstDigit(cpfArray) {
   const sum = cpfArray
@@ -116,7 +104,7 @@ function calcCpfSecondDigit(cpfArray) {
   return rest;
 }
 
-/*  16 - Validação de CPF */
+
 function cpfValidator(cpf) {
   const cpfArray = cpf
     .replace(/[^0-9]/g, "")

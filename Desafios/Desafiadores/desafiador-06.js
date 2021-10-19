@@ -1,3 +1,4 @@
+
 /*
 
 6 - Analise de preços da lista de compras
@@ -26,12 +27,4 @@ Entrada:
 Saída:
 "O produto mais caro é teclado gamer e custa: R$ 180, a média de preços dos produtos é de: R$36.11."
 ----------------------------------------------------------------------------------------------------
-
 */
-
-function productAnalysis(products){ // corrigir nome
-  // Desenvolva seu código nessa função
-}
-
-module.exports = productAnalysis;
-

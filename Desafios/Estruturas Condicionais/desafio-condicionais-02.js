@@ -12,35 +12,17 @@ entre 51 e 70: MEDIANO
 entre 71 e 90: ÓTIMO
 acima de 91: EXCELENTE
 
-function studentSituation(studentNote) {
-  let status = '';
-
-  switch (true) {
-    case (studentNote <= 10):
-      status = 'PÉSSIMO';
-      break;
-    case (studentNote >= 11 && studentNote <= 30):
-      status = 'RUIM';
-      break;
-    case (studentNote >= 31 && studentNote <= 50):
-      status = 'REGULAR';
-      break;
-    case (studentNote >= 51 && studentNote <= 70):
-      status = 'MEDIANO';
-      break;
-    case (studentNote >= 71 && studentNote <= 90):
-      status = 'ÓTIMO';
-      break;
-    default:
-      status = 'EXCELENTE';
-  }
-  return status;
-}
-
 */
 
 function studentSituation(studentNote){
-  // Desenvolva seu código nessa função
+  let studentStatus = ''
+  if (studentNote <= 10) studentStatus = 'PÉSSIMO'
+  else if (studentNote >= 11 && studentNote <= 30) studentStatus = 'RUIM'
+  else if (studentNote >= 31 && studentNote <= 50) studentStatus = 'REGULAR'
+  else if (studentNote >= 51 && studentNote <= 70) studentStatus = 'MEDIANO'
+  else if (studentNote >= 71 && studentNote <= 90) studentStatus = 'ÓTIMO'
+  else studentStatus = 'EXCELENTE'
+  return studentStatus
 }
 
 module.exports = studentSituation;

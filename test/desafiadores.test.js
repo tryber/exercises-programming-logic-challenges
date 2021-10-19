@@ -1,5 +1,5 @@
 const {
-  desafiadoresMock: { test4, test6, test8, result11 },
+  desafiadoresMock: { test4, test8, result11 },
 } = require("../test/mocks");
 
 /*
@@ -38,7 +38,6 @@ Exercícios
   musicalNotes,
   musicalNotes2,
   magicWand,
-  productAnalysis,
   averageTemperature,
   numberTies,
   viewerTvShows,
@@ -141,16 +140,6 @@ describe("Desafios Desafiadores.", () => {
       expect(
         magicWand("Alvo Dumbledore", "Nogueira e Fibra de Dragão")
       ).toBe("Não, não! Decididamente, não!");
-    });
-  });
-
-  describe("6 - Testando a Função productAnalysis.", () => {
-    it(`Ao passar o argumento:
-        ${JSON.stringify(test6)}
-        deve retornar:
-      "O produto mais caro é teclado gamer e custa: R$ 180, a média de preços dos produtos é de: R$36.11."`, () => {
-      expect(productAnalysis(test6)).toBe(
-        "O produto mais caro é teclado gamer e custa: R$ 180, a média de preços dos produtos é de: R$36.11.");
     });
   });
 

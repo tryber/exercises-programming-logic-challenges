@@ -20,7 +20,11 @@ Saída:
 */
 
 function fibonnaci(n){
-  // Desenvolva seu código nessa função
+  let FibonacciSequence = [0, 1, 1, 2, 3]
+  for (let index = 5; index <= n-1; index++) {
+    FibonacciSequence.push(FibonacciSequence[index-1]+FibonacciSequence[index-2])
+  }
+  return FibonacciSequence[n-1]
 }
 
 module.exports = fibonnaci;

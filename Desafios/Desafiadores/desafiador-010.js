@@ -16,7 +16,11 @@ Saída:
 */
 
 function negateNumbers(numbers){
-  // Desenvolva seu código nessa função
+  let negatedNumbers = []
+  numbers.forEach(element => {
+    negatedNumbers.push(element * -1)
+  });
+  return negatedNumbers
 }
 
 module.exports = negateNumbers;

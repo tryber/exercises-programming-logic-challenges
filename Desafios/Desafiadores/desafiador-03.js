@@ -23,7 +23,20 @@ Saída:
  */
 
 function musicalNotes(notes) {
-  // Desenvolva seu código nessa função
+  const Notes = {
+    'Dó' : 'I',
+    'Ré' : 'II',
+    'Mi' : 'III',
+    'Fá' : 'IV',
+    'Sol' : 'V',
+    'Lá' : 'VI',
+    'Si' : 'VII'
+  }
+  let convNotes = []
+  notes.forEach(element => {
+    convNotes.push(Notes[element])
+  });
+  return convNotes
 }
 
 module.exports = musicalNotes;

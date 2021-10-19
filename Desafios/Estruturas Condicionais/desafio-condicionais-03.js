@@ -25,7 +25,7 @@ Caso o nome informado não faça parte do esquadrão, retorne:
  */
 
 function findAdventurous(adventurous){
-  // Desenvolva seu código nessa função
+  
 }
 
 module.exports = findAdventurous;

@@ -31,7 +31,19 @@ Desafio: faça usando apenas um único IF acompanhado por um único Else.
 */
 
 function magicWand(wizard, wand){
-  // Desenvolva seu código nessa função
+  let Escolhas = 
+    {
+      'Harry Potter': 'Azevinho e Pena de Fênix' ,
+      'Rony Weasley' :'Salgueiro e Pelo de Unicórnio',
+      'Hermione Granger': 'Videira e Fibra de Dragão',
+      'Alvo Dumbledore' : 'Salgueiro e Pelo de Testrálio',
+      'Belatriz Lestrange' : 'Nogueira e Fibra de Dragão'
+    }
+  if (Escolhas[wizard] == wand){
+    return "Curioso... muito curioso..."
+  }
+  return "Não, não! Decididamente, não!"
+  
+  /*Se a varinha tiver como valor o wizard recebido retorna verdadeiro */
 }
-
-module.exports = magicWand;
+module.exports = magicWand

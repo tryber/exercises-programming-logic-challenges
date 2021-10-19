@@ -25,6 +25,7 @@ function dataType(types){
       return false
     }
   }
+  
   return true
 }
 module.exports = dataType;

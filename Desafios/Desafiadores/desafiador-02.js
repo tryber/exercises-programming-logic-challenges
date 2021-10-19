@@ -22,7 +22,16 @@ Se o valor recebido for igual a zero ou não for do tipo number, retorne:
 */
 
 function squareRoot(number){
-  // Desenvolva seu código nessa função
+  if (typeof number != 'number' || number == 0){
+    return "Número inválido."
+  }
+
+  let sqRoot = number**(1/2)
+
+  if (!Number.isInteger(sqRoot)) {
+    return `Não existe raiz exata para o número ${number}.`
+  }
+  return `A raiz quadrada de ${number} é: ${sqRoot}.`
 }
 
 module.exports = squareRoot;

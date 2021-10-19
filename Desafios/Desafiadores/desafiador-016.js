@@ -27,8 +27,8 @@ Exemplo De CPF Válido:
 Entrada:
 "397-606-448-34"
 
-Saída:
-"CPF inválido"
+Saída: "CPF válido"
+
 ----------------------
 
 Exemplo De CPF Inválido:
@@ -36,13 +36,7 @@ Exemplo De CPF Inválido:
 Entrada:
 "166.354.840-43"
 
-Saída: "CPF válido"
+Saída: "CPF inválido"
 ------------------------
 
 */
-
-function cpfValidator(cpf){
-  // Desenvolva seu código nessa função
-}
-
-module.exports = cpfValidator;

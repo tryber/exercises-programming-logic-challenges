@@ -34,7 +34,29 @@ Caso a pessoa não se enquadre nessas categorias acima, retorne:
 */
 
 function viewerTvShows(dataViewer){
-  // Desenvolva seu código nessa função
+  let {age, country, likeSports} = dataViewer
+  let message = {
+    ufc: "UFC.",
+    simpsons: "The Simpsons.",
+    madagascar: "The Penguins of Madagascar.",
+    fishing: "Sport Fishing.",
+    notFound: "Não foi possível dizer o que ela deve assistir.",
+  }
+  let checkedCountry = {
+    brasil : country.toLowerCase() == 'brasil',
+    chile : country.toLowerCase() == 'chile'
+  }
+
+  
+  if (age >= 16 && checkedCountry.brasil){
+    if (likeSports) return message.ufc
+    else return message.simpsons
+  }
+  if (age < 16){
+    if (!likeSports && checkedCountry.chile) return message.madagascar
+    if (likeSports && !checkedCountry.chile) return message.fishing
+  }
+  return message.notFound
 }
 
 module.exports = viewerTvShows;
