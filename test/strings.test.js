@@ -2,7 +2,7 @@ const {
   stringMock: { test9, resp9 },
 } = require("./mocks");
 /* Gabaritos */
-/* const {
+/*   const {
   reverseNames,
   converteType,
   personalPresentation,
@@ -75,29 +75,29 @@ describe("Desafios de Strings.", () => {
     });
   });
 
-  describe("07 - Testando a Função includeA.", () => {
-    it(`Ao passar o argumento 'Aninha', deve retornar:
-         'A palavra Aninha possui a letra 'a', porém ela não está nem no início nem no fim.'`, () => {
-      expect(includeA("Aninha")).toBe(
-        "A palavra Aninha possui a letra 'a', porém ela não está nem no início nem no fim."
+  only("07 - Testando a Função includeA.", () => {
+    it(`Ao passar o argumento 'Coragem', deve retornar:
+         'A palavra Coragem possui a letra 'a', porém não é a primeira nem a última letra.'`, () => {
+      expect(includeA("Coragem")).toBe(
+        "A palavra Coragem possui a letra 'a', porém não é a primeira nem a última letra."
       );
     });
     it(`Ao passar o argumento 'ana', deve retornar:
-         'A palavra ana possui a letra 'a', porém ela não está nem no início nem no fim.'`, () => {
+         ''`, () => {
       expect(includeA("ana")).toBe(
-        "A palavra ana possui a letra 'a', porém ela não está nem no início nem no fim."
+        "A palavra ana possui a letra 'a' apenas no começo e no fim da palavra."
       );
     });
     it(`Ao passar o argumento 'Amém', deve retornar:
-         'A palavra Amém possui a letra 'a' apenas no início.'`, () => {
+         'A palavra Amém possui a letra 'a' apenas como primeira letra.'`, () => {
       expect(includeA("Amém")).toBe(
-        "A palavra Amém possui a letra 'a' apenas no início."
+        "A palavra Amém possui a letra 'a' apenas como primeira letra."
       );
     });
     it(`Ao passar o argumento 'Lua', deve retornar:
-         'A palavra Lua possui a letra 'a' apenas no fim.'`, () => {
+         'A palavra Lua possui a letra 'a' apenas como última letra.'`, () => {
       expect(includeA("Lua")).toBe(
-        "A palavra Lua possui a letra 'a' apenas no fim."
+        "A palavra Lua possui a letra 'a' apenas como última letra."
       );
     });
     it(`Ao passar o argumento 'Esquivo', deve retornar:
