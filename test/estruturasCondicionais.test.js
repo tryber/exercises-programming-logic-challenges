@@ -279,7 +279,7 @@ describe("Desafios de Estruturas Condicionais.", () => {
     });
   });
 
-  describe.only(" 10 - Testando a Função droneDelivery.", () => {
+  describe(" 10 - Testando a Função droneDelivery.", () => {
     it(`Ao passar os argumentos 48, 87, 74, 50, 99 e 99,, deve retornar:
           É possível realizar a entrega.`, () => {
       expect(droneDelivery(48, 87, 74, 50, 99, 99)).toBe("É possível realizar a entrega.");
