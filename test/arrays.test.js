@@ -80,7 +80,7 @@ describe("Desafios de Arrays.", () => {
       );
     });
     it("Ao passar os argumentos 37 e [9, 6, 12], deve retornar: 'O filho mais velho tem 12 anos.'", () => {
-      expect(findOldestSon(37, [9, 6, 12])).toEqual(
+      expect(findOldestSon(37, [9, 6, 12])).toBe(
         "O filho mais velho tem 12 anos."
       );
     });
