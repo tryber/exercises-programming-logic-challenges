@@ -1,8 +1,8 @@
 /*
 
-01 - Encontre o maior número de uma array
+01 - Encontre o maior número de um array
 
-Escreva um algoritmo que recebe uma array de números inteiros, procure o maior valor e o retorne.
+Escreva um algoritmo que recebe um array de números inteiros, procure o maior valor e o retorne.
 
 */
 

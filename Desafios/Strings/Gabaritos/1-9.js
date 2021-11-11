@@ -64,17 +64,16 @@ function includeA(word) {
   let contain = newWord.substr(1, newWord.length - 2).includes("a");
 
   if (wordsBegin && !wordsEnd && !contain) {
-    return "A palavra " + word + " possui a letra 'a' apenas no início.";
+    return "A palavra " + word + " possui a letra 'a' apenas como primeira letra.";
   }
   if (!wordsBegin && wordsEnd && !contain) {
-    return "A palavra " + word + " possui a letra 'a' apenas no fim.";
+    return "A palavra " + word + " possui a letra 'a' apenas como última letra.";
   }
 
   if (wordsBegin && wordsEnd && !contain) {
     return (
       "A palavra " +
-      word +
-      " possui a letra 'a', porém ela não está nem no início nem no fim."
+      word + " possui a letra 'a' apenas no começo e no fim da palavra."
     );
   }
 
@@ -82,7 +81,7 @@ function includeA(word) {
     return (
       "A palavra " +
       word +
-      " possui a letra 'a', porém ela não é a primeira nem a última letra."
+      " possui a letra 'a', porém não é a primeira nem a última letra."
     );
   }
   return "A palavra " + word + " não contém a letra 'a'.";

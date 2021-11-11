@@ -69,9 +69,9 @@ describe("Desafios de Arrays.", () => {
   });
 
   describe("05 - Testando a Função findOldestSon.", () => {
-    it("Ao passar os argumentos 40 e [10, 10, 10], deve retornar: 'O filho mais velho tem 10 anos.'", () => {
-      expect(findOldestSon(40, [10, 10, 10])).toBe(
-        "O filho mais velho tem 10 anos."
+    it("Ao passar os argumentos 40 e [11, 8, 9], deve retornar: 'O filho mais velho tem 12 anos.'", () => {
+      expect(findOldestSon(40, [11, 8, 9])).toBe(
+        "O filho mais velho tem 12 anos."
       );
     });
     it("Ao passar os argumentos 60 e [12, 16, 20], deve retornar: 'O filho mais velho tem 21 anos.'", () => {
@@ -79,9 +79,9 @@ describe("Desafios de Arrays.", () => {
         "O filho mais velho tem 21 anos."
       );
     });
-    it("Ao passar os argumentos 40 e [10, 7, 14], deve retornar: 'O filho mais velho tem 14 anos.'", () => {
-      expect(findOldestSon(40, [10, 7, 14])).toEqual(
-        "O filho mais velho tem 14 anos."
+    it("Ao passar os argumentos 37 e [9, 6, 12], deve retornar: 'O filho mais velho tem 12 anos.'", () => {
+      expect(findOldestSon(37, [9, 6, 12])).toBe(
+        "O filho mais velho tem 12 anos."
       );
     });
   });
