@@ -12,7 +12,7 @@ const getBandsInformation = () => {
 }
 
 /* 2 - Através do destructuring, acesse o nome e os melhores álbuns primeira banda, 
-retornando uma string no seguinte formato: "os melhores álbuns do Radiohead: In Rainbows,Kid A,OK Computer,Pablo Honey"
+retornando uma string no seguinte formato: "Os Melhores álbuns do Radiohead: In Rainbows,Kid A,OK Computer,Pablo Honey"
 */
 
 const getBestAlbuns = () => {
@@ -22,7 +22,7 @@ const getBestAlbuns = () => {
     return acc;
   }, []);
 
-  return `Melhores álbuns do ${bandName}: ${albuns}` 
+  return `Os melhores álbuns do ${bandName}: ${albuns}` 
 }
 
 // 3 - Retorne um array utilizando HOF's que contenha apenas o nome das bandas
@@ -59,3 +59,5 @@ const highestRatingFilter = () => {
 
   return bandAlbum;
 }
+
+console.log(highestRatingFilter());
