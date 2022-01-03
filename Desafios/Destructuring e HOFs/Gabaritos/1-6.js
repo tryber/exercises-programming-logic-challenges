@@ -6,8 +6,6 @@ const getBandsInformation = () => {
   const [banda1, banda2] = data.bands;
   const bandsInformation = [banda1, banda2];
 
-  console.log(bandsInformation);
-
   return bandsInformation;
 }
 
@@ -47,7 +45,6 @@ const usaFilter = () => {
 const rockFilter = () => {
   const bandsGenre = data.bands.filter((band) => band.genre.includes('Rock'));
 
-  console.log(bandsGenre);
 }
 
 // 6 - Filtre e retorne um array com todos os álbuns que possuem nota igual a 100
@@ -59,5 +56,3 @@ const highestRatingFilter = () => {
 
   return bandAlbum;
 }
-
-console.log(highestRatingFilter());
