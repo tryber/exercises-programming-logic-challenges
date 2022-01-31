@@ -16,10 +16,7 @@ Saída:
 
 */
 
-function reverseNames(fullName) {
-  let invertName = fullName.split(' ');
-  return `${invertName[1]} ${invertName[0]}`;
-}
+const reverseNames = (fullName) => `${fullName.split(' ')[1]} ${fullName.split(' ')[0]}`;
 console.log(reverseNames('Igor Leal'));
 
 module.exports = reverseNames;
