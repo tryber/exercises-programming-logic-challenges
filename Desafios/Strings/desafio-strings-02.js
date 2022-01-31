@@ -15,8 +15,7 @@ Saída:
 
 */
 
-function converteType(string) {
-  // Desenvolva seu código nessa função
-}
+const converteType = (string) => parseInt(string);
+console.log(converteType('324'));
 
 module.exports = converteType;

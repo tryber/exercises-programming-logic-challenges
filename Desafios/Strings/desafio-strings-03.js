@@ -16,7 +16,10 @@ Saída:
 */
 
 function personalPresentation(firstName, lastName, age) {
-  // Desenvolva seu código nessa função
+  let fullName = `${firstName} ${lastName}`;
+  return `Meu nome é ${fullName} e tenho ${age} anos de vida.`;
 }
+
+console.log(personalPresentation('Igor', 'Leal', 25));
 
 module.exports = personalPresentation;
