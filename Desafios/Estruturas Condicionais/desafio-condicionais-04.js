@@ -34,7 +34,23 @@ Caso o comando não for reconhecido, retorne:
 */
 
 function polyglotDinosaur(command){
-  // Desenvolva seu código nessa função
+  if(command == "esquerda"){
+    return "english";
+
+  } else if(command == "direita"){
+    return "francês";
+
+  } else if(command == "as duas"){
+    return "Aí eu caio né!";
+
+  } else if(command == "nenhuma") {
+    return "português";
+
+  } else {
+    return "Comando inválido, tente novamente!"
+  }
 }
+
+
 
 module.exports = polyglotDinosaur;
