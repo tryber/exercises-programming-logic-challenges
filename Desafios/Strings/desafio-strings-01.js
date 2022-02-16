@@ -3,7 +3,7 @@
 01 - Inverte nomes
 
 Escreva um algoritmo que recebe uma string com o formato "Nome Sobrenome" e retorne
-uma outra string com os nomes invertido.
+uma outra string com os nomes invertidos.
 
 Por exemplo:
 ---------------------
