@@ -1,7 +1,4 @@
 /*
-
-06 - Taxa Metabólica Basal
-
 Renata é uma nutricionista e quer disponibilizar uma calculadora de BMR (Taxa Metabólica Basal) em seu site.
 
 Escreva um algoritmo que recebe os dados a seguir:
@@ -20,11 +17,4 @@ O retorno deve ser no seguinte formato:
 ---------------------------------------
 "A taxa metabólica basal é: x Kcal"
 ---------------------------------------
-
 */
-
-function basalMetabolicRate(age, sex, weight, height){
-  // Desenvolva seu código nessa função
-}
-
-module.exports = basalMetabolicRate;
