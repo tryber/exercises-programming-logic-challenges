@@ -10,7 +10,7 @@ Entradas:
 "João","Carvalho', 25
 
 Saída:
-"Meu nome é João Carvalho e tenho 25 anos de vida"
+"Meu nome é João Carvalho e tenho 25 anos de vida."
 ---------------------------------------------------
 
 */

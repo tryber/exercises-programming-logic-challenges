@@ -8,7 +8,7 @@ Escreva um algoritmo que receba o salário fixo de vendedores da sapataria do Fa
 e o valor de suas vendas,  calcule e retorne a comissão e seu salário final no formato:
 
 ---------------------------------------
-"A comissão é: x e o ganho total é: y".
+"A comissão é: x e o ganho total é: y"
 ---------------------------------------
 
 */

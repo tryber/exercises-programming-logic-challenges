@@ -14,7 +14,7 @@ Entradas:
 "Chocolate", "Pudim"
 
 Saída:
-"Chodim"
+"O cachorrinho de Joana vai se chamar: Chodim"
 --------------------
 
 */

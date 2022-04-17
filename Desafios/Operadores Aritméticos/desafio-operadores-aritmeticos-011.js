@@ -13,7 +13,7 @@ Entrada:
 80
 
 Saída:
-"À Vista: R$72,00 ou 4x de: R$23,00"
+"À Vista: R$72 ou 4x de: R$23"
 -------------------------------
 
 Obs: seguir o mesmo formato de retorno da mensagem de saída.

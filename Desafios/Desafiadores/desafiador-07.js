@@ -13,6 +13,8 @@ Saída:
 "A média anual de temperatura em graus Celsius é 30.05."
 --------------------------------------------------------
 
+Obs: Arredonde o resultado para duas casas decimais.
+
 */
 
 function averageTemperature(anualRegister){
