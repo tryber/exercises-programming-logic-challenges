@@ -6,7 +6,7 @@ Escreva uma algoritmo que recebe 2 parâmetros (um array e um elemento que está
 
 Caso não encontre o elemento, retorne:
 -----------------------------------
-"Elemento Não encontrado no array."
+"Elemento não encontrado no array."
 -----------------------------------
 
 */

@@ -110,13 +110,11 @@ describe("Desafios de Estruturas de Repetições.", () => {
   });
 
   describe("09 - Testando a Função includesArrays.", () => {
-    it("Ao passar o argumento [] e [] deve retornar: []", () => {
-      expect(includesArrays([], [])).toEqual([]);
+    it("Ao passar o argumento [1, 2, 4, 5, 6] e [2, 1, 3, 7, 0, 13], deve retornar: [1, 2]", () => {
+      expect(includesArrays([1, 2, 4, 5, 6], [2, 1, 3, 7, 0, 13])).toEqual([1, 2]);
     });
     it("Ao passar o argumento [1, 2, 4, 5, 6] e [3, 9, 8, 5, 0, 2], deve retornar: [2, 5]", () => {
-      expect(includesArrays([1, 2, 4, 5, 6], [3, 9, 8, 5, 0, 2])).toEqual([
-        2, 5,
-      ]);
+      expect(includesArrays([1, 2, 4, 5, 6], [3, 9, 8, 5, 0, 2])).toEqual([2, 5]);
     });
   });
 });
