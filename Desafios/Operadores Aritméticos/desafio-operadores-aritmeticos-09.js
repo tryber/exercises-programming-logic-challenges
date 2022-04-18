@@ -6,7 +6,7 @@ Escreva um algoritmo que faça conversão de temperatura em graus Celsius para g
 
 */
 
-function celsiusToFahrenheit(celsius){
+function celsiusToFahrenheit(celsius) {
   // Desenvolva seu código nessa função
 }
 

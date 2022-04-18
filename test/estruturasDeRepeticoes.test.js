@@ -97,6 +97,9 @@ describe("Desafios de Estruturas de Repetições.", () => {
     it("Ao passar o argumento [1, 2, 3, 4] e 4, deve retornar: 3 ", () => {
       expect(findIndexOf([1, 2, 3, 4], 4)).toBe(3);
     });
+    it("Ao passar o argumento [1, 2, 3, 4] e 5, deve retornar: 'Elemento não encontrado no array.' ", () => {
+      expect(findIndexOf([1, 2, 3, 4], 5)).toBe('Elemento não encontrado no array.');
+    });
   });
 
   describe("08- Testando a Função sortDec.", () => {

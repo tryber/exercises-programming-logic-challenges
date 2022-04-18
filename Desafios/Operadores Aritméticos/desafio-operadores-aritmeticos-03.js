@@ -10,7 +10,7 @@ Escreva um algoritmo que recebe um número inteiro e retorne o seu antecessor e 
 
 */
 
-function showNeighbors(number){
+function showNeighbors(number) {
   // Desenvolva seu código nessa função
 }
 

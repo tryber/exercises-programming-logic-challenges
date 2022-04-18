@@ -11,7 +11,7 @@ Escreva um algoritmo que calcule a área de um triângulo.
 
 */
 
-function triangleArea(base, height){
+function triangleArea(base, height) {
   // Desenvolva seu código nessa função
 }
 

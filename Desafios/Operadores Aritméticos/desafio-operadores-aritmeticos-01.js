@@ -10,7 +10,7 @@ Escreva um algoritmo que recebe 3 valores, calcule e retorne o valor da média n
 
 */
 
-function average(number1, number2, number3){
+function average(number1, number2, number3) {
   // Desenvolva seu código nessa função
 }
 

@@ -8,7 +8,7 @@ Obs: Retornar um valor do tipo number com uma casa decimal.
 
 */
 
-function restaurantExpenses(account){
+function restaurantExpenses(account) {
   // Desenvolva seu código nessa função
 }
 

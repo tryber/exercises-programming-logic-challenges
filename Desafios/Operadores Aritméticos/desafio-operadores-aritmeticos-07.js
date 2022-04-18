@@ -13,7 +13,7 @@ Escreva um algoritmo que calcula e retorne o tempo em minutos que Ana levará pa
 
 */
 
-function readingTime(totalPages, readPages, minutes){
+function readingTime(totalPages, readPages, minutes) {
   // Desenvolva seu código nessa função
 }
 

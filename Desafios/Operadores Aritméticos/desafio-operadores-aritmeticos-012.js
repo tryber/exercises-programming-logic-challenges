@@ -8,7 +8,7 @@ Escreva um algoritmo que recebe o valor por kilo e o peso do prato e
 calcule o valor da refeição, retornando uma mensagem no seguinte formato:
 
 ------------------------------------
-"O prato de x gramas custa: R$x,yz"
+"O prato de x gramas custa: R$ x,yz"
 ------------------------------------
 
 Obs: O valor do prato tem que ter duas casas decimais após a virgula.

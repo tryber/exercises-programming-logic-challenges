@@ -13,7 +13,7 @@ Use a seguinte estrutura no retorno:
 
 */
 
-function oddNumbers(){
+function oddNumbers() {
   // Desenvolva seu código nessa função
 }
 

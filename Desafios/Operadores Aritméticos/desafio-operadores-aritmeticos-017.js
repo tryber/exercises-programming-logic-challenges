@@ -15,11 +15,12 @@ A loja em questão usa uma taxa de juros fixa de 5% sobre o valor do financiamen
 Desenvolva a solução e retorne conforme o exemplo (os valores monetários precisam ter 2 casas decimais após a virgula):
 
 --------------------------------
-Valor Financiado: R$35000,00;
+Saída:
+"Valor Financiado: R$35000,00;
 Valor do Juros: R$1750,00;
 Quantidade de Parcelas: 36;
 Valor da Parcela: R$1020,83;
-Valor Total do Carro: R$46750,00.
+Valor Total do Carro: R$46750,00."
 --------------------------------
 
 */

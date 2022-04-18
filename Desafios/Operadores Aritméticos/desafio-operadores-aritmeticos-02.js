@@ -13,7 +13,7 @@ e o valor de suas vendas,  calcule e retorne a comissão e seu salário final no
 
 */
 
-function totalReceive(salary, sales){
+function totalReceive(salary, sales) {
   // Desenvolva seu código nessa função
 }
 

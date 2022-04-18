@@ -9,7 +9,7 @@ Escreva um algoritmo que faça conversão de temperatura em graus Fahrenheit par
 
 */
 
-function fahrenheitToCelsius(fahrenheit){
+function fahrenheitToCelsius(fahrenheit) {
   // Desenvolva seu código nessa função
 }
 

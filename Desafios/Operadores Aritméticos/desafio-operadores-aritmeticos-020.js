@@ -13,6 +13,8 @@ Retorne uma mensagem no seguinte formato:
 'Aprovação, média: 7' ou 'Reprovação, média: 5'
 ----------------------------------------------
 
+Obs: arredonde o resultado para o número íntegro mais próximo.
+
 */
 
 function avaliador(score1, score2, score3) {
