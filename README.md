@@ -1,3 +1,18 @@
+# Log Alterações
+* ajuste das funções de início nos Desafios de Array, padronizando com o restante dos desafios.
+* correção de enunciados:
+	* questões em que no enunciado a saída pede ponto e a resposta não requer o ponto e vice-versa.
+	* questões em que o enunciado exige o retorno apenas da resposta, mas o test requer um texto suporte.
+	* questões em que o resultado exige arredondamento do resultado para "x" casas decimais e não há informação no enunciado.
+	* questões em que se afirmar exigir arredondamento, porém não há tal exigência no test, ou se exige arredondamento diferente (uma casa decimal ao invés de duas).
+* ajuste da função de teste da questão 7 do desafio de strings. Linha 78 está usando a função 'only' ao invés de 'describe', impossibilitando a resolução da questão.
+* ajuste da função de teste da questão 6 do desafio de operadores aritméticos:
+	* Linha 119, está invertida a função. O correto é peso / altura² e não altura² / peso.
+	* Ajustada também a resposta esperada, refletindo o real resultado da fórmula corrigida, nas linhas 121 e 122.
+* ajuste do index.js do desafio de Operadores Aritméticos, que na linha 10 está exportando o desafio 01, ao invés do desafio 010, provocando erro nos testes que impossibilitam a resolução da questão.
+* correção do teste de Destructuring e HOFs, em razão de que não há um index.js na pasta, o que estava impedindo a exportação das funções para o teste. Utilizado require de cada desafio para torná-lo funcional. Ideal seria criação do index.js.
+ 
+# Readme Original abaixo
 # Lógica de Programação
 "Eu acho que todas as pessoas neste país deveriam aprender como programar um computador porque isto te ensina como pensar."
 Steve Jobs – Inventor
