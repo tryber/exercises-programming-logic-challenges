@@ -19,21 +19,21 @@ Escreva um algoritmo que recebe uma string por parâmetro, que contém a situaç
 
 Use a tabela abaixo para te auxiliar:
 
-|  Exemplo de entrata  |  'Exemplo de saída  |
+|  Exemplo de entrada  |   Exemplo de saída   |
 
-|       esquerda       |      'english       |
-|        direita       |     'français       |
-|        nenhuma       |     'português      |
-|        as duas       |  'Ai eu caio, né!!  |
+|       esquerda       |      'english'       |
+|        direita       |     'français'       |
+|        nenhuma       |     'português'      |
+|        as duas       |  'Ai eu caio, né!!'  |
 
 Caso o comando não for reconhecido, retorne:
 ----------------------
-"Comando desconhecido"
+"Comando desconhecido."
 ----------------------
 
 */
 
-function polyglotDinosaur(command){
+function polyglotDinosaur(command) {
   // Desenvolva seu código nessa função
 }
 

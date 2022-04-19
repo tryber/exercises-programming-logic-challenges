@@ -31,7 +31,7 @@ Os seus retornos devem seguir o mesmo padrão dos exemplos acima.
 
 */
 
-function cardsGame(maraCard1, maraCard2, saraCard1, saraCard2){
+function cardsGame(maraCard1, maraCard2, saraCard1, saraCard2) {
   // Desenvolva seu código nessa função
 }
 

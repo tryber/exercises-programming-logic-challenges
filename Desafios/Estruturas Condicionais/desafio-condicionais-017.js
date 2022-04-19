@@ -33,7 +33,7 @@ Caso o contrário retorne:
 */
 
 
-function oddOreEven(lucioFingers, anaFingers, even){
+function oddOreEven(lucioFingers, anaFingers, even) {
   // Desenvolva seu código nessa função
 }
 
