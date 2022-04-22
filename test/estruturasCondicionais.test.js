@@ -411,19 +411,19 @@ describe("Desafios de Estruturas Condicionais.", () => {
     it("Ao passar os argumentos 10, 10, 5, 5, deve retornar: 'Mara venceu com 40 pontos'", () => {
       expect(cardsGame(10, 10, 5, 5)).toBe("Mara venceu com 40 pontos");
     });
-    it("Ao passar os argumentos 10, 10, 5, 5, deve retornar: 'Mara venceu com 63 pontos'", () => {
+    it("Ao passar os argumentos 10, 11, 11, 115, deve retornar: 'Mara venceu com 63 pontos'", () => {
       expect(cardsGame(10, 11, 11, 11)).toBe("Mara venceu com 63 pontos");
     });
-    it("Ao passar os argumentos 10, 10, 5, 5, deve retornar: 'Sara venceu com 40 pontos'", () => {
+    it("Ao passar os argumentos 5, 5, 10, 10, deve retornar: 'Sara venceu com 40 pontos'", () => {
       expect(cardsGame(5, 5, 10, 10)).toBe("Sara venceu com 40 pontos");
     });
-    it("Ao passar os argumentos 10, 10, 5, 5, deve retornar: 'Sara venceu com 69 pontos'", () => {
+    it("Ao passar os argumentos 2, 12, 11, 12, deve retornar: 'Sara venceu com 69 pontos'", () => {
       expect(cardsGame(12, 12, 11, 12)).toBe("Sara venceu com 69 pontos");
     });
-    it("Ao passar os argumentos 10, 10, 5, 5, deve retornar: 'O jogo empatou'", () => {
+    it("Ao passar os argumentos 12, 12, 12, 12, deve retornar: 'O jogo empatou'", () => {
       expect(cardsGame(12, 12, 12, 12)).toBe("O jogo empatou");
     });
-    it("Ao passar os argumentos 10, 10, 5, 5, deve retornar: 'O jogo empatou'", () => {
+    it("Ao passar os argumentos 11, 12, 11, 12, deve retornar: 'O jogo empatou'", () => {
       expect(cardsGame(11, 12, 11, 12)).toBe("O jogo empatou");
     });
   });
