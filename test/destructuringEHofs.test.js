@@ -1,9 +1,11 @@
-const getBandsInformation = require('../Desafios/Destructuring e HOFs/desafio-hofs-01');
-const getBestAlbuns = require('../Desafios/Destructuring e HOFs/desafio-hofs-02');
-const getBandsName = require('../Desafios/Destructuring e HOFs/desafio-hofs-03');
-const usaFilter = require('../Desafios/Destructuring e HOFs/desafio-hofs-04');
-const rockFilter = require('../Desafios/Destructuring e HOFs/desafio-hofs-05');
-const highestRatingFilter = require('../Desafios/Destructuring e HOFs/desafio-hofs-06');
+const {
+  getBandsInformation,
+  getBestAlbuns,
+  getBandsName,
+  usaFilter,
+  rockFilter,
+  highestRatingFilter,
+} = require("../Desafios/Destructuring e Hofs/");
 
 describe("Desafios de Destructuring e HOFs.", () => {
   describe("01 - Testando a Função getBandsInformation.", () => {

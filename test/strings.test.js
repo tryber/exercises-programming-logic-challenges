@@ -75,7 +75,7 @@ describe("Desafios de Strings.", () => {
     });
   });
 
-  only("07 - Testando a Função includeA.", () => {
+  describe("07 - Testando a Função includeA.", () => {
     it(`Ao passar o argumento 'Coragem', deve retornar:
          'A palavra Coragem possui a letra 'a', porém não é a primeira nem a última letra.'`, () => {
       expect(includeA("Coragem")).toBe(
