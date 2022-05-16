@@ -12,7 +12,9 @@ const {
   includeA,
   countLetters,
   encodeMessage,
-} = require("../Desafios/Strings/Gabaritos/1-9"); */
+} = require("../Desafios/Strings/Gabaritos/1-9");
+telephoneFormat = require("../Desafios/Strings/Gabaritos/10");
+*/
 
  const {
   reverseNames,
@@ -24,6 +26,7 @@ const {
   includeA,
   countLetters,
   encodeMessage,
+  telephoneFormat,
 } = require("../Desafios/Strings");
 
 describe("Desafios de Strings.", () => {
@@ -132,12 +135,27 @@ describe("Desafios de Strings.", () => {
     });
   });
 
-  describe("09- Testando a Função encodeMessage.", () => {
+  describe("09 - Testando a Função encodeMessage.", () => {
     it("Ao passar o argumento 'aeiou', deve retornar: '5b9p1'", () => {
       expect(encodeMessage("aeiou")).toBe("5b9p1");
     });
     it("Verifica o retorno ao passar o trecho de uma música.", () => {
       expect(encodeMessage(test9)).toBe(resp9);
+    });
+  });
+
+  describe("10 - Testando a Função telephoneFormat.", () => {
+    it("Ao passar o argumento '11 97878-7878', deve retornar: '(11) 9 7878-7878'", () => {
+      expect(telephoneFormat("11 97878-7878")).toBe("(11) 9 7878-7878");
+    });
+    it("Ao passar o argumento '(11)78787878', deve retornar: '(11) 7878-7878'", () => {
+      expect(telephoneFormat("(11)7878-7878")).toBe("(11) 7878-7878");
+    });
+    it("Ao passar o argumento 1178787878, deve retornar: '(11) 7878-7878'", () => {
+      expect(telephoneFormat(1178787878)).toBe("(11) 7878-7878");
+    });
+    it("Ao passar um argumento inválido o mesmo deve ser retornado", () => {
+      expect(telephoneFormat("234")).toBe("234");
     });
   });
 });
