@@ -7,6 +7,7 @@ const dogName = require("./desafio-strings-06")
 const includeA = require("./desafio-strings-07")
 const countLetters = require("./desafio-strings-08")
 const encodeMessage = require("./desafio-strings-09")
+const telephoneFormat = require("./desafio-strings-10")
 
 module.exports = {
   reverseNames,
@@ -18,4 +19,5 @@ module.exports = {
   includeA,
   countLetters,
   encodeMessage,
+  telephoneFormat,
 }
