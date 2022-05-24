@@ -6,7 +6,7 @@ Escreva um algoritmo que recebe uma base e um expoente numéricos e retorne o re
 
 */
 
-function powerNumber(base, exponent){
+function powerNumber(base, exponent) {
   // Desenvolva seu código nessa função
 }
 

@@ -17,7 +17,7 @@ Obs: Não utilize o includes, você deve encontrar os valores utilizando 2 for's
 
 */
 
-function includesArrays(a, b){
+function includesArrays(a, b) {
   // Desenvolva seu código nessa função
 }
 

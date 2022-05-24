@@ -26,7 +26,7 @@ Se apenas possui o "a" sem a mesma ser a primeira ou a última letra da palavra,
 
 Senão, retorne:
 -----------------------------
-"A palavra x não contém "a"."
+"A palavra x não contém a letra "a"."
 -----------------------------
 
 */

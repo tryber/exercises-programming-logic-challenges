@@ -128,7 +128,7 @@ describe("Desafios de Estruturas Condicionais.", () => {
       expect(polyglotDinosaur("nenhuma")).toBe("português");
     });
     it("Ao passar o argumento 'as duas', deve retornar: 'Ai eu caiu, né!!'", () => {
-      expect(polyglotDinosaur("as duas")).toBe("Ai eu caiu, né!!");
+      expect(polyglotDinosaur("as duas")).toBe("Ai eu caio, né!!");
     });
     it("Ao passar o argumento 'Xablau', deve retornar: 'Comando desconhecido'", () => {
       expect(polyglotDinosaur("Xablau")).toBe("Comando desconhecido.");
@@ -237,7 +237,7 @@ describe("Desafios de Estruturas Condicionais.", () => {
       reqs: 100,
       totalReqs: 120,
       completed: 79,
-    }, deve retornar: 'Você ainda precisa entregar mais requisitos ;)'.`, () => {
+    }, deve retornar: 'Você ainda precisa entregar mais requisitos.'`, () => {
       expect(
         evaluateProject({
           rec: false,
@@ -245,7 +245,7 @@ describe("Desafios de Estruturas Condicionais.", () => {
           totalReqs: 120,
           completed: 79,
         })
-      ).toBe("Você ainda precisa entregar mais requisitos ;)");
+      ).toBe("Você ainda precisa entregar mais requisitos.");
     });
     it(`Ao passar o argumento {
       rec: true,
@@ -267,7 +267,7 @@ describe("Desafios de Estruturas Condicionais.", () => {
       reqs: 80,
       totalReqs: 100,
       completed: 89,
-    }, deve retornar: 'Você ainda precisa entregar mais requisitos ;)'.`, () => {
+    }, deve retornar: 'Você ainda precisa entregar mais requisitos.'`, () => {
       expect(
         evaluateProject({
           rec: true,
@@ -275,7 +275,7 @@ describe("Desafios de Estruturas Condicionais.", () => {
           totalReqs: 100,
           completed: 89,
         })
-      ).toBe("Você ainda precisa entregar mais requisitos ;)");
+      ).toBe("Você ainda precisa entregar mais requisitos.");
     });
   });
 
@@ -342,11 +342,11 @@ describe("Desafios de Estruturas Condicionais.", () => {
   });
 
   describe(" 14 - Testando a Função ATM.", () => {
-    it("Ao passar os argumento 10 e xablau, deve retornar: 'Valor de saldo inválido'", () => {
-      expect(ATM(10, "xablau")).toBe("Valor de saldo inválido");
+    it("Ao passar os argumento 10 e xablau, deve retornar: 'Valor de saque inválido'", () => {
+      expect(ATM(10, "xablau")).toBe("Valor de saque inválido");
     });
-    it("Ao passar os argumentos 10 e 0, deve retornar: 'Valor de saldo inválido'", () => {
-      expect(ATM(10, 0)).toBe("Valor de saldo inválido");
+    it("Ao passar os argumentos 10 e 0, deve retornar: 'Valor de saque inválido'", () => {
+      expect(ATM(10, 0)).toBe("Valor de saque inválido");
     });
     it("Ao passar os argumentos 0, 10, deve retornar: 'Saldo insuficiente'", () => {
       expect(ATM(0, 10)).toBe("Saldo insuficiente");
@@ -411,13 +411,13 @@ describe("Desafios de Estruturas Condicionais.", () => {
     it("Ao passar os argumentos 10, 10, 5, 5, deve retornar: 'Mara venceu com 40 pontos'", () => {
       expect(cardsGame(10, 10, 5, 5)).toBe("Mara venceu com 40 pontos");
     });
-    it("Ao passar os argumentos 10, 11, 11, 115, deve retornar: 'Mara venceu com 63 pontos'", () => {
+    it("Ao passar os argumentos 10, 11, 11, 11, deve retornar: 'Mara venceu com 63 pontos'", () => {
       expect(cardsGame(10, 11, 11, 11)).toBe("Mara venceu com 63 pontos");
     });
     it("Ao passar os argumentos 5, 5, 10, 10, deve retornar: 'Sara venceu com 40 pontos'", () => {
       expect(cardsGame(5, 5, 10, 10)).toBe("Sara venceu com 40 pontos");
     });
-    it("Ao passar os argumentos 2, 12, 11, 12, deve retornar: 'Sara venceu com 69 pontos'", () => {
+    it("Ao passar os argumentos 12, 12, 11, 12, deve retornar: 'Sara venceu com 69 pontos'", () => {
       expect(cardsGame(12, 12, 11, 12)).toBe("Sara venceu com 69 pontos");
     });
     it("Ao passar os argumentos 12, 12, 12, 12, deve retornar: 'O jogo empatou'", () => {

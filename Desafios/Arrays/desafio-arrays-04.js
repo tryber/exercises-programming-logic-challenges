@@ -18,9 +18,8 @@ Obs: Os retornos tem que ser dados do tipo boolean.
 
 */
 
-function dataType(types){
+function dataType(types) {
   // Desenvolva seu código aqui.
-  return // Retorne o resultado aqui
 }
 
 module.exports = dataType;

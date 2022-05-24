@@ -15,7 +15,7 @@ Saída:
 
 */
 
-function encode(string){
+function encode(string) {
   // Desenvolva seu código nessa função
 }
 

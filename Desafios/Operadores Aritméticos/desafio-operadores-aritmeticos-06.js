@@ -12,7 +12,7 @@ Escreva o algoritmo usado por André para calcular seu próprio IMC e o retorne.
 
 */
 
-function IMC(base, height){
+function IMC(base, height) {
   // Desenvolva seu código nessa função
 }
 

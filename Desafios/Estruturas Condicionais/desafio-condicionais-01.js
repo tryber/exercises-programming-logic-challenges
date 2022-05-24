@@ -21,7 +21,7 @@ Utilize Switch/Case para resolver este problema.
 
 */
 
-function optionsMenu(number){
+function optionsMenu(number) {
   // Desenvolva seu código nessa função
 }
 

@@ -23,7 +23,7 @@ Se a varinha escolher a pessoa aspirante de acordo com a tabela, retorne:
 
 Caso o contrário:
 --------------------------------
-"Não, não! Decididamente, não.!"
+"Não, não! Decididamente, não!"
 --------------------------------
 
 Desafio: faça usando apenas um único IF acompanhado por um único Else.

@@ -18,7 +18,7 @@ Bônus: Crie a condição utilizando O Operador Ternário.
 
 */
 
-function legalAge(age){
+function legalAge(age) {
   // Desenvolva seu código nessa função
 }
 

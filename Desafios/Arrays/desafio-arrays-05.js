@@ -18,7 +18,6 @@ A saída deve ter o seguinte formato:
 
 function findOldestSon(pedroAge, kidsAge){
   // Desenvolva seu código aqui.
-  return // Retorne o resultado aqui
 }
 
 module.exports = findOldestSon;

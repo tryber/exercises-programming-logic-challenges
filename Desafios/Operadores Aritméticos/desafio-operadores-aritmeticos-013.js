@@ -9,7 +9,7 @@ Elabore uma função que retorne uma cor RGB aleatória no formato:
 
  */
 
-function generateColor(){
+function generateColor() {
   // Desenvolva seu código nessa função
 }
 

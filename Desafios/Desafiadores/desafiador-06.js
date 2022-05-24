@@ -27,6 +27,8 @@ Saída:
 "O produto mais caro é teclado gamer e custa: R$ 180, a média de preços dos produtos é de: R$36.11."
 ----------------------------------------------------------------------------------------------------
 
+Obs: Arredonde os resultados para duas casas decimais.
+
 */
 
 function productAnalysis(products){ // corrigir nome

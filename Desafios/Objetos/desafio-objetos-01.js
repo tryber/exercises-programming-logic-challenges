@@ -19,7 +19,7 @@ Entrada:
 "Mago"'
 
 Saída:
-"Mago, 5PV"
+"Mago, 5PV."
 ------------
 
 Desafio: faça sem usar estruturas condicionais (ifs ou switches) 

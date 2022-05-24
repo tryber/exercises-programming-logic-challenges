@@ -18,12 +18,12 @@ Fórmula para mulheres:
 
 O retorno deve ser no seguinte formato:
 ---------------------------------------
-"A taxa metabólica basal é: x Kcal"
+"A taxa metabólica basal é: x Kcal."
 ---------------------------------------
 
 */
 
-function basalMetabolicRate(age, sex, weight, height){
+function basalMetabolicRate(age, sex, weight, height) {
   // Desenvolva seu código nessa função
 }
 

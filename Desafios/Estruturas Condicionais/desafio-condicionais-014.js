@@ -32,7 +32,7 @@ Se estiver tudo certo com o valor do saque, subtraia o valor do saldo e retorne 
 */
 
 
-function ATM(balance, withdrew){
+function ATM(balance, withdrew) {
   // Desenvolva seu código nessa função
 }
 

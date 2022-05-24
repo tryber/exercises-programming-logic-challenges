@@ -11,7 +11,7 @@ x, y, z ...n.
 
 */
 
-function sortDec(){
+function sortDec() {
   // Desenvolva seu código nessa função
 }
 

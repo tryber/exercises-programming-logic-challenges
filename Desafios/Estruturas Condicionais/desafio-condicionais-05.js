@@ -29,7 +29,7 @@ Caso contrário retorne:
 
 */
 
-function robotFriend(mon, dad, me, brother, sister){
+function robotFriend(mom, dad, me, brother, sister) {
   // Desenvolva seu código nessa função
 }
 

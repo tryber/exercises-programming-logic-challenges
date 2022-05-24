@@ -26,9 +26,9 @@ Retorne a resultado no seguinte formato:
 
  */
 
-function IMC(weight, height){
+function IMC(weight, height) {
   // Desenvolva seu código nessa função
 }
 
-module.exports = IMC;3
+module.exports = IMC;
 

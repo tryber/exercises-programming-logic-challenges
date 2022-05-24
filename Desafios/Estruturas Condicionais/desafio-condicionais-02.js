@@ -39,7 +39,7 @@ function studentSituation(studentNote) {
 
 */
 
-function studentSituation(studentNote){
+function studentSituation(studentNote) {
   // Desenvolva seu código nessa função
 }
 

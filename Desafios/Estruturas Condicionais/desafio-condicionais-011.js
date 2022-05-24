@@ -15,7 +15,7 @@
  
  */
 
-function triVowels(word){
+function triVowels(word) {
   // Desenvolva seu código nessa função
 }
 

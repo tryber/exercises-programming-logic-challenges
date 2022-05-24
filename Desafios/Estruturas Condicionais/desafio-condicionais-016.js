@@ -15,7 +15,7 @@ Saída:
 
 */
 
-function sortAgeAsc(mariaAge, silviaAge, izaAge){
+function sortAgeAsc(mariaAge, silviaAge, izaAge) {
   // Desenvolva seu código nessa função
 }
 

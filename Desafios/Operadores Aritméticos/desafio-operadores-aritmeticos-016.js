@@ -8,7 +8,7 @@ Obs: O retorne deve ser do tipo boolean.
 
 */
 
-function randomBoolean(){
+function randomBoolean() {
   // Desenvolva seu código nessa função
 }
 

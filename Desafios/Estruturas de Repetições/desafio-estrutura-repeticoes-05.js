@@ -17,7 +17,7 @@ Caso o contrário:
 
 */
 
-function numbersDivisibleBy3(start, limit){
+function numbersDivisibleBy3(start, limit) {
   // Desenvolva seu código nessa função
 }
 

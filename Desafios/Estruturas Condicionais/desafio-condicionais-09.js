@@ -8,14 +8,14 @@ Escreva um algoritmo que recebe um objeto com a seguinte estrutura:
 {
 rec: bool,
 reqs: number int,
-allReqs: number int,
+totalReqs: number int,
 completed: number int,
 }
 
 Onde:
 * rec: informando se a pessoa estudante está ou não em recuperação;
 * reqs: são os requisitos obrigatórios;
-* allReqs: são os requisitos obrigatórios mais os bônus:
+* totalReqs: são os requisitos obrigatórios mais os bônus:
 * completed: quantidade de requisitos feitos, completados:
 
 Considere as seguintes premissas:
@@ -29,12 +29,12 @@ Caso a pessoa tenha conseguido entregar o projeto retorne:
 
 Caso a pessoa não tenha conseguido entregar o projeto retorne:
 -----------------------------------------------
-"Você ainda precisa entregar mais requisitos;)"
+"Você ainda precisa entregar mais requisitos."
 -----------------------------------------------
 
 */
 
-function evaluateProject(obj){
+function evaluateProject(obj) {
   // Desenvolva seu código nessa função
 }
 
