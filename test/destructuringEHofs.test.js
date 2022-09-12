@@ -94,7 +94,7 @@ describe("Desafios de Destructuring e HOFs.", () => {
 
   describe("04 - Testando a Função usaFilter.", () => {
     it("O retorno da função deve ser um array", () => {
-      expect(usaFilter()).toBe('object');
+      expect(typeof usaFilter()).toBe('object');
     });
     it("O retorno da função deve ser o array esperado", () => {
       const expectedArray = [
