@@ -9,8 +9,8 @@ const {
 
 describe("Desafios de Destructuring e HOFs.", () => {
   describe("01 - Testando a Função getBandsInformation.", () => {
-    it("O retorno da função deve ser um array", () => {
-      expect(getBandsInformation()).toBe('object');
+    it("Retorne true caso o retorno da função seja um array", () => {
+      expect(Array.isArray(getBandsInformation())).toBeTruthy();
     });
     it("O retorno da função deve ser o array esperado", () => {
       const expectedArray = [
