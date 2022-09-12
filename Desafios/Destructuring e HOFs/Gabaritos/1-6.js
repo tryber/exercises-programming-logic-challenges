@@ -34,7 +34,7 @@ const getBandsName = () => {
 // 4 - Filtre e retorne um array apenas com o nome das bandas que são dos Estados Unidos
 
 const usaFilter = () => {
-  usaBands = data.bands.filter((band) => band.country = 'United States')
+  const usaBands = data.bands.filter((band) => band.country = 'United States')
     .map(({ bandName }) => bandName);
 
   return usaBands;
