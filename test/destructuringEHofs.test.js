@@ -67,10 +67,10 @@ describe("Desafios de Destructuring e HOFs.", () => {
 
   describe("02 - Testando a Função getBestAlbuns.", () => {
     it("O retorno da função deve ser uma string", () => {
-      expect(getBestAlbuns()).toBe('string');
+      expect(typeof getBestAlbuns()).toBe('string');
     });
     it("O retorno da função deve ser a tring esperado", () => {
-      const expectedString = 'Os Melhores álbuns do Radiohead: In Rainbows,Kid A,OK Computer,Pablo Honey'
+      const expectedString = 'Os melhores álbuns do Radiohead: In Rainbows,Kid A,OK Computer,Pablo Honey'
       expect(getBestAlbuns()).toEqual(expectedString);
     });
   });
