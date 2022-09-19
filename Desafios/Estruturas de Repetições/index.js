@@ -6,7 +6,7 @@ const numbersDivisibleBy3 = require('./desafio-estrutura-repeticoes-05');
 const oddNumbers = require('./desafio-estrutura-repeticoes-06');
 const findIndexOf = require('./desafio-estrutura-repeticoes-07');
 const sortDec = require('./desafio-estrutura-repeticoes-08');
-const includesInArrays = require('./desafio-estrutura-repeticoes-09');
+const includesArrays = require('./desafio-estrutura-repeticoes-09');
 
 module.exports ={
   encode,
@@ -17,5 +17,5 @@ module.exports ={
   oddNumbers,
   findIndexOf,
   sortDec,
-  includesInArrays,
+  includesArrays,
 }
