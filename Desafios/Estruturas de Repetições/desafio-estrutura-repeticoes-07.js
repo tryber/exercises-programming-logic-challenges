@@ -11,7 +11,7 @@ Caso não encontre o elemento, retorne:
 
 */
 
-function findIndexOf(){
+function findIndexOf(array, element){
   // Desenvolva seu código nessa função
 }
 
