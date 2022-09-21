@@ -96,8 +96,6 @@ function fantasyGame3(className, level) {
   return `${role}, nível ${level}: ${totalLifePoints}PV, ${equipment}.`;
 }
 
-console.log(fantasyGame3("Cavaleiro", 2));
-
 module.exports = {
   fantasyGame,
   fantasyGame2,

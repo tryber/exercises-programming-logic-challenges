@@ -42,7 +42,7 @@ Saída:
 
 */
 
-function musicalNotes3(notes){
+function musicalNotes3(arrNotes){
   // Desenvolva seu código nessa função
 }
 

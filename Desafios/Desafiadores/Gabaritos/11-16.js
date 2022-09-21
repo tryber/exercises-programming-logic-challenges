@@ -52,6 +52,7 @@ function fibonnaci(n) {
   return fib[n - 1];
 }
 
+/*  14 - Soma de números primos */
 function isPrimo(number) {
   if (number <= 1) return false;
 
@@ -62,7 +63,6 @@ function isPrimo(number) {
   return true;
 }
 
-/*  14 - Soma de números primos */
 function sumPrimesNumbers() {
   let sum = 0;
   for (let index = 1; index <= 150; index += 1) {
@@ -95,6 +95,8 @@ function meanFactorialFromAToB(a, b) {
   return parseFloat((sum / (b - a + 1)).toFixed(2));
 }
 
+/*  16 - Validação de CPF */
+
 function calcCpfFirstDigit(cpfArray) {
   const sum = cpfArray
     .slice(0, 9)
@@ -116,7 +118,7 @@ function calcCpfSecondDigit(cpfArray) {
   return rest;
 }
 
-/*  16 - Validação de CPF */
+
 function cpfValidator(cpf) {
   const cpfArray = cpf
     .replace(/[^0-9]/g, "")

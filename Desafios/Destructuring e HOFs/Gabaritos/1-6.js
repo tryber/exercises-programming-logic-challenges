@@ -34,17 +34,17 @@ const getBandsName = () => {
 // 4 - Filtre e retorne um array apenas com o nome das bandas que são dos Estados Unidos
 
 const usaFilter = () => {
-  usaBands = data.bands.filter((band) => band.country = 'United States')
+  const usaBands = data.bands.filter((band) => band.country = 'United States')
     .map(({ bandName }) => bandName);
 
   return usaBands;
 }
 
-// 5 - Filtre e retorne um array com as informações das bandas que contenham 'Rock' no gênero musical
+// 5 - Filtre e retorne um array com os nomes das bandas que contenham 'Rock' no gênero musical
 
 const rockFilter = () => {
-  const bandsGenre = data.bands.filter((band) => band.genre.includes('Rock'));
-
+  const bandsGenre = data.bands.filter((band) => band.genre.includes('Rock')).map(band => band.bandName)
+  return bandsGenre;
 }
 
 // 6 - Filtre e retorne um array com todos os álbuns que possuem nota igual a 100

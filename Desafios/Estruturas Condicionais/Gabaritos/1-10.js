@@ -84,18 +84,18 @@ function robotFriend(mon, dad, me, brother, sister) {
 }
 
 /* 06 - Taxa Metabólica Basal */
-function basalMetabolicRate(age, sex, weight, heigh) {
-  let bmr;
+function basalMetabolicRate(age, sex, weight, height) {
+  let metabolicRate;
 
   if (sex === "M") {
-    bmr = heigh * 6.25 + weight * 9.99 - age * 4.92 + 5;
+    metabolicRate = height * 6.25 + weight * 9.99 - age * 4.92 + 5;
   }
 
   if (sex === "F") {
-    bmr = heigh * 6.25 + weight * 9.99 - age * 4.92 - 161;
+    metabolicRate = height * 6.25 + weight * 9.99 - age * 4.92 - 161;
   }
 
-  return `A taxa metabólica basal é: ${bmr} Kcal.`;
+  return `A taxa metabólica basal é: ${metabolicRate} Kcal.`;
 }
 
 /* 07 - Maior ou menor de idade */
