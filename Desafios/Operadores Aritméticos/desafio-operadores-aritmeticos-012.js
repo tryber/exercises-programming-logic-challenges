@@ -15,7 +15,7 @@ Obs: O valor do prato tem que ter duas casas decimais após a virgula.
 
 */
 
-function weightAndValue(price, gram) {
+function weightAndValue(priceKg, plateWeight) {
   // Desenvolva seu código nessa função
 }
 
