@@ -44,7 +44,7 @@ const usaFilter = () => {
 
 const rockFilter = () => {
   const bandsGenre = data.bands.filter((band) => band.genre.includes('Rock')).map(band => band.bandName)
-  return bandsGenre
+  return bandsGenre;
 }
 
 // 6 - Filtre e retorne um array com todos os álbuns que possuem nota igual a 100
