@@ -1,10 +1,4 @@
 /*  11 - Loja de ração */
-function formatBrazilianMoney(number) {
-  const beforeComma = Math.floor(number);
-  let afterComma = Math.round(number * 100 - beforeComma * 100);
-  afterComma = afterComma !== 0 ? afterComma : `00`;
-  return `${beforeComma},${afterComma}`;
-}
 function paymentOptions(price) {
   let inCash = price - price * 0.1;
   let creditCard = price + price * 0.15;
@@ -17,12 +11,12 @@ function weightAndValue(priceKg, plateWeight) {
   return `O prato de ${plateWeight} gramas custa: R$ ${totalPrice}`;
 }
 
+/*  13 - Cor aleatória */
 function generateOneColor() {
   let uniqueColor = Math.floor(Math.random() * 256);
   return uniqueColor;
 }
 
-/*  13 - Cor aleatória */
 function randomRGBColor() {
   let finalColor = `rgb(${generateOneColor()}, ${generateOneColor()}, ${generateOneColor()})`;
   return finalColor;
@@ -56,6 +50,13 @@ function randomBoolean() {
 }
 
 /*  17 - Financiamento de veículo */
+function formatBrazilianMoney(number) {
+  const beforeComma = Math.floor(number);
+  let afterComma = Math.round(number * 100 - beforeComma * 100);
+  afterComma = afterComma !== 0 ? afterComma : `00`;
+  return `${beforeComma},${afterComma}`;
+}
+
 function carFinancing(carPrice, entranceValue, quota) {
   let financing = carPrice - entranceValue;
   let tax = 0.05;
