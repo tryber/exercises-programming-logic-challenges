@@ -11,4 +11,4 @@ function getMinNumber(numbers) {
   return // Retorne o resultado aqui
 }
 
-module.exports = getMinNumber;
+module.exports = getMinNumber
