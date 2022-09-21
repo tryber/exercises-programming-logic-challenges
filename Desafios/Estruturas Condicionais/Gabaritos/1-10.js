@@ -85,7 +85,7 @@ function robotFriend(mon, dad, me, brother, sister) {
 
 /* 06 - Taxa Metabólica Basal */
 function basalMetabolicRate(age, sex, weight, height) {
-  let bmr;
+  let metabolicRate;
 
   if (sex === "M") {
     bmr = height * 6.25 + weight * 9.99 - age * 4.92 + 5;
