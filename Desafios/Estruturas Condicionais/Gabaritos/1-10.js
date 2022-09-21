@@ -92,7 +92,7 @@ function basalMetabolicRate(age, sex, weight, height) {
   }
 
   if (sex === "F") {
-    bmr = height * 6.25 + weight * 9.99 - age * 4.92 - 161;
+    metabolicRate = height * 6.25 + weight * 9.99 - age * 4.92 - 161;
   }
 
   return `A taxa metabólica basal é: ${metabolicRate} Kcal.`;
