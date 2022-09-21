@@ -10,7 +10,7 @@ Escreva um algoritmo que recebe a duração total de uma viagem em minutos e ret
 
 */
 
-function timeTravel(minutes){
+function timeTravel(totalMinutes){
   // Desenvolva seu código nessa função
 }
 
