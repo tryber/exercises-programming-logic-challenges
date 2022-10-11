@@ -10,13 +10,13 @@ Entradas:
 "João","Carvalho', 25
 
 Saída:
-"Meu nome é João Carvalho e tenho 25 anos de vida"
+"Meu nome é João Carvalho e tenho 25 anos de vida."
 ---------------------------------------------------
 
 */
 
 function personalPresentation(firstName, lastName, age) {
-  // Desenvolva seu código nessa função
+
 }
 
 module.exports = personalPresentation;
