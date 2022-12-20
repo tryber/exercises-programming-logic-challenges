@@ -116,9 +116,9 @@ describe("Desafios de Operadores Aritméticos.", () => {
   describe(" 06 - Testando a Função IMC.", () => {
     const height = +`1.${getRandomInt(40, 99)}`
     const weight = getRandomInt(40, 120);
-    const imc =  (height * height) / weight;
-    it("Ao passar os argumentos 70 e 1.8 , deve retornar: 0.04628571428571429", () => {
-      expect(IMC(70, 1.8)).toBe(0.04628571428571429);
+    const imc =  weight / (height * height);
+    it("Ao passar os argumentos 70 e 1.8 , deve retornar: 21.604938271604937", () => {
+      expect(IMC(70, 1.8)).toBe(21.604938271604937);
     });
     it(`Ao passar os argumentos ${weight} e ${height}, deve retornar: ${imc}`, () => {
       expect(IMC(weight, height)).toBe(imc);
