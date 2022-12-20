@@ -9,7 +9,8 @@ Obs: O retorne deve ser do tipo boolean.
 */
 
 function randomBoolean(){
-  // Desenvolva seu código nessa função
+  const zeroOrOne = Math.round(Math.random());
+  return zeroOrOne === 0;
 }
 
 module.exports = randomBoolean;
