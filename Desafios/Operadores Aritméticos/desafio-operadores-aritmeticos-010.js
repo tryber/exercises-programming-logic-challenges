@@ -8,7 +8,8 @@ Escreva um algoritmo que faça conversão de temperatura em graus Fahrenheit par
 */
 
 function fahrenheitToCelsius(fahrenheit){
-  // Desenvolva seu código nessa função
+  const temperatureInCelcius = (fahrenheit - 32) * 5 / 9;
+  return Number(temperatureInCelcius.toFixed(2));
 }
 
 module.exports = fahrenheitToCelsius;
