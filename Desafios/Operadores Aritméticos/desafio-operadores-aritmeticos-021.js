@@ -16,7 +16,17 @@ Retorne uma mensagem no seguinte formato:
 */
 
 function weightedAverage(score1, score2, score3) {
-  // Desenvolva seu código nessa função
+  const weight1 = 3;
+  const weight2 = 3;
+  const weight3 = 4;
+
+  const weightsSum = weight1 + weight2 + weight3;
+  const numerator = score1 * weight1 + score2 * weight2 + score3 * weight3;
+  const average = numerator / weightsSum;
+  
+  const averageText = `, média: ${average.toFixed(1)}`
+  const situation = (average >= 6 ? 'Aprovação' : 'Reprovação');
+  return situation + averageText;
 }
 
 module.exports = weightedAverage;
