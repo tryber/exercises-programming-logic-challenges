@@ -9,8 +9,16 @@ Elabore uma função que retorne uma cor RGB aleatória no formato:
 
  */
 
+const randomRGBNumber = () => {
+  const rbgNumberMax = 256;
+  return Math.floor(Math.random() * (rbgNumberMax + 1));
+};
+
 function generateColor(){
-  // Desenvolva seu código nessa função
+  const red = randomRGBNumber();
+  const blue = randomRGBNumber();
+  const green = randomRGBNumber();
+  return `rgb(${red}, ${green}, ${blue})`;
 }
 
 module.exports = generateColor;
