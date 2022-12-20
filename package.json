@@ -4,7 +4,8 @@
   "description": "Este repositório tem por finalidade apresentar alguns exercícios de logica de programação e alguns materiais de estudo complementares sobre os temas que são abordados nos exercícios.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"  },
+    "test": "jest"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tryber/exercises-programming-logic-challenges.git"
