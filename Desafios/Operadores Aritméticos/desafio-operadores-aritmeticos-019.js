@@ -19,7 +19,14 @@ Informações:
 */
 
 function carTrip(spBh, bhSal, salNat) {
-  // Desenvolva seu código nessa função
+  const totalHours = spBh + bhSal + salNat;
+  const days = totalHours / 24;
+  const formatedDays = days.toLocaleString(
+    'en-US', { maximumFractionDigits: 3 }
+  );
+
+  return Number(formatedDays);
 }
 
 module.exports = carTrip;
+
