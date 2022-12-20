@@ -10,7 +10,11 @@ Obs2: Dependendo do método usado para arredondar o tipo da sua variável, o val
 */
 
 function restaurantExpenses(account){
-  // Desenvolva seu código nessa função
+  const taxPercent = 0.1;
+  const tipPercent = 0.05;
+  const accountPlusTax = (1 + taxPercent) * account;
+  const totalAccount = (1 + tipPercent) * accountPlusTax;
+  return Number(totalAccount.toFixed(2));
 }
 
 module.exports = restaurantExpenses;
