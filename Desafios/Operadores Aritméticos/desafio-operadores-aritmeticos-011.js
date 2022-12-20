@@ -20,8 +20,23 @@ Obs: seguir o mesmo formato de retorno da mensagem de saída.
 
 */
 
+const format = (number) => (
+  number.toLocaleString('en-US', { maximumFractionDigits: 2 })
+);
+
 function paymentOptions(price) {
-  // Desenvolva seu código nessa função
-}
+  const oneLumpDiscount = 0.1;
+  const installmentTax = 0.15;
+  const installmentsNumber = 4;
+
+  const oneLumpSumPrice = (1 - oneLumpDiscount) * price;
+  const installmentTotalPrice = (1 + installmentTax) * price;
+  const installmentPrice = installmentTotalPrice / installmentsNumber;
+
+  return (
+    `À Vista: R$${format(oneLumpSumPrice)} ` +
+    `ou 4x de: R$${format(installmentPrice)}`
+  );
+};
 
 module.exports = paymentOptions;
