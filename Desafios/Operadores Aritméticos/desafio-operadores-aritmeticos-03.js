@@ -11,7 +11,9 @@ Escreva um algoritmo que recebe um número inteiro e retorne o seu antecessor e 
 */
 
 function showNeighbors(number){
-  // Desenvolva seu código nessa função
+  return (
+    `O antecessor de ${number} é ${number - 1} e seu sucessor é ${number + 1}`
+  );
 }
 
 module.exports = showNeighbors;
