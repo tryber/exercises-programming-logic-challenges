@@ -9,7 +9,7 @@ Exemplo: um D-6 vai sortear um número entre 1 e 6.
 */
 
 function rollDice(diceSide) {
-  // Desenvolva seu código nessa função
+  return Math.floor(Math.random() * diceSide) + 1;
 }
 
 module.exports = rollDice;
