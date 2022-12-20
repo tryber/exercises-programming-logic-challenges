@@ -16,7 +16,11 @@ Retorne uma mensagem no seguinte formato:
 */
 
 function avaliador(score1, score2, score3) {
-  // Desenvolva seu código nessa função
-}
+  const grade = (score1 + score2 + score3) / 3;
+  const roundedGrade = Math.round(grade);
+  const gradeText = `, média: ${roundedGrade}`;
+  const situation = (roundedGrade >= 6 ? 'Aprovação' : 'Reprovação');
+  return situation + gradeText;
+} 
 
 module.exports = avaliador;
