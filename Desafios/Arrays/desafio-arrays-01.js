@@ -6,9 +6,8 @@ Escreva um algoritmo que recebe um array de números inteiros, procure o maior v
 
 */
 
-function getMaxNumber(numbers) {
-  // Desenvolva seu código nessa função
-  return // Retorne o resultado aqui
+const getMaxNumber = (numbers) => {
+    return numbers.reduce((bigger, number) => bigger > number ? bigger : number);
 }
 
 module.exports = getMaxNumber;
