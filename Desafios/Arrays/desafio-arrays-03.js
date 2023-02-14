@@ -19,8 +19,11 @@ Caso o contrário:
 const findGuest = (names, guest) => {
   const verify = names.some((name) => name === guest)
 
-  if (verify) return "O nome está na lista"
-  if (!verify) return "O nome não está na lista"
+  if (verify === true) {
+    return "O nome está na lista."
+  } else if (verify === false) {
+    return "O nome não está na lista."
+  }
 }
-
+ 
 module.exports = findGuest;
