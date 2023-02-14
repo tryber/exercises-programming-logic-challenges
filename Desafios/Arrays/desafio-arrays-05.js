@@ -16,9 +16,9 @@ A saída deve ter o seguinte formato:
 
 */
 
-function findOldestSon(pedroAge, kidsAge){
-  // Desenvolva seu código aqui.
-  return // Retorne o resultado aqui
-}
+const findOldestSon = (pedroAge, kidsAge) => {
+  
+  return `O filho mais velho tem ${kidsAge.reduce((pedro, kids) => pedro > kids ? pedro : kids)} anos.`
 
+}
 module.exports = findOldestSon;
