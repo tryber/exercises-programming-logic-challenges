@@ -16,9 +16,14 @@ Caso o contrário:
 
 */
 
-function findGuest(names, guest){
-  // Desenvolva seu código nessa função
-  return // Retorne o resultado aqui
-}
+const findGuest = (names, guest) => {
+  const verify = names.some((name) => name === guest)
 
+  if (verify === true) {
+    return "O nome está na lista."
+  } else if (verify === false) {
+    return "O nome não está na lista."
+  }
+}
+ 
 module.exports = findGuest;

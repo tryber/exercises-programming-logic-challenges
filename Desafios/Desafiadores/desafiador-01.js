@@ -17,7 +17,10 @@ Caso contrário:
 */
 
 function cnhProcess(name, birthYear){
-  // Desenvolva seu código nessa função
+  const minAge = 18;
+
+  if(birthYear >= minAge) return `${name} tem ${birthYear} de idade e pode iniciar o processo.`;
+  if(birthYear < minAge) return `${name} tem ${birthYear} de idade e não pode iniciar o processo.`;
 }
 
 module.exports = cnhProcess;
